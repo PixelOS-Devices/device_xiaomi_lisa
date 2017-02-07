@@ -245,6 +245,7 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 CONFIG_ACS := true
+CONFIG_IEEE80211AX := true
 
 # Inherit proprietary blobs
 -include vendor/xiaomi/lisa/BoardConfigVendor.mk
