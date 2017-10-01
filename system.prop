@@ -2,6 +2,9 @@
 ro.bluetooth.library_name=libbluetooth_qti.so
 vendor.bluetooth.soc=hastings
 
+# Charger
+ro.charger.enable_suspend=true
+
 # CNE
 persist.vendor.cne.feature=1
 
