@@ -706,4 +706,9 @@
 
     <!-- The default peak refresh rate. -->
     <integer name="config_defaultPeakRefreshRate">90</integer>
+
+    <!-- Configure SQLite to operate in MEMORY mode -->
+    <string name="db_default_journal_mode">MEMORY</string>
+    <string name="db_default_sync_mode">OFF</string>
+    <string name="db_wal_sync_mode">OFF</string>
 </resources>
