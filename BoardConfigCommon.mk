@@ -63,13 +63,6 @@ BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
-# Dex
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    WITH_DEXPREOPT ?= true
-  endif
-endif
-
 # Display
 TARGET_SCREEN_DENSITY := 440
 TARGET_USES_HWC2 := true
