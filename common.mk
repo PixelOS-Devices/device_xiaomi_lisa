@@ -361,6 +361,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.xiaomi_sm8350
 
+# QTI
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect.vendor
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
