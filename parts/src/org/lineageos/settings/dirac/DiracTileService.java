@@ -24,10 +24,10 @@ public class DiracTileService extends TileService {
     public void onClick() {
         Tile tile = getQsTile();
         if (DiracUtils.isDiracEnabled()) {
-            DiracUtils.setMusic(false);
+            DiracUtils.setEnabled(false);
             tile.setState(Tile.STATE_INACTIVE);
         } else {
-            DiracUtils.setMusic(true);
+            DiracUtils.setEnabled(true);
             tile.setState(Tile.STATE_ACTIVE);
         }
         tile.updateTile();
