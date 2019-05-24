@@ -18,9 +18,3 @@ cc_library_shared {
     shared_libs: ["libhidlbase"],
     vendor_available: true,
 }
-
-cc_library_shared {
-    name: "android.hidl.manager@1.0",
-    shared_libs: ["libhidlbase"],
-    vendor_available: true,
-}
