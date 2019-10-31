@@ -749,7 +749,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
              <instance>default</instance>
          </interface>
      </hal>
-
+    <!-- Secure Execution Environment Communicator -->
+    <hal format="hidl" optional="true">
+    	<name>vendor.qti.hardware.qseecom</name>
+    	<version>1.0</version>
+    	<interface>
+            <name>IQSEECom</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- Trusted UI HAL Service -->
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.trustedui</name>
