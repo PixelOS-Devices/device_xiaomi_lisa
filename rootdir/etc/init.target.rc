@@ -124,6 +124,9 @@ on boot
 
     write /dev/cpuset/audio-app/cpus 1-2
 
+    # Freezer setup
+    write /dev/freezer/frozen/freezer.killable 1
+
     # Add a cpuset for the camera daemon
     # We want all cores for camera
     mkdir /dev/cpuset/camera-daemon
