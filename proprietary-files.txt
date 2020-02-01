@@ -77,9 +77,13 @@ vendor/lib/libadm.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libaudioroute_ext.so
+vendor/lib/libbatterylistener.so
+vendor/lib/libhdmiedid.so
 vendor/lib/libhdmipassthru.so
+vendor/lib/libhfp.so
 vendor/lib/libqtigef.so
 vendor/lib/libresampler.so
+vendor/lib/libsndmonitor.so
 vendor/lib/libssrec.so
 vendor/lib/libvideoNS.so
 
