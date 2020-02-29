@@ -70,6 +70,13 @@ on init
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     start logd
     
+    # add a cpuset for the audio
+    mkdir /dev/cpuset/audio-app
+    chown system system /dev/cpuset/audio-app
+    chown system system /dev/cpuset/audio-app/tasks
+    chmod 0664 /dev/cpuset/audio-app/tasks
+    write /dev/cpuset/audio-app/mems 0
+
     #add uwb node
     mkdir /data/uwb 0777 uwb uwb
     mkdir /data/vendor 0777 uwb uwb
