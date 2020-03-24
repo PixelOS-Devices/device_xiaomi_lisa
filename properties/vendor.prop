@@ -143,6 +143,10 @@ dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
 dalvik.vm.dex2oat64.enabled=true
 
+# Dolby
+persist.vendor.audio_fx.current=dolby
+ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
+
 # DPM
 persist.vendor.dpm.feature=1
 persist.vendor.dpm.idletimer.mode=default
@@ -207,6 +211,7 @@ vendor.gralloc.disable_ubwc=0
 # Media
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
+debug.stagefright.omx_default_rank.sw-audio=16
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.config.vc_call_vol_steps=11
 
