@@ -30,6 +30,8 @@ on property:vendor.post_boot.parsed=1
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/audio-app/cpus 1-2
     write /dev/cpuset/restricted/cpus 0-3
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
+    setprop dalvik.vm.dex2oat-threads 6
 
     # Configure CPU input boost
     write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:1324800 4:1228800"
@@ -52,7 +54,6 @@ on property:vendor.post_boot.parsed=1
     write /sys/devices/system/cpu/cpu0/core_ctl/enable 0
     write /sys/devices/system/cpu/cpu4/core_ctl/enable 0
     write /sys/devices/system/cpu/cpu7/core_ctl/enable 0
-
 
     # Configure uclamp
     write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
