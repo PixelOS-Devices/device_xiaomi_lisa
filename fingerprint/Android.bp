@@ -1,6 +1,34 @@
+soong_config_module_type {
+    name: "fingerprint_extension",
+    module_type: "cc_defaults",
+    config_namespace: "xiaomiSm8350Vars",
+    bool_variables: ["fingerprint_use_extension"],
+    properties: [
+        "cflags",
+        "shared_libs",
+        "vintf_fragments",
+    ],
+}
+
+fingerprint_extension {
+    name: "fingerprint_extension_defaults",
+    soong_config_variables: {
+        fingerprint_use_extension: {
+            cflags: ["-DUSE_EXTENSION"],
+            shared_libs: [
+                "vendor.xiaomi.hardware.fingerprintextension@1.0",
+            ],
+            vintf_fragments: ["vendor.xiaomi.hardware.fingerprintextension@1.0.xml"],
+        },
+    },
+}
+
 cc_binary {
     name: "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm8350",
-    defaults: ["hidl_defaults"],
+    defaults: [
+        "hidl_defaults",
+        "fingerprint_extension_defaults",
+    ],
     init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm8350.rc"],
     vintf_fragments: ["android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm8350.xml"],
     vendor: true,
