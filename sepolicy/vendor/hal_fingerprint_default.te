@@ -1,8 +1,8 @@
 type vendor_fingerprint_data_file, data_file_type, file_type;
 type vendor_fingerprint_device, dev_type;
-type vendor_fp_prop, vendor_public_property_type, vendor_property_type, property_type;
-type vendor_fp_info_prop, vendor_public_property_type, vendor_property_type, property_type;
 type vendor_hal_fingerprint_hwservice_xiaomi, hwservice_manager_type;
+vendor_internal_prop(vendor_fp_prop)
+vendor_internal_prop(vendor_fp_info_prop)
 
 # Binder
 add_hwservice(hal_fingerprint_default, vendor_hal_fingerprint_hwservice_xiaomi)

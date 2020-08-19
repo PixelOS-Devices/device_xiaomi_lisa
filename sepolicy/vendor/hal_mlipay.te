@@ -6,7 +6,7 @@ hal_server_domain(hal_mlipay_default, hal_mlipay)
 type hal_mlipay_default_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(hal_mlipay_default)
 
-type vendor_mlipay_prop, vendor_public_property_type, vendor_property_type, property_type;
+vendor_public_prop(vendor_mlipay_prop)
 
 # Allow hwbinder call from hal client to server
 binder_call(hal_mlipay_client, hal_mlipay_server)
