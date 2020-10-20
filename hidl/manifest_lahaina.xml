@@ -776,6 +776,20 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>qtee-vm</instance>
         </interface>
     </hal>
+    <!-- System Helper HAL Service -->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.systemhelper</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISystemEvent</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ISystemResource</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- BluetoothSar service-->
     <hal format="hidl">
         <name>vendor.qti.hardware.bluetooth_sar</name>
