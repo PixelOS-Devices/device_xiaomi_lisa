@@ -754,17 +754,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <hal format="hidl">
         <name>vendor.qti.hardware.trustedui</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITrustedUI</name>
-            <instance>default</instance>
-            <instance>qtee-vm</instance>
-        </interface>
-        <interface>
-            <name>ITrustedInput</name>
-            <instance>default</instance>
-            <instance>qtee-vm</instance>
-        </interface>
+        <fqname>@1.1::ITrustedUI/default</fqname>
+        <fqname>@1.1::ITrustedUI/qtee-vm</fqname>
+        <fqname>@1.0::ITrustedInput/default</fqname>
+        <fqname>@1.0::ITrustedInput/qtee-vm</fqname>
     </hal>
     <!-- System Helper HAL Service -->
     <hal format="hidl">
