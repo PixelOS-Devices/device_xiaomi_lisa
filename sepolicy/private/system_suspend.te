@@ -1,0 +1,2 @@
+allow system_suspend sysfs:dir { open read };
+allow system_suspend sysfs_type:dir r_dir_perms;
