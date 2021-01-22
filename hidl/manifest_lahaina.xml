@@ -754,10 +754,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <hal format="hidl">
         <name>vendor.qti.hardware.trustedui</name>
         <transport>hwbinder</transport>
-        <fqname>@1.1::ITrustedUI/default</fqname>
-        <fqname>@1.1::ITrustedUI/qtee-vm</fqname>
-        <fqname>@1.0::ITrustedInput/default</fqname>
-        <fqname>@1.0::ITrustedInput/qtee-vm</fqname>
+        <fqname>@1.2::ITrustedUI/default</fqname>
+        <fqname>@1.2::ITrustedUI/qtee-vm</fqname>
+        <fqname>@1.1::ITrustedInput/default</fqname>
+        <fqname>@1.1::ITrustedInput/qtee-vm</fqname>
     </hal>
     <!-- BluetoothSar service-->
     <hal format="hidl">
