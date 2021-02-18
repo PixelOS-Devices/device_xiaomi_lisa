@@ -23,6 +23,10 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# LMKD
+ro.config.low_ram=false
+ro.lmk.log_stats=true
+
 # Media
 media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
