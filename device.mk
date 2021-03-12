@@ -10,3 +10,6 @@ $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Call the proprietary setup
+$(call inherit-product, vendor/xiaomi/lisa/lisa-vendor.mk)
