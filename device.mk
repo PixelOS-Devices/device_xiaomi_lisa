@@ -382,6 +382,11 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+PRODUCT_PACKAGES += \
+    LisaCNSettingsProviderOverlay \
+    LisaGLSettingsProviderOverlay \
+    LisaINSettingsProviderOverlay
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Partitions
@@ -518,6 +523,9 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-qcom \
     libwpa_client \
+    LisaCNWifiOverlay \
+    LisaGLWifiOverlay \
+    LisaINWifiOverlay \
     WifiOverlay \
     wpa_cli \
     wpa_supplicant \
