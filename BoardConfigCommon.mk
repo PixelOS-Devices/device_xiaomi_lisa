@@ -126,8 +126,55 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.l
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+
+DEVICE_MANIFEST_FILE := \
+    $(COMMON_PATH)/manifests/manifest_lahaina.xml \
+    $(COMMON_PATH)/manifests/AHBF@2.1-service.xml \
+    $(COMMON_PATH)/manifests/android.hardware.atrace@1.0-service.xml \
+    $(COMMON_PATH)/manifests/android.hardware.boot@1.1.xml \
+    $(COMMON_PATH)/manifests/android.hardware.cas@1.2-service.xml \
+    $(COMMON_PATH)/manifests/android.hardware.dumpstate@1.1-service.xiaomi.xml \
+    $(COMMON_PATH)/manifests/android.hardware.gnss@2.1-service-qti.xml \
+    $(COMMON_PATH)/manifests/android.hardware.graphics.mapper-impl-qti-display.xml \
+    $(COMMON_PATH)/manifests/android.hardware.health@2.1.xml \
+    $(COMMON_PATH)/manifests/android.hardware.ir@1.0-service.xml \
+    $(COMMON_PATH)/manifests/android.hardware.lights-qti.xml \
+    $(COMMON_PATH)/manifests/android.hardware.neuralnetworks@1.3-service-qti.xml \
+    $(COMMON_PATH)/manifests/android.hardware.sensors@2.0-multihal.xml \
+    $(COMMON_PATH)/manifests/android.hardware.thermal@2.0-service.qti.xml \
+    $(COMMON_PATH)/manifests/android.hardware.usb@1.2-service.xml \
+    $(COMMON_PATH)/manifests/android.hardware.wifi.hostapd.xml \
+    $(COMMON_PATH)/manifests/android.hardware.wifi@1.0-service.xml \
+    $(COMMON_PATH)/manifests/c2_manifest_vendor.xml \
+    $(COMMON_PATH)/manifests/fod.xml \
+    $(COMMON_PATH)/manifests/manifest_android.hardware.drm@1.3-service.clearkey.xml \
+    $(COMMON_PATH)/manifests/manifest_android.hardware.drm@1.3-service.widevine.xml \
+    $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.cld.xml \
+    $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.mfidoca.xml \
+    $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.mlipay.xml \
+    $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.mtdservice.xml \
+    $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.otrpagent.xml \
+    $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.tidaservice.xml \
+    $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.vsimapp.xml \
+    $(COMMON_PATH)/manifests/power.xml \
+    $(COMMON_PATH)/manifests/vendor.qti.diag.hal.service.xml \
+    $(COMMON_PATH)/manifests/vendor.qti.gnss@4.0-service.xml \
+    $(COMMON_PATH)/manifests/vendor.qti.hardware.display.allocator-service.xml \
+    $(COMMON_PATH)/manifests/vendor.qti.hardware.display.composer-service.xml \
+    $(COMMON_PATH)/manifests/vendor.qti.hardware.servicetracker@1.2-service.xml \
+    $(COMMON_PATH)/manifests/vendor.qti.hardware.vibrator.service.xml \
+    $(COMMON_PATH)/manifests/vendor.xiaomi.cit.bluetooth@1.0_manifest.xml \
+    $(COMMON_PATH)/manifests/vendor.xiaomi.cit.wifi@1.0_manifest.xml \
+    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.citsensorservice@1.1-service.xml \
+    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.micharge@1.0.xml \
+    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.mioob@1.0.xml \
+    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.misys@1.0.xml \
+    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.misys@2.0.xml \
+    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.misys@3.0.xml \
+    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.vibratorfeature@1.0-service.xml \
+    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.wireless@1.0.xml \
+    $(COMMON_PATH)/manifests/vendor.xiaomi.hw.touchfeature@1.0-service.xml
 
 # Media
 TARGET_USES_ION := true
