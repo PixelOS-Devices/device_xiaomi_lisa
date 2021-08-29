@@ -31,7 +31,7 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle
 
 PRODUCT_PACKAGES += \
-    audio.primary.atoll \
+    audio.primary.lahaina \
     audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default \
@@ -123,12 +123,12 @@ PRODUCT_COPY_FILES += \
 # Display
 PRODUCT_PACKAGES += \
     disable_configstore \
-    gralloc.atoll \
-    hwcomposer.atoll \
+    gralloc.lahaina \
+    hwcomposer.lahaina \
     libdisplayconfig.qti \
     libqdMetaData \
     libtinyxml \
-    memtrack.atoll
+    memtrack.lahaina
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-impl \
