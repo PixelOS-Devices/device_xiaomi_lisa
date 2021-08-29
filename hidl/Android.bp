@@ -1,0 +1,13 @@
+prebuilt_hidl_interfaces {
+    name: "IEmbms",
+    interfaces: [
+        "vendor.qti.hardware.embmssl@1.0::IEmbms",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "INetPerfTuner",
+    interfaces: [
+        "vendor.qti.hardware.wigig.netperftuner@1.0::INetPerfTuner",
+    ],
+}
