@@ -1525,7 +1525,7 @@ vendor/etc/camera/model_front.dlc
 vendor/etc/camera/model_front_mibokeh_video.dlc
 vendor/etc/camera/model_glass.dlc
 vendor/etc/camera/preview_bokeh_params.json
-vendor/etc/camera/pureShot_parameter.xml
+vendor/etc/camera/pureShot_parameter.xml|2441cf293c7a12b3bd66401e7794b3e4fbf5f4c8
 vendor/etc/camera/reid_float.dlc
 vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/seg_quantized.dlc
