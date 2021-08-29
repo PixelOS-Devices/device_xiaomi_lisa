@@ -15,7 +15,7 @@
 //
 
 cc_library_static {
-    name: "libinit_xiaomi_sm6250_common",
+    name: "libinit_xiaomi_sm8350_common",
     recovery_available: true,
     srcs: [
         "init_common.cpp"
@@ -33,12 +33,12 @@ cc_library_static {
 }
 
 cc_library_static {
-    name: "libinit_xiaomi_sm6250",
+    name: "libinit_xiaomi_sm8350",
     recovery_available: true,
     srcs: [
         "init.cpp"
     ],
     whole_static_libs: [
-        "libinit_xiaomi_sm6250_common"
+        "libinit_xiaomi_sm8350_common"
     ]
 }

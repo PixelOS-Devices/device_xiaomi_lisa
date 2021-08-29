@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/xiaomi/sm6250-common
+COMMON_PATH := device/xiaomi/sm8350-common
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -86,7 +86,7 @@ KERNEL_LD := LD=ld.lld
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := cust_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6250
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
@@ -109,8 +109,8 @@ DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_xiaomi_sm6250
-TARGET_RECOVERY_DEVICE_MODULES := libinit_xiaomi_sm6250
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_xiaomi_sm8350
+TARGET_RECOVERY_DEVICE_MODULES := libinit_xiaomi_sm8350
 
 # Media
 TARGET_USES_ION := true
@@ -226,4 +226,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit proprietary blobs
--include vendor/xiaomi/sm6250-common/BoardConfigVendor.mk
+-include vendor/xiaomi/sm8350-common/BoardConfigVendor.mk
