@@ -326,8 +326,8 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.xiaomi_sm8350
+# PRODUCT_PACKAGES += \
+#     android.hardware.power@1.3-service.xiaomi_sm8350
 
 # RCS
 PRODUCT_PACKAGES += \
