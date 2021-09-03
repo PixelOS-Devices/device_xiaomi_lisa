@@ -700,7 +700,6 @@ odm/ueventd.rc
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 product/bin/init.qti.display.sh
 product/build.prop
-product/etc/apns-conf.xml
 product/etc/init/init.miui.google_revenue_share_v2.rc
 product/etc/init/init.qti.display.rc
 product/etc/permissions/com.qti.snapdragon.sdk.display.xml
