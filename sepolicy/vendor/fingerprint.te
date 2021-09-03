@@ -1,0 +1,2 @@
+type vendor_mfp-daemon, domain;
+type vendor_mfp-daemon_exec, exec_type, vendor_file_type, file_type;
