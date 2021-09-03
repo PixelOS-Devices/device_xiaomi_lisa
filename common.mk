@@ -6,6 +6,7 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # Inherit proprietary targets
 $(call inherit-product-if-exists, vendor/xiaomi/sm8350-common/sm8350-common-vendor.mk)
@@ -84,6 +85,23 @@ PRODUCT_PACKAGES += \
     q-gsi.avbpubkey \
     r-gsi.avbpubkey \
     s-gsi.avbpubkey
+
+# A/B
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_system=true \
+    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    FILESYSTEM_TYPE_system=ext4 \
+    POSTINSTALL_OPTIONAL_system=true
+
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_vendor=true \
+    POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
+    FILESYSTEM_TYPE_vendor=ext4 \
+    POSTINSTALL_OPTIONAL_vendor=true
+
+PRODUCT_PACKAGES += \
+    checkpoint_gc \
+    otapreopt_script
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -366,6 +384,15 @@ PRODUCT_COPY_FILES += \
 # Ueventd
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
+
+# Update engine
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
 
 # USB
 PRODUCT_PACKAGES += \
