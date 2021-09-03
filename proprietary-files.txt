@@ -64,7 +64,6 @@ system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc
 system_ext/etc/init/wfdservice.rc
 system_ext/etc/perf/wlc_model.tflite
 system_ext/etc/permissions/audiosphere.xml
-system_ext/etc/permissions/com.android.carrierconfig.xml
 system_ext/etc/permissions/com.android.emergency.xml
 system_ext/etc/permissions/com.android.settings.xml
 system_ext/etc/permissions/com.android.storagemanager.xml
@@ -697,7 +696,6 @@ system_ext/lib64/vendor.qti.qspmhal@1.0.so
 system_ext/lib64/vendor.qti.voiceprint@1.0.so
 system_ext/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 -system_ext/priv-app/beyondGnssService/beyondGnssService.apk
--system_ext/priv-app/CarrierConfig/CarrierConfig.apk
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 -system_ext/priv-app/EmergencyInfo/EmergencyInfo.apk
 -system_ext/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk
@@ -764,7 +762,6 @@ product/etc/sysconfig/preinstalled-packages-platform-overlays.xml
 -product/overlay/AccentColorOrchid/AccentColorOrchidOverlay.apk
 -product/overlay/AccentColorPurple/AccentColorPurpleOverlay.apk
 -product/overlay/AccentColorSpace/AccentColorSpaceOverlay.apk
--product/overlay/CarrierConfigResCommon.apk
 -product/overlay/CellBroadcastReceiverResCommon.apk
 -product/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk
 -product/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk
