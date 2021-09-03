@@ -195,7 +195,6 @@ system_ext/framework/oat/arm64/com.qti.location.sdk.art
 -system_ext/framework/wigig-service.jar
 system_ext/lib/android.hidl.base@1.0.so
 system_ext/lib/com.qualcomm.qti.ant@1.0.so
-system_ext/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so
 system_ext/lib/com.qualcomm.qti.imscmservice@1.0.so
 system_ext/lib/com.qualcomm.qti.imscmservice@2.0.so
@@ -220,7 +219,6 @@ system_ext/lib/libadsprpc_system.so
 system_ext/lib/libavenhancements.so
 system_ext/lib/libbeluga.so
 system_ext/lib/libbinauralrenderer_wrapper.qti.so
-system_ext/lib/libbluetooth_qti.so
 system_ext/lib/libbt-logClient.so
 system_ext/lib/libbtconfigstore.so
 system_ext/lib/libcdsprpc_system.so
@@ -365,7 +363,6 @@ system_ext/lib/vendor.qti.gnss@3.0.so
 system_ext/lib/vendor.qti.gnss@4.0.so
 system_ext/lib/vendor.qti.hardware.alarm@1.0.so
 system_ext/lib/vendor.qti.hardware.audiohalext@1.0.so
-system_ext/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
 system_ext/lib/vendor.qti.hardware.btconfigstore@1.0.so
 system_ext/lib/vendor.qti.hardware.btconfigstore@2.0.so
 system_ext/lib/vendor.qti.hardware.camera.device@1.0.so
@@ -451,7 +448,6 @@ system_ext/lib/vendor.qti.voiceprint@1.0.so
 system_ext/lib/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 system_ext/lib64/android.hidl.base@1.0.so
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so
-system_ext/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
 system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
 system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so
@@ -475,7 +471,6 @@ system_ext/lib64/libadsprpc_system.so
 system_ext/lib64/libavenhancements.so
 system_ext/lib64/libbeluga.so
 system_ext/lib64/libbinauralrenderer_wrapper.qti.so
-system_ext/lib64/libbluetooth_qti.so
 system_ext/lib64/libbt-logClient.so
 system_ext/lib64/libbtconfigstore.so
 system_ext/lib64/libcdsprpc_system.so
@@ -616,7 +611,6 @@ system_ext/lib64/vendor.qti.gnss@3.0.so
 system_ext/lib64/vendor.qti.gnss@4.0.so
 system_ext/lib64/vendor.qti.hardware.alarm@1.0.so
 system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so
-system_ext/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so
 system_ext/lib64/vendor.qti.hardware.btconfigstore@1.0.so
 system_ext/lib64/vendor.qti.hardware.btconfigstore@2.0.so
 system_ext/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
@@ -2355,7 +2349,6 @@ vendor/lib/com.qti.stats.common.so
 vendor/lib/com.qualcomm.mcx.distortionmapper.so
 vendor/lib/com.qualcomm.mcx.linearmapper.so
 vendor/lib/com.qualcomm.mcx.policy.mfl.so
-vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib/com.qualcomm.qti.imscmservice@1.0.so
 vendor/lib/com.qualcomm.qti.imscmservice@2.0.so
@@ -2380,7 +2373,6 @@ vendor/lib/hw/android.hardware.audio@2.0-impl.so
 vendor/lib/hw/android.hardware.audio@4.0-impl.so
 vendor/lib/hw/android.hardware.audio@5.0-impl.so
 vendor/lib/hw/android.hardware.audio@6.0-impl.so
-vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
@@ -2394,7 +2386,6 @@ vendor/lib/hw/android.hardware.renderscript@1.0-impl.so
 vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so
 vendor/lib/hw/android.hardware.soundtrigger@2.2-impl.so
 vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so
-vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.lahaina.so
@@ -2482,7 +2473,6 @@ vendor/lib/libbase64.so
 vendor/lib/libbatching.so
 vendor/lib/libbatterylistener.so
 vendor/lib/libbitmlengine.so
-vendor/lib/libbluetooth_audio_session.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/libboot_control_qti.so
 vendor/lib/libbt-hidlclient.so
@@ -3072,7 +3062,6 @@ vendor/lib/vendor.qti.gnss@4.0.so
 vendor/lib/vendor.qti.hardware.alarm@1.0.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib/vendor.qti.hardware.automotive.vehicle@1.0.so
-vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so
@@ -3379,7 +3368,6 @@ vendor/lib64/com.qti.stats.common.so
 vendor/lib64/com.qualcomm.mcx.distortionmapper.so
 vendor/lib64/com.qualcomm.mcx.linearmapper.so
 vendor/lib64/com.qualcomm.mcx.policy.mfl.so
-vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so
 vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so
@@ -3406,7 +3394,6 @@ vendor/lib64/hw/android.hardware.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.audio@4.0-impl.so
 vendor/lib64/hw/android.hardware.audio@5.0-impl.so
 vendor/lib64/hw/android.hardware.audio@6.0-impl.so
-vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
@@ -3419,7 +3406,6 @@ vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so
 vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so
 vendor/lib64/hw/android.hardware.soundtrigger@2.2-impl.so
 vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so
-vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.lahaina.so
@@ -3531,7 +3517,6 @@ vendor/lib64/libbatterylistener.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libblink.so
 vendor/lib64/libBlinkStub.so
-vendor/lib64/libbluetooth_audio_session.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libboot_control_qti.so
 vendor/lib64/libbt-hidlclient.so
@@ -4064,7 +4049,6 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
