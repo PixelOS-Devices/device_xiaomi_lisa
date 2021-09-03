@@ -1085,7 +1085,6 @@ vendor/bin/btconfig
 vendor/bin/ccid_daemon_nr
 vendor/bin/cdsprpcd
 vendor/bin/charge_logger
-vendor/bin/checkpoint_gc
 vendor/bin/chifeature2test
 vendor/bin/chiofflinepostproctest
 vendor/bin/cnd
