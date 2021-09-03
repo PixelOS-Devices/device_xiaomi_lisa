@@ -994,8 +994,6 @@ vendor/camera/fonts/FZMiaoWuJW.ttf
 vendor/camera/fonts/MFYueYuan-Regular.ttf
 vendor/camera/fonts/MI+LanTing_GB+Outside+YS_V2.3_20160322.ttf
 vendor/camera/fonts/MIUI_Time.ttf
-vendor/camera/mimoji/data.zip
-vendor/camera/mimoji/model2.zip
 vendor/camera/model/model_front.dlc
 vendor/default.prop
 vendor/etc/1-SN1X0_SPC.txt
