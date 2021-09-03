@@ -53,9 +53,6 @@ system_ext/etc/bluetooth/interop_database.conf
 system_ext/etc/cdma_call_conf.xml
 system_ext/etc/compatconfig/settings-platform-compat-config.xml
 system_ext/etc/dpm/dpm.conf
-system_ext/etc/fs_config_dirs
-system_ext/etc/fs_config_files
-system_ext/etc/group
 system_ext/etc/init/checknv.rc
 system_ext/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc
 system_ext/etc/init/dpmd.rc
@@ -65,9 +62,6 @@ system_ext/etc/init/qspmsvc.rc
 system_ext/etc/init/qvrd_ext.rc
 system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc
 system_ext/etc/init/wfdservice.rc
-system_ext/etc/NOTICE.xml.gz
-system_ext/etc/NOTICE_GPL.xml.gz
-system_ext/etc/passwd
 system_ext/etc/perf/wlc_model.tflite
 system_ext/etc/permissions/android.software.verified_boot.xml
 system_ext/etc/permissions/audiosphere.xml
@@ -727,12 +721,6 @@ system_ext/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 
 # odm
 odm/etc/build.prop
-odm/etc/fs_config_dirs
-odm/etc/fs_config_files
-odm/etc/group
-odm/etc/NOTICE.xml.gz
-odm/etc/NOTICE_GPL.xml.gz
-odm/etc/passwd
 odm/etc/vintf/manifest_cetus.xml
 odm/etc/vintf/manifest_haydn.xml
 odm/etc/vintf/manifest_haydnin.xml
@@ -755,14 +743,8 @@ product/bin/init.qti.display.sh
 product/build.prop
 product/etc/apns-conf.xml
 product/etc/default-permissions/default-permissions-google.xml
-product/etc/fs_config_dirs
-product/etc/fs_config_files
-product/etc/group
 product/etc/init/init.miui.google_revenue_share_v2.rc
 product/etc/init/init.qti.display.rc
-product/etc/NOTICE.xml.gz
-product/etc/NOTICE_GPL.html.gz
-product/etc/passwd
 product/etc/permissions/com.android.settings.intelligence.xml
 product/etc/permissions/com.qti.snapdragon.sdk.display.xml
 product/etc/permissions/ims_ext_common.xml
@@ -1621,8 +1603,6 @@ vendor/etc/excluded-input-devices.xml
 vendor/etc/face3d/qcnn_concat_file_model-0324_2_encrypted
 vendor/etc/factory_cmd_config/modem.xml
 vendor/etc/flp.conf
-vendor/etc/fs_config_dirs
-vendor/etc/fs_config_files
 vendor/etc/fstab.qcom
 vendor/etc/ftm_test_config
 vendor/etc/ftm_test_config_lahaina-hdk-snd-card
@@ -1634,7 +1614,6 @@ vendor/etc/gnss_antenna_info.conf
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/gps.conf
 vendor/etc/gps_diag.cfg
-vendor/etc/group
 vendor/etc/hostapd/hostapd.accept
 vendor/etc/hostapd/hostapd.deny
 vendor/etc/hostapd/hostapd_default.conf
@@ -1875,9 +1854,6 @@ vendor/etc/mkshrc
 vendor/etc/models_knock_k2_20210401.dlc
 vendor/etc/modem/Diag.cfg
 vendor/etc/msm_irqbalance.conf
-vendor/etc/NOTICE.xml.gz
-vendor/etc/NOTICE_GPL.html.gz
-vendor/etc/passwd
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/perfconfigstore.xml
