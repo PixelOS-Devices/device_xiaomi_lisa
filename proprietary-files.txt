@@ -8,7 +8,6 @@
 -system_ext/app/DeviceInfo/DeviceInfo.apk
 -system_ext/app/DeviceStatisticsService/DeviceStatisticsService.apk
 -system_ext/app/DynamicDDSService/DynamicDDSService.apk
--system_ext/app/embms/embms.apk
 -system_ext/app/NQNfcNci/NQNfcNci.apk
 -system_ext/app/PerformanceMode/PerformanceMode.apk
 -system_ext/app/QColor/QColor.apk
@@ -76,8 +75,6 @@ system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice.xml
 system_ext/etc/permissions/com.qualcomm.qti.izattools.xml
 system_ext/etc/permissions/dpmapi.xml
-system_ext/etc/permissions/embms-noship_product_privapp_permissions_qti.xml
-system_ext/etc/permissions/embms.xml
 system_ext/etc/permissions/izat.xt.srv.xml
 system_ext/etc/permissions/lpa.xml
 system_ext/etc/permissions/privapp-permissions-com.qualcomm.location.xml
@@ -135,7 +132,6 @@ system_ext/etc/wfdconfigsink.xml
 -system_ext/framework/com.quicinc.cne.constants-V2.0-java.jar
 -system_ext/framework/com.quicinc.cne.constants-V2.1-java.jar
 -system_ext/framework/dpmapi.jar
--system_ext/framework/embmslibrary.jar
 -system_ext/framework/izat.xt.srv.jar
 -system_ext/framework/qcrilhook.jar
 -system_ext/framework/qmapbridge.jar
@@ -466,8 +462,6 @@ system_ext/lib64/libcomposerextn.qti.so
 system_ext/lib64/libcryptfs_hw.so
 system_ext/lib64/libcvp_common_system.so
 system_ext/lib64/libcvpcpuRev_skel_system.so
-system_ext/lib64/libdashdatasource.so
-system_ext/lib64/libdashsamplesource.so
 system_ext/lib64/libdiag_system.so
 system_ext/lib64/libDiagService.so
 system_ext/lib64/libdisplayconfig.qti.so
@@ -476,10 +470,6 @@ system_ext/lib64/libdpmctmgr.so
 system_ext/lib64/libdpmfdmgr.so
 system_ext/lib64/libdpmframework.so
 system_ext/lib64/libdpmtcm.so
-system_ext/lib64/libembmsmmosal.so
-system_ext/lib64/libembmsmmparser_lite.so
-system_ext/lib64/libembmssqlite.so
-system_ext/lib64/libembmstinyxml.so
 system_ext/lib64/libframeextension.so
 system_ext/lib64/libgralloc.qti.so
 system_ext/lib64/libhoaeffects.qti.so
@@ -497,14 +487,8 @@ system_ext/lib64/libmediasp_jni.so
 system_ext/lib64/libmink-sock-native-api.so
 system_ext/lib64/libminksocket_system.so
 system_ext/lib64/libmiracastsystem.so
-system_ext/lib64/libmmhttpstack.so
-system_ext/lib64/libmmiipstreammmihttp.so
-system_ext/lib64/libmmipstreamnetwork.so
-system_ext/lib64/libmmipstreamsourcehttp.so
-system_ext/lib64/libmmipstreamutils.so
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
-system_ext/lib64/libmmQSM.so
 system_ext/lib64/libmmrtpdecoder.so
 system_ext/lib64/libmmrtpencoder.so
 system_ext/lib64/libmsp.so
@@ -616,8 +600,6 @@ system_ext/lib64/vendor.qti.hardware.data.latency@1.0.so
 system_ext/lib64/vendor.qti.hardware.data.qmi@1.0.so
 system_ext/lib64/vendor.qti.hardware.display.composer@3.0.so
 system_ext/lib64/vendor.qti.hardware.dsp@1.0.so
-system_ext/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so
-system_ext/lib64/vendor.qti.hardware.embmssl@1.0.so
 system_ext/lib64/vendor.qti.hardware.iop@2.0.so
 system_ext/lib64/vendor.qti.hardware.perf@2.0.so
 system_ext/lib64/vendor.qti.hardware.perf@2.1.so
@@ -687,7 +669,6 @@ system_ext/lib64/vendor.qti.voiceprint@1.0.so
 system_ext/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 -system_ext/priv-app/ims/ims.apk
--system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -system_ext/priv-app/seccamservice/seccamservice.apk
 -system_ext/priv-app/WfdService/WfdService.apk
@@ -759,7 +740,6 @@ vendor/bin/dpmQmiMgr
 vendor/bin/dspservice
 vendor/bin/dumpsys
 vendor/bin/e_loop
-vendor/bin/embmsslServer
 vendor/bin/f2player
 vendor/bin/fastrpc_tests_apps
 vendor/bin/fastrpc_tests_apps32
@@ -1238,7 +1218,6 @@ vendor/etc/init/ims_rtp_daemon.rc
 vendor/etc/init/imsdaemon.rc
 vendor/etc/init/init-qcril-data.rc
 vendor/etc/init/init.charge_logger.rc
-vendor/etc/init/init.embmssl_server.rc
 vendor/etc/init/init.mfp-daemon.rc
 vendor/etc/init/init.mishow.ctl.rc
 vendor/etc/init/init.qdmastats.rc
@@ -3358,7 +3337,6 @@ vendor/lib64/libdualcam_optical_zoom_control.so
 vendor/lib64/libdualcam_video_optical_zoom.so
 vendor/lib64/libeffects.so
 vendor/lib64/libeffectsconfig.so
-vendor/lib64/libembmsservice.so
 vendor/lib64/libexthwplugin.so
 vendor/lib64/libface3d_dev.so
 vendor/lib64/libFace3D_hlos.so
@@ -3846,8 +3824,6 @@ vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so
 vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.eid@1.0.so
-vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so
-vendor/lib64/vendor.qti.hardware.embmssl@1.0.so
 vendor/lib64/vendor.qti.hardware.factory@1.0.so
 vendor/lib64/vendor.qti.hardware.factory@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
