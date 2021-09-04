@@ -851,8 +851,6 @@ vendor/bin/lowi-server
 vendor/bin/lowi_test
 vendor/bin/lowirpcd
 vendor/bin/mec
-vendor/bin/MI_IC
-vendor/bin/MI_RIC
 vendor/bin/mi_thermald
 vendor/bin/minidump64
 vendor/bin/mishow.sh
@@ -1212,8 +1210,6 @@ vendor/etc/init/init_thermal-engine.rc
 vendor/etc/init/ipa_fws.rc
 vendor/etc/init/ipacm-diag.rc
 vendor/etc/init/ipacm.rc
-vendor/etc/init/mi_ic.rc
-vendor/etc/init/mi_ric.rc
 vendor/etc/init/minidump.rc
 vendor/etc/init/mutualex.rc
 vendor/etc/init/netmgrd.rc
