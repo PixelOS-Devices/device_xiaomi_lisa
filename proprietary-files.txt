@@ -2211,7 +2211,6 @@ vendor/lib/libaudioalsa.so
 vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libaudioroute_ext.so
-vendor/lib/libavservices_minijail.so
 vendor/lib/libbase64.so
 vendor/lib/libbatching.so
 vendor/lib/libbatterylistener.so
@@ -3252,7 +3251,6 @@ vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioconfigstore.so
 vendor/lib64/libaudioparsers.so
 vendor/lib64/libaudioroute_ext.so
-vendor/lib64/libavservices_minijail.so
 vendor/lib64/libbase64.so
 vendor/lib64/libbatching.so
 vendor/lib64/libbatterylistener.so
