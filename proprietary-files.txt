@@ -8,7 +8,6 @@
 -system_ext/app/DeviceInfo/DeviceInfo.apk
 -system_ext/app/DeviceStatisticsService/DeviceStatisticsService.apk
 -system_ext/app/DynamicDDSService/DynamicDDSService.apk
--system_ext/app/NQNfcNci/NQNfcNci.apk
 -system_ext/app/PerformanceMode/PerformanceMode.apk
 -system_ext/app/QColor/QColor.apk
 -system_ext/app/QdcmFF/QdcmFF.apk
@@ -63,7 +62,6 @@ system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc
 system_ext/etc/init/wfdservice.rc
 system_ext/etc/perf/wlc_model.tflite
 system_ext/etc/permissions/audiosphere.xml
-system_ext/etc/permissions/com.nxp.nfc.nq.xml
 system_ext/etc/permissions/com.qti.dpmframework.xml
 system_ext/etc/permissions/com.qti.location.sdk.xml
 system_ext/etc/permissions/com.qti.media.secureprocessor.xml
@@ -116,7 +114,6 @@ system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
 system_ext/etc/wfdconfigsink.xml
 -system_ext/framework/ActivityExt.jar
 -system_ext/framework/audiosphere.jar
--system_ext/framework/com.nxp.nfc.nq.jar
 -system_ext/framework/com.qti.dpmframework.jar
 -system_ext/framework/com.qti.location.sdk.jar
 -system_ext/framework/com.qti.media.secureprocessor.jar
@@ -239,8 +236,6 @@ system_ext/lib/libmmosal.so
 system_ext/lib/libmmparser_lite.so
 system_ext/lib/libmmrtpdecoder.so
 system_ext/lib/libmmrtpencoder.so
-system_ext/lib/libnqnfc-nci.so
-system_ext/lib/libnqnfc_nci_jni.so
 system_ext/lib/liboemaids_system.so
 system_ext/lib/libOpenCL_system.so
 system_ext/lib/libpngt.so
@@ -280,8 +275,6 @@ system_ext/lib/libsecureuisvc_jni.so
 system_ext/lib/libsensor_calibration.so
 system_ext/lib/libskewknob_system.so
 system_ext/lib/libsmomo.qti.so
-system_ext/lib/libsn100nfc-nci.so
-system_ext/lib/libsn100nfc_nci_jni.so
 system_ext/lib/libsystemhelper_jni.so
 system_ext/lib/libtess.so
 system_ext/lib/libtrigger-handler.so
@@ -329,10 +322,6 @@ system_ext/lib/vendor.display.config@1.4.so
 system_ext/lib/vendor.display.config@1.5.so
 system_ext/lib/vendor.display.config@2.0.so
 system_ext/lib/vendor.display.postproc@1.0.so
-system_ext/lib/vendor.nxp.hardware.nfc@1.0.so
-system_ext/lib/vendor.nxp.hardware.nfc@1.1.so
-system_ext/lib/vendor.nxp.hardware.nfc@2.0.so
-system_ext/lib/vendor.nxp.nxpnfclegacy@1.0.so
 system_ext/lib/vendor.qti.data.factory@1.0.so
 system_ext/lib/vendor.qti.data.factory@2.0.so
 system_ext/lib/vendor.qti.data.factory@2.1.so
@@ -492,8 +481,6 @@ system_ext/lib64/libmmparser_lite.so
 system_ext/lib64/libmmrtpdecoder.so
 system_ext/lib64/libmmrtpencoder.so
 system_ext/lib64/libmsp.so
-system_ext/lib64/libnqnfc-nci.so
-system_ext/lib64/libnqnfc_nci_jni.so
 system_ext/lib64/liboemaids_system.so
 system_ext/lib64/libOpenCL_system.so
 system_ext/lib64/libpngt.so
@@ -527,8 +514,6 @@ system_ext/lib64/libsecureui_svcsock_system.so
 system_ext/lib64/libsecureuisvc_jni.so
 system_ext/lib64/libskewknob_system.so
 system_ext/lib64/libsmomo.qti.so
-system_ext/lib64/libsn100nfc-nci.so
-system_ext/lib64/libsn100nfc_nci_jni.so
 system_ext/lib64/libsystemhelper_jni.so
 system_ext/lib64/libtess.so
 system_ext/lib64/libtrigger-handler.so
@@ -565,10 +550,6 @@ system_ext/lib64/vendor.display.config@1.4.so
 system_ext/lib64/vendor.display.config@1.5.so
 system_ext/lib64/vendor.display.config@2.0.so
 system_ext/lib64/vendor.display.postproc@1.0.so
-system_ext/lib64/vendor.nxp.hardware.nfc@1.0.so
-system_ext/lib64/vendor.nxp.hardware.nfc@1.1.so
-system_ext/lib64/vendor.nxp.hardware.nfc@2.0.so
-system_ext/lib64/vendor.nxp.nxpnfclegacy@1.0.so
 system_ext/lib64/vendor.qti.data.factory@1.0.so
 system_ext/lib64/vendor.qti.data.factory@2.0.so
 system_ext/lib64/vendor.qti.data.factory@2.1.so
@@ -787,7 +768,6 @@ vendor/bin/hw/mfp-daemon
 vendor/bin/hw/qconfigservice
 vendor/bin/hw/qcrilNrd
 vendor/bin/hw/vendor.display.color@1.0-service
-vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
@@ -886,7 +866,6 @@ vendor/bin/mtd@1.2
 vendor/bin/mutualex
 vendor/bin/myftm
 vendor/bin/netmgrd
-vendor/bin/nqnfcinfo
 vendor/bin/nv_mac
 vendor/bin/pd-mapper
 vendor/bin/pktlogconf
@@ -1251,7 +1230,6 @@ vendor/etc/init/shsusrd.rc
 vendor/etc/init/slad.rc
 vendor/etc/init/ssgtzd.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
@@ -1315,14 +1293,6 @@ vendor/etc/init/wfdvndservice.rc
 vendor/etc/IPACM_cfg.xml
 vendor/etc/izat.conf
 vendor/etc/knock-config.json
-vendor/etc/libnfc-mtp-SN100.conf
-vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
-vendor/etc/libnfc-nci.conf
-vendor/etc/libnfc-nxp-pnscr.conf
-vendor/etc/libnfc-nxp.conf
-vendor/etc/libnfc-nxp_RF.conf
-vendor/etc/libnfc-qrd-SN100.conf
-vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf
 vendor/etc/lm/AdaptLaunchFeature.xml
 vendor/etc/lm/AppClassifierFeature.xml
 vendor/etc/lm/GameOptimizationFeature.xml
@@ -1613,22 +1583,6 @@ vendor/etc/sensors/proto/sns_ultra_violet.proto
 vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto
 vendor/etc/sensors/sns_reg_config
 vendor/etc/sla/slad.conf
-vendor/etc/sn100u_bootup.pnscr
-vendor/etc/sn100u_ese_disableIso.pnscr
-vendor/etc/sn100u_ese_disableIsoRead.pnscr
-vendor/etc/sn100u_nfcon.pnscr
-vendor/etc/sn100u_pnx_chr.pnscr
-vendor/etc/sn100u_pnx_cui.pnscr
-vendor/etc/sn100u_pnx_ese_3.pnscr
-vendor/etc/sn100u_pnx_ese_aclog.pnscr
-vendor/etc/sn100u_pnx_ese_cplc.pnscr
-vendor/etc/sn100u_pnx_ese_fabkey.pnscr
-vendor/etc/sn100u_pnx_ese_free.pnscr
-vendor/etc/sn100u_pnx_ese_keyset.pnscr
-vendor/etc/sn100u_pnx_ese_sn.pnscr
-vendor/etc/sn100u_pnx_ndi.pnscr
-vendor/etc/sn100u_pnx_pcv.pnscr
-vendor/etc/sn100u_pnx_sst.pnscr
 vendor/etc/snapdragon_color_libs_config.xml
 vendor/etc/sound_trigger_mixer_paths.xml
 vendor/etc/sound_trigger_mixer_paths_cdp.xml
@@ -2671,7 +2625,6 @@ vendor/lib/libxtwifi_server_protocol_uri_v3.so
 vendor/lib/mediacas/libclearkeycasplugin.so
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/nfc_nci.nqx.default.hw.so
 vendor/lib/qcrild_libqcrilnrutils.so
 vendor/lib/qcrilMarshal.so
 vendor/lib/qtiril-utils.so
@@ -2785,7 +2738,6 @@ vendor/lib/vendor.display.config@1.8.so
 vendor/lib/vendor.display.config@1.9.so
 vendor/lib/vendor.display.config@2.0.so
 vendor/lib/vendor.display.postproc@1.0.so
-vendor/lib/vendor.nxp.hardware.nfc@2.0.so
 vendor/lib/vendor.qti.data.factory@2.0.so
 vendor/lib/vendor.qti.data.factory@2.1.so
 vendor/lib/vendor.qti.data.slm@1.0.so
@@ -3193,7 +3145,6 @@ vendor/lib64/hw/vendor.xiaomi.hardware.wireless@1.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so
 vendor/lib64/hw/vibrator.default.so
 vendor/lib64/hw/vulkan.adreno.so
-vendor/lib64/jcos_nq_client.so
 vendor/lib64/lib-imscommon.so
 vendor/lib64/lib-imsdpl.so
 vendor/lib64/lib-imsqimf.so
@@ -3710,18 +3661,15 @@ vendor/lib64/libxml.so
 vendor/lib64/libxtadapter.so
 vendor/lib64/libxtwifi_server_protocol.so
 vendor/lib64/libxtwifi_server_protocol_uri_v3.so
-vendor/lib64/ls_nq_client.so
 vendor/lib64/mediacas/libclearkeycasplugin.so
 vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib64/nfc_nci.nqx.default.hw.so
 vendor/lib64/qcrild_libqcrilnrutils.so
 vendor/lib64/qcrilMarshal.so
 vendor/lib64/qtiril-utils.so
 vendor/lib64/qtiwakelock.so
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib64/se_nq_extn_client.so
 vendor/lib64/sensors.elliptic@2.0.so
 vendor/lib64/sensors.mius.proximity.so
 vendor/lib64/sensors.ssc.so
@@ -3769,7 +3717,6 @@ vendor/lib64/vendor.display.config@1.8.so
 vendor/lib64/vendor.display.config@1.9.so
 vendor/lib64/vendor.display.config@2.0.so
 vendor/lib64/vendor.display.postproc@1.0.so
-vendor/lib64/vendor.nxp.hardware.nfc@2.0.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
 vendor/lib64/vendor.qti.data.factory@2.1.so
 vendor/lib64/vendor.qti.data.slm@1.0.so
