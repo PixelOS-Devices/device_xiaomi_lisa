@@ -8,7 +8,6 @@
 -system_ext/app/DeviceInfo/DeviceInfo.apk
 -system_ext/app/DeviceStatisticsService/DeviceStatisticsService.apk
 -system_ext/app/DynamicDDSService/DynamicDDSService.apk
--system_ext/app/PerformanceMode/PerformanceMode.apk
 -system_ext/app/QColor/QColor.apk
 -system_ext/app/QdcmFF/QdcmFF.apk
 -system_ext/app/QTIDiagServices/QTIDiagServices.apk
