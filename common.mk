@@ -459,6 +459,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service.xiaomi_sm8350
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+
 # VNDK
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libhidlcache.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlcache.so
