@@ -13,5 +13,5 @@ ro.telephony.sim_slots.count=2
 telephony.active_modems.max_count=2
 
 # WFD
+debug.sf.latch_unsignaled=1
 persist.debug.wfd.enable=1
-vendor.wfdservice64=enable
