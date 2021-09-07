@@ -1,61 +1,25 @@
-# Audio
-audio.deep_buffer.media=true
-audio.offload.buffer.size.kb=32
-audio.offload.gapless.enabled=true
-audio.offload.video=true
-persist.audio.fluence.speaker=true
-persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicerec=false
-ro.af.client_heap_size_kbyte=7168
-ro.config.vc_call_vol_steps=11
-ro.qc.sdk.audio.fluencetype=none
-
 # Bluetooth
 persist.vendor.btstack.aac_frm_ctl.enabled=true
-persist.vendor.btstack.enable.twsplus=true
-persist.vendor.service.bdroid.soc.alwayson=true
 ro.bluetooth.library_name=libbluetooth_qti.so
+
+# Camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam
 
 # CNE
 persist.vendor.cne.feature=1
 
-# Dalvik
-dalvik.vm.dexopt.secondary=true
-
-# Display
+# Graphics
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
 ro.opengles.version=196610
-ro.sf.blurs_are_expensive=1
-ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-ro.surface_flinger.has_wide_color_display=true
-ro.surface_flinger.has_HDR_display=true
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
-ro.surface_flinger.max_virtual_display_dimension=4096
-ro.surface_flinger.supports_background_blur=1
-ro.surface_flinger.use_color_management=true
-ro.surface_flinger.wcg_composition_dataspace=143261696
-ro.vendor.display.cabl=0
-ro.vendor.display.sensortype=2
-ro.vendor.display.svi=1
-vendor.display.svi.config=1
-vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 
-# DPM
-persist.dpm.feature=1
-
-# HVDCP
-persist.vendor.cp.taper_term_mv=6500
-persist.vendor.cp.fcc_main_ua=400000
-
-# IMS
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
+# Iorap
+ro.iorapd.enable=false
 
 # Media
 debug.stagefright.ccodec=1
+media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.enable-aac=true
 media.stagefright.enable-fma2dp=true
@@ -64,45 +28,44 @@ media.stagefright.enable-player=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
+mm.enable.smoothstreaming=true
+persist.mm.enable.prefetch=true
 ro.media.recorder-max-base-layer-fps=60
-vendor.mm.enable.qcom_parser=131071983
+vendor.mm.enable.qcom_parser=16777215
 
 # Netflix
-ro.netflix.bsp_rev=Q6250-19132-1
+ro.netflix.bsp_rev=Q875-32408-1
 
-# Perf
-ro.vendor.qti.sys.fw.bservice_enable=true
-
-# Qcom
-ro.vendor.qti.va_aosp.support=1
+# NFC
+ro.nfc.port=I2C
 
 # Radio
 DEVICE_PROVISIONED=1
 keyguard.no_require_sim=true
-persist.data.df.agg.dl_pkt=10
-persist.data.df.agg.dl_size=4096
-persist.data.df.dev_name=rmnet_usb0
-persist.data.df.dl_mode=5
-persist.data.df.iwlan_mux=9
-persist.data.df.mux_count=8
-persist.data.df.ul_mode=5
-persist.data.wda.enable=true
-persist.vendor.data.iwlan.enable=true
+persist.rmnet.data.enable=true
 persist.vendor.data.mode=concurrent
+persist.vendor.overlay.izat.optin=rro
 persist.vendor.radio.atfwd.start=true
-persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.report_codec=1
-persist.vendor.radio.snapshot_enabled=1
-persist.vendor.radio.snapshot_timer=5
 ril.subscription.types=NV,RUIM
-ro.telephony.default_network=22,22
-ro.vendor.use_data_netmgrd=true
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+ro.telephony.default_network=33,33
 telephony.lteOnCdmaDevice=1
+
+# QC framework value-adds
+ro.vendor.qti.va_aosp.support=1
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
-# WFD
+# SSR
+persist.vendor.ssr.enable_ramdumps=1
+
+# WiFi
+ro.hardware.wlan.chip=685x
+ro.hardware.wlan.mimo=1
+ro.hardware.wlan.vendor=qcom
+
+# Wifi Display
 persist.debug.wfd.enable=1
-persist.sys.wfd.virtual=0
