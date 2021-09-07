@@ -1319,7 +1319,6 @@ vendor/etc/miLut_7.txt
 vendor/etc/miLut_8.txt
 vendor/etc/miLut_9.txt
 vendor/etc/miLutInfo.txt
-vendor/etc/mkshrc
 vendor/etc/modem/Diag.cfg
 vendor/etc/msm_irqbalance.conf
 vendor/etc/perf/commonresourceconfigs.xml
