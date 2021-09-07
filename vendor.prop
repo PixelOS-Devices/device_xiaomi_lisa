@@ -1,41 +1,82 @@
 # Audio
 aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
-aaudio.mmap_policy=2
+aaudio.mmap_policy=1
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.buffer.size.kb=32
 audio.offload.gapless.enabled=true
 audio.offload.video=true
+av.offload.enable=true
+persist.audio.button_jack.profile=volume
+persist.audio.button_jack.switch=0
 persist.audio.fluence.speaker=true
-persist.audio.fluence.audiorec=true
 persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicecomm=true
-persist.audio.fluence.voicerec=true
-persist.vendor.audio.avs.afe_api_version=2
+persist.audio.fluence.voicerec=false
+persist.vendor.audio.ambisonic.auto.profile=false
+persist.vendor.audio.ambisonic.capture=false
+persist.vendor.audio.apptype.multirec.enabled=false
+persist.vendor.audio.avs.afe_api_version=9
 persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.tmic.enabled=false
-persist.vendor.audio.fluence.audiorec=true
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicecomm=true
-persist.vendor.audio.fluence.voicerec=true
+persist.vendor.audio.fluence.voicerec=false
+persist.vendor.audio.ha_proxy.enabled=true
 persist.vendor.audio.ras.enabled=false
-persist.vendor.audio.spv3.enable=true
-persist.vendor.audio.voicecall.speaker.stereo=false
-ro.qc.sdk.audio.fluencetype=fluence
+persist.vendor.audio.ring.filter.mask=0
+persist.vendor.audio.speaker.prot.enable=false
+persist.vendor.audio.spv4.enable=true
+persist.vendor.audio.voicecall.speaker.stereo=true
+ro.af.client_heap_size_kbyte=7168
+ro.audio.monitorRotation=true
+ro.qc.sdk.audio.fluencetype=none
+ro.qc.sdk.audio.ssr=false
+ro.vendor.audio.game.mode=true
+ro.vendor.audio.game.vibrate=true
+ro.vendor.audio.multiroute=true
+ro.vendor.audio.ring.filter=true
+ro.vendor.audio.scenario.support=true
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
+ro.vendor.audio.sfx.earadj=true
+ro.vendor.audio.sfx.harmankardon=true
+ro.vendor.audio.sfx.scenario=true
+ro.vendor.audio.sos=true
 ro.vendor.audio.soundfx.type=mi
 ro.vendor.audio.soundfx.usb=true
-vendor.audio.adm.buffering.ms=2
-vendor.audio.chk.cal.spk=0
-vendor.audio.chk.cal.us=0
+ro.vendor.audio.soundtrigger.appdefine.cnn.level=45
+ro.vendor.audio.soundtrigger.appdefine.gmm.level=55
+ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=65
+ro.vendor.audio.soundtrigger.appdefine.vop.level=10
+ro.vendor.audio.soundtrigger.lowpower=true
+ro.vendor.audio.soundtrigger.snr=16
+ro.vendor.audio.soundtrigger.training.level=50
+ro.vendor.audio.soundtrigger.xanzn.cnn.level=70
+ro.vendor.audio.soundtrigger.xanzn.gmm.level=50
+ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=30
+ro.vendor.audio.soundtrigger.xanzn.vop.level=10
+ro.vendor.audio.soundtrigger.xatx.cnn.level=45
+ro.vendor.audio.soundtrigger.xatx.gmm.level=30
+ro.vendor.audio.soundtrigger.xatx.gmm.user.level=40
+ro.vendor.audio.soundtrigger.xatx.vop.level=0
+ro.vendor.audio.soundtrigger=sva
+ro.vendor.audio.spk.clean=true
+ro.vendor.audio.spk.stereo=true
+ro.vendor.audio.surround.support=true
+ro.vendor.audio.us.proximity=true
+ro.vendor.audio.vocal.support=true
+ro.vendor.audio.voice.change.support=true
+ro.vendor.audio.voice.change.youme.support=true
+tunnel.audio.encode=true
+use.voice.path.for.pcm.voip=true
+vendor.audio.adm.buffering.ms=6
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.enable.mirrorlink=false
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
-vendor.audio.feature.anc_headset.enable=true
+vendor.audio.feature.anc_headset.enable=false
 vendor.audio.feature.audiozoom.enable=false
 vendor.audio.feature.battery_listener.enable=true
 vendor.audio.feature.compr_cap.enable=false
@@ -47,7 +88,7 @@ vendor.audio.feature.custom_stereo.enable=true
 vendor.audio.feature.deepbuffer_as_primary.enable=false
 vendor.audio.feature.display_port.enable=true
 vendor.audio.feature.dsm_feedback.enable=false
-vendor.audio.feature.dynamic_ecns.enable=true
+vendor.audio.feature.dynamic_ecns.enable=false
 vendor.audio.feature.ext_hw_plugin.enable=false
 vendor.audio.feature.external_dsp.enable=false
 vendor.audio.feature.external_speaker.enable=false
@@ -64,10 +105,11 @@ vendor.audio.feature.keep_alive.enable=true
 vendor.audio.feature.kpi_optimize.enable=true
 vendor.audio.feature.maxx_audio.enable=false
 vendor.audio.feature.multi_voice_session.enable=true
+vendor.audio.feature.power_mode.enable=true
 vendor.audio.feature.ras.enable=true
 vendor.audio.feature.record_play_concurency.enable=false
 vendor.audio.feature.snd_mon.enable=true
-vendor.audio.feature.spkr_prot.enable=true
+vendor.audio.feature.spkr_prot.enable=false
 vendor.audio.feature.src_trkn.enable=true
 vendor.audio.feature.ssrec.enable=true
 vendor.audio.feature.usb_offload.enable=true
@@ -76,7 +118,8 @@ vendor.audio.feature.usb_offload_sidetone_volume.enable=false
 vendor.audio.feature.vbat.enable=true
 vendor.audio.feature.wsa.enable=false
 vendor.audio.flac.sw.decoder.24bit=true
-vendor.audio.hal.output.suspend.supported=true
+vendor.audio.hal.boot.timeout.ms=20000
+vendor.audio.hal.output.suspend.supported=false
 vendor.audio.hw.aac.encoder=true
 vendor.audio.offload.buffer.size.kb=32
 vendor.audio.offload.gapless.enabled=true
@@ -86,90 +129,160 @@ vendor.audio.offload.passthrough=false
 vendor.audio.offload.track.enable=false
 vendor.audio.parser.ip.buffer.size=262144
 vendor.audio.safx.pbe.enabled=false
+vendor.audio.spkcal.copy.inhal=true
 vendor.audio.tunnel.encode=false
+vendor.audio.usb.disable.sidetone=true
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.use.sw.mpegh.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
-vendor.audio.hal.boot.timeout.ms=20000
 vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=3
 vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
-persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+bt.max.hfpclient.connections=1
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac-lhdc
 persist.bluetooth.a2dp_offload.disabled=false
-persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.bt.a2dp.mac_whitelist=false
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptiver2-aac-ldac-lhdc
 persist.vendor.bt.aac_frm_ctl.enabled=true
-persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
+persist.vendor.btsatck.absvolfeature=true
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptiver2-aac-ldac-lhdc
 persist.vendor.btstack.enable.splita2dp=true
-persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
+persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
-persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
-persist.vendor.qcom.bluetooth.enable.splita2dp=true
-persist.vendor.qcom.bluetooth.scram.enabled=true
-persist.vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
+persist.vendor.qcom.bluetooth.scram.enabled=false
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
-ro.bluetooth.emb_wp_mode=true
+ro.bluetooth.emb_wp_mode=false
 ro.bluetooth.library_name=libbluetooth_qti.so
-ro.bluetooth.wipower=true
-ro.vendor.bluetooth.wipower=false
-vendor.bluetooth.soc=cherokee
-vendor.qcom.bluetooth.soc=cherokee
+ro.bluetooth.wipower=false
+vendor.bluetooth.soc=hastings
 
 # Camera
-camera.disable_zsl_mode=1
+camera.disable_zsl_mode=true
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.xiaomi.runin,com.xiaomi.cameratest,com.xiaomi.factory.mmi
 
 # CNE
 persist.vendor.cne.feature=1
 
 # Crypto
-ro.crypto.allow_encrypt_override=true
-ro.crypto.volume.filenames_mode=aes-256-cts
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
 
-# Dalvik
-dalvik.vm.dex2oat64.enabled=true
+# Display feature
+persist.vendor.dc_backlight.enable=false
+persist.vendor.dc_backlight.threshold=440
+persist.vendor.dfps.level=60
+persist.vendor.power.dfps.level=0
+ro.vendor.all_modes.colorpick_adjust=true
+ro.vendor.cabc.enable=fasle
+ro.vendor.colorpick_adjust=true
+ro.vendor.dfps.enable=false
+ro.vendor.display.ai_disp.enable=true
+ro.vendor.display.default_fps=60
+ro.vendor.display.mi_calib.enable=true
+ro.vendor.display.nature_mode.enable=true
+ro.vendor.display.sensortype=2
+ro.vendor.display.type=oled
+ro.vendor.fps.switch.default=true
+ro.vendor.histogram.enable=true
+ro.vendor.localhbm.enable=true
+ro.vendor.soft_backlight.enable=true
+sys.displayfeature.entry.enable=true
+sys.displayfeature_hidl=true
+ro.vendor.sre.enable=true
+ro.vendor.standard.video.enable=true
+ro.vendor.thermal.dimming.enable=true
+ro.vendor.xiaomi.bl.poll=true
 
-# Display
-persist.sys.sf.color_saturation=1.0
-ro.hardware.egl=adreno
-ro.hardware.vulkan=adreno
-ro.opengles.version=196610
-ro.vendor.cabc.enable=true
-vendor.display.comp_mask=0
-vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
-vendor.display.disable_decimation=1
-vendor.display.disable_excl_rect=0
-vendor.display.disable_hw_recovery=1
-vendor.display.disable_hw_recovery_dump=1
-vendor.display.disable_idle_time_hdr=1
-vendor.display.disable_inline_rotator=1
-vendor.display.disable_scaler=0
-vendor.display.disable_ui_3d_tonemap=1
-vendor.display.enable_default_color_mode=1
-vendor.display.enable_null_display=0
-vendor.display.enable_optimize_refresh=1
-vendor.gralloc.disable_ubwc=0
+# DPM
+persist.vendor.dpm.feature=1
+persist.vendor.dpm.idletimer.mode=default
+persist.vendor.dpm.nsrm.bkg.evt=3955
+persist.vendor.dpmhalservice.enable=1
 
-# FM
-vendor.hw.fm.init=0
+# DRM
+drm.service.enabled=true
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
-# Keyguard
-keyguard.no_require_sim=true
+# Graphics
+debug.egl.hw=0
+debug.mdpcomp.logs=0
+debug.sf.disable_client_composition_cache=1
+debug.sf.enable_advanced_sf_phase_offset=1
+debug.sf.enable_gl_backpressure=1
+debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
+debug.sf.high_fps_early_phase_offset_ns=-4000000
+debug.sf.high_fps_late_app_phase_offset_ns=1000000
+debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
+debug.sf.hw=0
+debug.sf.latch_unsignaled=1
+debug.sf.set_idle_timer_ms=3000c
+persist.sys.sf.color_mode=0
+persist.sys.sf.color_saturation=1.0
+ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.lahaina.api30
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+ro.opengles.version=196610
+ro.vendor.sf.enable_fb_scaling=1
+vendor.display.comp_mask=0
+vendor.display.disable_excl_rect=0
+vendor.display.disable_excl_rect_partial_fb=1
+vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_offline_rotator=1
+vendor.display.disable_scaler=0
+vendor.display.enable_async_powermode=0
+vendor.display.enable_early_wakeup=1
+vendor.display.enable_optimize_refresh=1
+vendor.display.enable_perf_hint_large_comp_cycle=1
+vendor.display.qdcm.mode_combine=2
+vendor.display.use_layer_ext=0
+vendor.display.use_smooth_motion=0
+vendor.gralloc.disable_ubwc=0
 
-# Keystore
-ro.hardware.keystore_desede=true
+# Haptics
+sys.haptic.down.normal=2
+sys.haptic.down.strong=5
+sys.haptic.down.weak=0
+sys.haptic.down=5,2
+sys.haptic.dynamiceffect=true
+sys.haptic.flick.light=7,2
+sys.haptic.flick=5,2
+sys.haptic.hold=4,0
+sys.haptic.infinitelevel=true
+sys.haptic.long.press=0,1
+sys.haptic.mesh.heavy=8,2
+sys.haptic.mesh.light=5,1
+sys.haptic.mesh.normal=5,2
+sys.haptic.motor=linear
+sys.haptic.pickup=2,2
+sys.haptic.popup.light=6,1
+sys.haptic.popup.normal=6,2
+sys.haptic.runin=13
+sys.haptic.scroll.edge=7,0
+sys.haptic.switch=9,2
+sys.haptic.tap.light=5,2
+sys.haptic.tap.normal=3,2
+sys.haptic.trigger.drawer=2,0
 
 # Media
-debug.stagefright.ccodec=1
+debug.config.media.video.aie.support=true
+debug.config.media.video.ais.support=true
+debug.config.media.video.frc.support=true
+debug.media.video.frc=false
+debug.media.video.vpp=false
+debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
-drm.service.enabled=true
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
 media.stagefright.enable-fma2dp=true
 media.stagefright.enable-http=true
@@ -177,52 +290,126 @@ media.stagefright.enable-player=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
-ro.media.recorder-max-base-layer-fps=60
+mmp.enable.3g2=true
+persist.demo.hdmirotationlock=false
+persist.mm.enable.prefetch=true
+ro.config.media_vol_default=100
+ro.config.media_vol_steps=150
+ro.config.vc_call_vol_steps=11
+ro.vendor.media.video.frc.support=true
+ro.vendor.media.video.vpp.support=true
+vendor.media.vpp.aie.cade=100
+vendor.media.vpp.aie.ltm=1
+vendor.media.vpp.aie.ltmacebrih=0
+vendor.media.vpp.aie.ltmacebril=20
+vendor.media.vpp.aie.ltmacestr=37
+vendor.media.vpp.aie.ltmsatgain=55
+vendor.media.vpp.aie.ltmsatoff=55
+vendor.media.vpp.debug.value.use=false
 vendor.mm.enable.qcom_parser=16777215
+vendor.mm.enable.qcom_parser=63963135
+qcom.hw.aac.encoder=true
 
-# PASR
-vendor.power.pasr.enabled=true
+# NFC
+ro.nfc.port=I2C
+ro.vendor.nfc.repair=1
+ro.vendor.se.type=eSE,HCE,UICC
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.perf.scroll_opt=0
 
 # Priv-app permissions
-ro.control_privapp_permissions=log
+ro.control_privapp_permissions=enforce
+
+# Qcom
+ro.vendor.qti.sys.fw.bservice_enable=true
+
+# Qcomsysd
+persist.vendor.qcomsysd.enabled=1
+
+# QSPM
+ro.vendor.qspm.enable=true
 
 # Radio
 DEVICE_PROVISIONED=1
+keyguard.no_require_sim=true
+persist.data.df.agg.dl_pkt=10
+persist.data.df.agg.dl_size=4096
 persist.data.df.dev_name=rmnet_usb0
-persist.radio.atfwd.start=false
+persist.data.df.dl_mode=5
+persist.data.df.iwlan_mux=9
+persist.data.df.mux_count=8
+persist.data.df.ul_mode=5
+persist.data.netmgrd.qos.enable=true
+persist.data.wda.enable=true
+persist.radio.dynamic_sar=false
 persist.radio.multisim.config=dsds
-persist.vendor.data.iwlan.enable=true
+persist.radio.NO_STAPA=1
+persist.radio.VT_HYBRID_ENABLE=1
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_plmn=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+persist.rmnet.data.enable=true
 persist.vendor.data.mode=concurrent
 persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.custom_ecc=1
-persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.data_ltd_sys_ind=1
+persist.vendor.radio.dynamic_load_mbn=3
+persist.vendor.radio.dynamic_sar=1
 persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.enableadvancedscan=true
+persist.vendor.radio.force_ltd_sys_ind=1
+persist.vendor.radio.force_on_dc=true
+persist.vendor.radio.hidl_dev_service=true
+persist.vendor.radio.manual_nw_rej_ct=1
+persist.vendor.radio.mbn_trace=true
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
+persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.sib16_support=1
-persist.vendor.radio.snapshot_enabled=1
-persist.vendor.radio.snapshot_timer=5
+persist.vendor.radio.ucdetect.usb=true
 ril.subscription.types=NV,RUIM
-ro.telephony.default_network=22,20
-ro.telephony.iwlan_operation_mode=legacy
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+ro.telephony.default_cdma_sub=0
+ro.telephony.default_network=22,22
+ro.vendor.radio.5g=3
 ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
 
 # Sensors
-persist.vendor.sensors.odl.adsp=true
-persist.vendor.sensors.support_direct_channel=false
 persist.vendor.sensors.allow_non_default_discovery=true
+persist.vendor.sensors.on_change_sample_period=true
+persist.vendor.sensors.sync_request=true
 
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
-# WFD
-persist.debug.wfd.enable=1
-persist.sys.wfd.virtual=0
+# Storage
+ro.incremental.enable=yes
 
-# Wi-Fi
+# Thermal
+vendor.sys.thermal.data.path=/data/vendor/thermal/
+
+# Touchfeature
+ro.vendor.touchfeature.type=55
+
+# USB
+vendor.usb.diag.func.name=ffs
+vendor.usb.use_ffs_mtp=1
+
+# Wifi
 wifi.aware.interface=wifi-aware0
+ro.vendor.net.enable_dual_wifi=1
+ro.vendor.net.enable_passpoint_r1=1
+ro.vendor.net.enable_sla=1
+
+# Wifi Display
+persist.debug.wfd.enable=1
