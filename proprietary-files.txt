@@ -42,7 +42,6 @@ system_ext/bin/rtspserver
 system_ext/bin/sigma_miracasthalservice
 system_ext/bin/test_diag_system
 system_ext/bin/wfdservice
-system_ext/build.prop
 system_ext/etc/bluetooth/bt_configstore.conf
 system_ext/etc/bluetooth/bt_profile.conf
 system_ext/etc/bluetooth/interop_database.conf
@@ -651,13 +650,11 @@ system_ext/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 -system_ext/priv-app/WfdService/WfdService.apk
 
 # odm
-odm/etc/build.prop
 odm/ueventd.rc
 
 # product
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 product/bin/init.qti.display.sh
-product/build.prop
 product/etc/init/init.miui.google_revenue_share_v2.rc
 product/etc/init/init.qti.display.rc
 product/etc/permissions/com.qti.snapdragon.sdk.display.xml
@@ -930,13 +927,11 @@ vendor/bin/xiaomi_extend_cmd
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
-vendor/build.prop
 vendor/camera/fonts/FZMiaoWuJW.ttf
 vendor/camera/fonts/MFYueYuan-Regular.ttf
 vendor/camera/fonts/MI+LanTing_GB+Outside+YS_V2.3_20160322.ttf
 vendor/camera/fonts/MIUI_Time.ttf
 vendor/camera/model/model_front.dlc
-vendor/default.prop
 vendor/etc/1-SN1X0_SPC.txt
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/CDP/CDP_Bluetooth_cal.acdb
