@@ -1117,7 +1117,6 @@ vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/etc/init/dataadpl.rc
 vendor/etc/init/dataqti.rc
 vendor/etc/init/dpmQmiMgr.rc
-vendor/etc/init/exfat.rc
 vendor/etc/init/feature_enabler_client.rc
 vendor/etc/init/ffu.rc
 vendor/etc/init/hw/init.batterysecret.rc
