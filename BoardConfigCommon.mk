@@ -140,7 +140,6 @@ DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/manifests/android.hardware.graphics.mapper-impl-qti-display.xml \
     $(COMMON_PATH)/manifests/android.hardware.health@2.1.xml \
     $(COMMON_PATH)/manifests/android.hardware.ir@1.0-service.xml \
-    $(COMMON_PATH)/manifests/android.hardware.lights-qti.xml \
     $(COMMON_PATH)/manifests/android.hardware.neuralnetworks@1.3-service-qti.xml \
     $(COMMON_PATH)/manifests/android.hardware.thermal@2.0-service.qti.xml \
     $(COMMON_PATH)/manifests/c2_manifest_vendor.xml \
