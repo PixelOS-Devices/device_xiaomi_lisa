@@ -137,7 +137,6 @@ DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/manifests/android.hardware.boot@1.1.xml \
     $(COMMON_PATH)/manifests/android.hardware.dumpstate@1.1-service.xiaomi.xml \
     $(COMMON_PATH)/manifests/android.hardware.gnss@2.1-service-qti.xml \
-    $(COMMON_PATH)/manifests/android.hardware.graphics.mapper-impl-qti-display.xml \
     $(COMMON_PATH)/manifests/android.hardware.health@2.1.xml \
     $(COMMON_PATH)/manifests/android.hardware.ir@1.0-service.xml \
     $(COMMON_PATH)/manifests/android.hardware.neuralnetworks@1.3-service-qti.xml \
@@ -156,8 +155,6 @@ DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/manifests/power.xml \
     $(COMMON_PATH)/manifests/vendor.qti.diag.hal.service.xml \
     $(COMMON_PATH)/manifests/vendor.qti.gnss@4.0-service.xml \
-    $(COMMON_PATH)/manifests/vendor.qti.hardware.display.allocator-service.xml \
-    $(COMMON_PATH)/manifests/vendor.qti.hardware.display.composer-service.xml \
     $(COMMON_PATH)/manifests/vendor.qti.hardware.servicetracker@1.2-service.xml \
     $(COMMON_PATH)/manifests/vendor.xiaomi.cit.bluetooth@1.0_manifest.xml \
     $(COMMON_PATH)/manifests/vendor.xiaomi.cit.wifi@1.0_manifest.xml \
