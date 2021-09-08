@@ -222,6 +222,7 @@ vendor.display.enable_async_powermode=0
 vendor.display.enable_early_wakeup=1
 vendor.display.enable_optimize_refresh=1
 vendor.display.enable_perf_hint_large_comp_cycle=1
+vendor.display.enable_posted_start_dyn=2
 vendor.display.qdcm.mode_combine=2
 vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=0
