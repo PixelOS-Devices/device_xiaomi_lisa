@@ -59,4 +59,13 @@
         </interface>
         <fqname>@1.0::IKeystoreExt/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.lineage.biometrics.fingerprint.inscreen</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IFingerprintInscreen</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
