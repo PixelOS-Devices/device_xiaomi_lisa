@@ -94,10 +94,12 @@ Return<void> FingerprintInscreen::onRelease() {
 
 Return<void> FingerprintInscreen::onShowFODView() {
     set(FOD_STATUS_PATH, FOD_STATUS_ON);
+    xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_FOD);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
+    xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
     set(FOD_STATUS_PATH, FOD_STATUS_OFF);
     return Void();
 }
