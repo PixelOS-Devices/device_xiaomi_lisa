@@ -195,9 +195,6 @@ echo 4-7 > /dev/cpuset/foreground/boost/cpus
 echo 0-2,4-7 > /dev/cpuset/foreground/cpus
 echo 0-7 > /dev/cpuset/top-app/cpus
 
-# Turn off scheduler boost at the end
-echo 0 > /proc/sys/kernel/sched_boost
-
 # configure governor settings for silver cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
@@ -370,17 +367,5 @@ if [ -f /sys/devices/soc0/select_image ]; then
 	echo $image_variant > /sys/devices/soc0/image_variant
 	echo $oem_version > /sys/devices/soc0/image_crm_version
 fi
-
-# Change console log level as per console config property
-console_config=`getprop persist.console.silent.config`
-case "$console_config" in
-	"1")
-		echo "Enable console config to $console_config"
-		echo 0 > /proc/sys/kernel/printk
-	;;
-	*)
-		echo "Enable console config to $console_config"
-	;;
-esac
 
 setprop vendor.post_boot.parsed 1
