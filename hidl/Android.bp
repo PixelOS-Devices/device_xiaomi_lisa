@@ -1,6 +1,0 @@
-prebuilt_hidl_interfaces {
-    name: "INetPerfTuner",
-    interfaces: [
-        "vendor.qti.hardware.wigig.netperftuner@1.0::INetPerfTuner",
-    ],
-}
