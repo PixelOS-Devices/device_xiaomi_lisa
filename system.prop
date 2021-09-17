@@ -36,6 +36,8 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 mm.enable.smoothstreaming=true
 persist.mm.enable.prefetch=true
 ro.media.recorder-max-base-layer-fps=60
+ro.media.xml_variant.codecs=lahaina
+ro.media.xml_variant.codecs_performance=lahaina
 vendor.mm.enable.qcom_parser=16777215
 
 # Netflix
@@ -56,6 +58,7 @@ persist.vendor.radio.report_codec=1
 ril.subscription.types=NV,RUIM
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.telephony.default_network=33,33
+ro.telephony.call_ring.multiple=false
 telephony.lteOnCdmaDevice=1
 
 # QC framework value-adds
@@ -71,6 +74,7 @@ persist.vendor.ssr.enable_ramdumps=1
 ro.hardware.wlan.chip=685x
 ro.hardware.wlan.mimo=1
 ro.hardware.wlan.vendor=qcom
+wifi.interface=wlan0
 
 # Wifi Display
 persist.debug.wfd.enable=1

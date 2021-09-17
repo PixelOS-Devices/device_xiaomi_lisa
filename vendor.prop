@@ -182,6 +182,9 @@ drm.service.enabled=true
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Gatekeeper
+vendor.gatekeeper.disable_spu=true
+
 # Graphics
 debug.egl.hw=0
 debug.mdpcomp.logs=0
@@ -311,6 +314,7 @@ ril.subscription.types=NV,RUIM
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.telephony.default_cdma_sub=0
 ro.telephony.default_network=22,22
+ro.telephony.call_ring.multiple=false
 ro.vendor.radio.5g=3
 ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
@@ -341,6 +345,7 @@ wifi.aware.interface=wifi-aware0
 ro.vendor.net.enable_dual_wifi=1
 ro.vendor.net.enable_passpoint_r1=1
 ro.vendor.net.enable_sla=1
+wifi.interface=wlan0
 
 # Wifi Display
 persist.debug.wfd.enable=1
