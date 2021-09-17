@@ -1,0 +1,3 @@
+type vendor_sysfs_double_tap, sysfs_type, fs_type;
+
+allow hal_power_default vendor_sysfs_double_tap:file rw_file_perms;
