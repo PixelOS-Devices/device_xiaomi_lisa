@@ -155,7 +155,6 @@ DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.otrpagent.xml \
     $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.tidaservice.xml \
     $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.vsimapp.xml \
-    $(COMMON_PATH)/manifests/power.xml \
     $(COMMON_PATH)/manifests/vendor.qti.diag.hal.service.xml \
     $(COMMON_PATH)/manifests/vendor.qti.gnss@4.0-service.xml \
     $(COMMON_PATH)/manifests/vendor.qti.hardware.servicetracker@1.2-service.xml \
