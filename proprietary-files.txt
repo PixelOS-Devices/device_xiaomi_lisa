@@ -86,7 +86,6 @@ system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/checknv.rc
 system_ext/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc
 system_ext/etc/init/dpmd.rc
-system_ext/etc/init/init.qti.bt.logger.rc
 system_ext/etc/init/perfservice.rc
 system_ext/etc/init/qspmsvc.rc
 system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc
@@ -601,7 +600,6 @@ odm/ueventd.rc
 
 # product
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
-product/etc/init/init.miui.google_revenue_share_v2.rc
 product/etc/permissions/ims_ext_common.xml
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
@@ -670,7 +668,6 @@ vendor/bin/garden_app
 vendor/bin/hal_proxy_daemon
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
-vendor/bin/hvdcp_opti
 vendor/bin/hw/android.hardware.atrace@1.0-service
 vendor/bin/hw/android.hardware.audio.service
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -727,30 +724,6 @@ vendor/bin/hw/vendor.xiaomi.hardware.wireless@1.0-service
 vendor/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdaemon
-vendor/bin/init.class_main.sh
-vendor/bin/init.crda.sh
-vendor/bin/init.kernel.post_boot-lahaina.sh
-vendor/bin/init.kernel.post_boot-shima.sh
-vendor/bin/init.kernel.post_boot.sh
-vendor/bin/init.mdm.sh
-vendor/bin/init.mi.usb.sh
-vendor/bin/init.qcom.class_core.sh
-vendor/bin/init.qcom.coex.sh
-vendor/bin/init.qcom.early_boot.sh
-vendor/bin/init.qcom.efs.sync.sh
-vendor/bin/init.qcom.post_boot.sh
-vendor/bin/init.qcom.sdio.sh
-vendor/bin/init.qcom.sensors.sh
-vendor/bin/init.qcom.sh
-vendor/bin/init.qcom.usb.sh
-vendor/bin/init.qti.chg_policy.sh
-vendor/bin/init.qti.kernel.debug-lahaina.sh
-vendor/bin/init.qti.kernel.debug-shima.sh
-vendor/bin/init.qti.kernel.debug.sh
-vendor/bin/init.qti.kernel.sh
-vendor/bin/init.qti.keymaster.sh
-vendor/bin/init.qti.media.sh
-vendor/bin/init.qti.qcv.sh
 vendor/bin/ipacm
 vendor/bin/ipacm-diag
 vendor/bin/iperf
@@ -771,7 +744,6 @@ vendor/bin/lowirpcd
 vendor/bin/mec
 vendor/bin/mi_thermald
 vendor/bin/minidump64
-vendor/bin/mishow.sh
 vendor/bin/mlid
 vendor/bin/mlipayd@1.1
 vendor/bin/mm-adec-omxMpegh-test
@@ -956,8 +928,6 @@ vendor/etc/camera/xiaomi/thirdpartydualbokehyuvsnapshot.json
 vendor/etc/camera/xiaomi/thirdpartyjpegsnapshot.json
 vendor/etc/camera/xiaomi/thirdpartysnapshot.json
 vendor/etc/charger_diag.cfg
-vendor/etc/charger_fstab.qti
-vendor/etc/charger_fw_fstab.qti
 vendor/etc/cirrus.cfg
 vendor/etc/cit_param_config.json
 vendor/etc/cne/profileSlm.xml
@@ -1016,8 +986,6 @@ vendor/etc/gnss_antenna_info.conf
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/gps.conf
 vendor/etc/gps_diag.cfg
-vendor/etc/init.panel_info.sh
-vendor/etc/init.qti.fm.sh
 vendor/etc/init/android.hardware.atrace@1.0-service.rc
 vendor/etc/init/android.hardware.audio.service.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -1031,7 +999,6 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 vendor/etc/init/android.hardware.health@2.1-service.rc
 vendor/etc/init/android.hardware.ir@1.0-service.rc
-vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc
 vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
 vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
@@ -1045,24 +1012,10 @@ vendor/etc/init/dataqti.rc
 vendor/etc/init/dpmQmiMgr.rc
 vendor/etc/init/feature_enabler_client.rc
 vendor/etc/init/ffu.rc
-vendor/etc/init/hw/init.batterysecret.rc
-vendor/etc/init/hw/init.mi_thermald.rc
-vendor/etc/init/hw/init.qcom.factory.rc
-vendor/etc/init/hw/init.qcom.rc
-vendor/etc/init/hw/init.qcom.usb.rc
-vendor/etc/init/hw/init.qti.kernel.rc
-vendor/etc/init/hw/init.qti.ufs.rc
-vendor/etc/init/hw/init.target.rc
 vendor/etc/init/ims_rtp_daemon.rc
 vendor/etc/init/imsdaemon.rc
-vendor/etc/init/init-qcril-data.rc
-vendor/etc/init/init.charge_logger.rc
 vendor/etc/init/init.mfp-daemon.rc
-vendor/etc/init/init.mishow.ctl.rc
 vendor/etc/init/init.qdmastats.rc
-vendor/etc/init/init.qti.fm.rc
-vendor/etc/init/init.qti.media.rc
-vendor/etc/init/init.qti.qcv.rc
 vendor/etc/init/init.spdaemon.rc
 vendor/etc/init/init.time_daemon.rc
 vendor/etc/init/init.vendor.qti.spu@1.1-service.rc
@@ -1092,7 +1045,6 @@ vendor/etc/init/vendor.qti.diag.rc
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.eid@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
