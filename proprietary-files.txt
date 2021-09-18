@@ -3462,4 +3462,3 @@ vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.1.so
 vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.2.so
 vendor/lib64/vendor.xiaomi.hardware.wireless@1.0.so
 vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so
-vendor/ueventd.rc
