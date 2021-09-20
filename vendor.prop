@@ -304,9 +304,6 @@ persist.vendor.sensors.sync_request=true
 # SKU
 ro.boot.product.vendor.sku=lahaina
 
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
-
 # Storage
 ro.incremental.enable=yes
 
