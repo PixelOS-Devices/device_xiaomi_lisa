@@ -815,7 +815,6 @@ vendor/bin/vendor.qti.qspmhal@1.0-service
 vendor/bin/vendor.xiaomi.hardware.otrpagent@1.0-service
 vendor/bin/vendor.xiaomi.hardware.otrpagent@2.0-service
 vendor/bin/vendor_cmd_tool
-vendor/bin/vendor_modprobe.sh
 vendor/bin/vib_cal
 vendor/bin/vmmgr
 vendor/bin/vppservice
