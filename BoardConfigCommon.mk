@@ -160,7 +160,6 @@ DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/manifests/vendor.qti.hardware.servicetracker@1.2-service.xml \
     $(COMMON_PATH)/manifests/vendor.xiaomi.cit.bluetooth@1.0_manifest.xml \
     $(COMMON_PATH)/manifests/vendor.xiaomi.cit.wifi@1.0_manifest.xml \
-    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.citsensorservice@1.1-service.xml \
     $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.micharge@1.0.xml \
     $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.mioob@1.0.xml \
     $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.misys@1.0.xml \
