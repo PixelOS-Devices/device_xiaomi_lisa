@@ -174,7 +174,6 @@ system_ext/etc/wfdconfigsink.xml
 -system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar
 -system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
 -system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 -system_ext/framework/vendor.qti.hardware.slmadapter-V1.0-java.jar
 -system_ext/framework/vendor.qti.hardware.soter-V1.0-java.jar
 -system_ext/framework/vendor.qti.hardware.wigig.netperftuner-V1.0-java.jar
@@ -646,7 +645,6 @@ vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
 vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
-vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
 vendor/bin/hw/android.hardware.thermal@2.0-service.qti
 vendor/bin/hw/mfp-daemon
 vendor/bin/hw/qconfigservice
@@ -661,7 +659,6 @@ vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/bin/hw/vendor.qti.hardware.secureprocessor@1.0
-vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti
@@ -672,7 +669,6 @@ vendor/bin/hw/vendor.qti.secure_element@1.2-service
 vendor/bin/hw/vendor.qti.sla.service@1.0-service
 vendor/bin/hw/vendor.qti.spu@1.1-service
 vendor/bin/hw/vendor.xiaomi.cit.bluetooth@1.0-service
-vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
 vendor/bin/hw/vendor.xiaomi.hardware.cld@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.mioob@1.0-service
@@ -905,7 +901,6 @@ vendor/etc/init/android.hardware.ir@1.0-service.rc
 vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
 vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
-vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
 vendor/etc/init/android.hardware.thermal@2.0-service.qti.rc
 vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/cnd.rc
@@ -955,7 +950,6 @@ vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc
-vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc
@@ -970,7 +964,6 @@ vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/init/vendor.xiaomi.cit.bluetooth@1.0-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.cld@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc
@@ -1577,7 +1570,6 @@ vendor/lib/android.hardware.automotive.vehicle@2.0-manager-lib.so
 vendor/lib/android.hardware.camera.provider@2.4-external.so
 vendor/lib/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib/android.hardware.secure_element@1.0-impl.so
-vendor/lib/android.hardware.sensors@2.0-ScopedWakelock.so
 vendor/lib/android.hidl.base@1.0.so
 vendor/lib/btaudio_offload_if.so
 vendor/lib/camera.device@1.0-impl.so
@@ -1751,10 +1743,8 @@ vendor/lib/hw/vendor.qti.hardware.eid@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so
-vendor/lib/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.cld@1.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.mioob@1.0-impl.so
@@ -2090,7 +2080,6 @@ vendor/lib/libscveObjectTracker.so
 vendor/lib/libscveObjectTracker_stub.so
 vendor/lib/libsdsprpc.so
 vendor/lib/libsecureui_svcsock.so
-vendor/lib/libsensorcal.so
 vendor/lib/libsensorslog.so
 vendor/lib/libsi.so
 vendor/lib/libskewknob.so
@@ -2383,7 +2372,6 @@ vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
-vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/lib/vendor.qti.hardware.servicetracker@1.0.so
 vendor/lib/vendor.qti.hardware.servicetracker@1.1.so
 vendor/lib/vendor.qti.hardware.servicetracker@1.2.so
@@ -2421,10 +2409,6 @@ vendor/lib/vendor.qti.spu@1.1.so
 vendor/lib/vendor.qti.voiceprint@1.0.so
 vendor/lib/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so
 vendor/lib/vendor.xiaomi.hardware.campostproc@1.0.so
-vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.0.so
-vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.0_vendor.so
-vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.1.so
-vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.1_vendor.so
 vendor/lib/vendor.xiaomi.hardware.cld@1.0.so
 vendor/lib/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 vendor/lib/vendor.xiaomi.hardware.mfidoca@1.0.so
@@ -2452,7 +2436,6 @@ vendor/lib64/android.hardware.automotive.vehicle@2.0-manager-lib.so
 vendor/lib64/android.hardware.camera.provider@2.4-external.so
 vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib64/android.hardware.secure_element@1.0-impl.so
-vendor/lib64/android.hardware.sensors@2.0-ScopedWakelock.so
 vendor/lib64/android.hidl.base@1.0.so
 vendor/lib64/btaudio_offload_if.so
 vendor/lib64/camera.device@1.0-impl.so
@@ -2675,10 +2658,8 @@ vendor/lib64/hw/vendor.qti.hardware.eid@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
-vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.cld@1.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.mioob@1.0-impl.so
@@ -3074,8 +3055,6 @@ vendor/lib64/libscveObjectTracker_stub.so
 vendor/lib64/libsdk_sr.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libsensorcal.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsi.so
 vendor/lib64/libskewknob.so
@@ -3269,7 +3248,6 @@ vendor/lib64/vendor.qti.hardware.secureprocessor.common@1.0-helper.so
 vendor/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so
 vendor/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so
 vendor/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/lib64/vendor.qti.hardware.servicetracker@1.0.so
 vendor/lib64/vendor.qti.hardware.servicetracker@1.1.so
 vendor/lib64/vendor.qti.hardware.servicetracker@1.2.so
@@ -3307,10 +3285,6 @@ vendor/lib64/vendor.qti.voiceprint@1.0.so
 vendor/lib64/vendor.xiaomi.cit.bluetooth@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so
 vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0_vendor.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1_vendor.so
 vendor/lib64/vendor.xiaomi.hardware.cld@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
