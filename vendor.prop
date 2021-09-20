@@ -144,32 +144,6 @@ persist.vendor.cne.feature=1
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
 
-# Display feature
-persist.vendor.dc_backlight.enable=false
-persist.vendor.dc_backlight.threshold=440
-persist.vendor.dfps.level=60
-persist.vendor.power.dfps.level=0
-ro.vendor.all_modes.colorpick_adjust=true
-ro.vendor.cabc.enable=fasle
-ro.vendor.colorpick_adjust=true
-ro.vendor.dfps.enable=false
-ro.vendor.display.ai_disp.enable=true
-ro.vendor.display.default_fps=60
-ro.vendor.display.mi_calib.enable=true
-ro.vendor.display.nature_mode.enable=true
-ro.vendor.display.sensortype=2
-ro.vendor.display.type=oled
-ro.vendor.fps.switch.default=true
-ro.vendor.histogram.enable=true
-ro.vendor.localhbm.enable=true
-ro.vendor.soft_backlight.enable=true
-sys.displayfeature.entry.enable=true
-sys.displayfeature_hidl=true
-ro.vendor.sre.enable=true
-ro.vendor.standard.video.enable=true
-ro.vendor.thermal.dimming.enable=true
-ro.vendor.xiaomi.bl.poll=true
-
 # DPM
 persist.vendor.dpm.feature=1
 persist.vendor.dpm.idletimer.mode=default
