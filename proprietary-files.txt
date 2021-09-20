@@ -624,7 +624,6 @@ vendor/bin/batterysecret
 vendor/bin/cdsprpcd
 vendor/bin/cnd
 vendor/bin/cnss-daemon
-vendor/bin/cnss_diag
 vendor/bin/diag-router
 vendor/bin/dpmQmiMgr
 vendor/bin/dspservice
