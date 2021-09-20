@@ -723,7 +723,6 @@ vendor/bin/spdaemon
 vendor/bin/sscrpcd
 vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
-vendor/bin/ssr_setup
 vendor/bin/tftp_server
 vendor/bin/thermal-engine
 vendor/bin/tidad@1.2
