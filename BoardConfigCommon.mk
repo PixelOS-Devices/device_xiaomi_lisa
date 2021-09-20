@@ -166,8 +166,7 @@ DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.misys@1.0.xml \
     $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.misys@2.0.xml \
     $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.misys@3.0.xml \
-    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.wireless@1.0.xml \
-    $(COMMON_PATH)/manifests/vendor.xiaomi.hw.touchfeature@1.0-service.xml
+    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.wireless@1.0.xml
 
 # Media
 TARGET_USES_ION := true
