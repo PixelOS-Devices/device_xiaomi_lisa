@@ -35,8 +35,6 @@ for MODULE in ${MODULES}; do
 			echo "Xiaomi Wifi:" ${MODULE}
         elif [ ${MODULE} == "cnss2" ]; then
 			echo "Xiaomi Wifi:" ${MODULE}
-        elif [ ${MODULE} == "fts_touch_spi" ]; then
-			echo "xiaomi fts:" ${MODULE}
         else
 		${MODPROBE} -a -b -d ${MODULES_PATH} ${MODULE} &
         fi
