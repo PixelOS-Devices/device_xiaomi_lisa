@@ -36,8 +36,8 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 mm.enable.smoothstreaming=true
 persist.mm.enable.prefetch=true
 ro.media.recorder-max-base-layer-fps=60
-ro.media.xml_variant.codecs=lahaina
-ro.media.xml_variant.codecs_performance=lahaina
+ro.media.xml_variant.codecs=_lahaina
+ro.media.xml_variant.codecs_performance=_lahaina
 vendor.mm.enable.qcom_parser=16777215
 
 # Netflix

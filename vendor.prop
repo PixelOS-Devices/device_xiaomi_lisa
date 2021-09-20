@@ -227,6 +227,8 @@ persist.mm.enable.prefetch=true
 ro.config.media_vol_default=15
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=11
+ro.media.xml_variant.codecs=_lahaina
+ro.media.xml_variant.codecs_performance=_lahaina
 ro.vendor.media.video.frc.support=true
 ro.vendor.media.video.vpp.support=true
 vendor.media.vpp.aie.cade=100
@@ -239,6 +241,7 @@ vendor.media.vpp.aie.ltmsatoff=55
 vendor.media.vpp.debug.value.use=false
 vendor.mm.enable.qcom_parser=16777215
 vendor.mm.enable.qcom_parser=63963135
+vendor.media.target_variant=_lahaina
 
 # NFC
 ro.nfc.port=I2C
@@ -297,6 +300,9 @@ telephony.lteOnCdmaDevice=1
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.on_change_sample_period=true
 persist.vendor.sensors.sync_request=true
+
+# SKU
+ro.boot.product.vendor.sku=lahaina
 
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
