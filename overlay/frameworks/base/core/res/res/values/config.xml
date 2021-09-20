@@ -550,6 +550,9 @@
          that can be set by the user. -->
     <integer name="config_screenBrightnessDoze">17</integer>
 
+    <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
+    <bool name="config_dozePulsePickup">true</bool>
+
     <!-- If true, the display will be shifted around in ambient mode. -->
     <bool name="config_enableBurnInProtection">true</bool>
 </resources>
