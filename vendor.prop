@@ -307,9 +307,6 @@ ro.incremental.enable=yes
 # Thermal
 vendor.sys.thermal.data.path=/data/vendor/thermal/
 
-# Touchfeature
-ro.vendor.touchfeature.type=55
-
 # USB
 vendor.usb.diag.func.name=ffs
 vendor.usb.use_ffs_mtp=1
