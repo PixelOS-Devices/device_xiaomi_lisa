@@ -59,7 +59,6 @@ tea5761.ko
 qti_battery_charger.ko
 nfc_i2c.ko
 cnss2.ko
-xiaomi_touch.ko
 rx_macro_dlkm.ko
 e4000.ko
 native_dlkm.ko
