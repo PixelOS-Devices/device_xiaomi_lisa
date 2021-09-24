@@ -147,24 +147,9 @@ DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/manifests/fod.xml \
     $(COMMON_PATH)/manifests/manifest_android.hardware.drm@1.3-service.clearkey.xml \
     $(COMMON_PATH)/manifests/manifest_android.hardware.drm@1.3-service.widevine.xml \
-    $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.cld.xml \
-    $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.mfidoca.xml \
-    $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.mlipay.xml \
-    $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.mtdservice.xml \
-    $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.otrpagent.xml \
-    $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.tidaservice.xml \
-    $(COMMON_PATH)/manifests/manifest_vendor.xiaomi.hardware.vsimapp.xml \
     $(COMMON_PATH)/manifests/vendor.qti.diag.hal.service.xml \
     $(COMMON_PATH)/manifests/vendor.qti.gnss@4.0-service.xml \
-    $(COMMON_PATH)/manifests/vendor.qti.hardware.servicetracker@1.2-service.xml \
-    $(COMMON_PATH)/manifests/vendor.xiaomi.cit.bluetooth@1.0_manifest.xml \
-    $(COMMON_PATH)/manifests/vendor.xiaomi.cit.wifi@1.0_manifest.xml \
-    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.micharge@1.0.xml \
-    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.mioob@1.0.xml \
-    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.misys@1.0.xml \
-    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.misys@2.0.xml \
-    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.misys@3.0.xml \
-    $(COMMON_PATH)/manifests/vendor.xiaomi.hardware.wireless@1.0.xml
+    $(COMMON_PATH)/manifests/vendor.qti.hardware.servicetracker@1.2-service.xml
 
 # Media
 TARGET_USES_ION := true
