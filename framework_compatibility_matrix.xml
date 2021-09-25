@@ -822,6 +822,22 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.fingerprintextension</name>
+        <version>1.0</version>
+        <interface>
+            <name>IXiaomiFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.fx.tunnel</name>
+        <version>1.0</version>
+        <interface>
+            <name>IMiFxTunnel</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <sepolicy>
         <kernel-sepolicy-version>30</kernel-sepolicy-version>
         <sepolicy-version>26.0</sepolicy-version>
