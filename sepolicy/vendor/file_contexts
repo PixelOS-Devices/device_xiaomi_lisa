@@ -6,6 +6,9 @@
 # Power
 /sys/devices/virtual/touch/tp_dev/double_tap                       u:object_r:vendor_sysfs_double_tap:s0
 
+# Powershare
+/vendor/bin/hw/vendor\.lineage\.powershare@1\.0-service\.xiaomi_sm8350                           u:object_r:hal_lineage_powershare_default_exec:s0
+
 # Sensors
 /vendor/bin/hw/android\.hardware\.sensors@2.1-service\.xiaomi_sm8350-multihal                           u:object_r:hal_sensors_default_exec:s0
 
