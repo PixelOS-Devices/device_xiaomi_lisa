@@ -13,6 +13,7 @@
 /vendor/bin/hw/android\.hardware\.sensors@2.1-service\.xiaomi_sm8350-multihal                           u:object_r:hal_sensors_default_exec:s0
 
 # Fingerprint
+/dev/goodix_fp                                                      u:object_r:vendor_fingerprint_device:s0
 /mnt/vendor/persist/goodix(/.*)?                                    u:object_r:vendor_fingerprint_data_file:s0
 
 # FOD
