@@ -62,7 +62,6 @@ etc/sysconfig/qti_whitelist.xml
 -system_ext/app/uimremoteserver/uimremoteserver.apk
 -system_ext/app/WAPPushManager/WAPPushManager.apk
 -system_ext/app/WigigTetheringRRO/WigigTetheringRRO.apk
--system_ext/app/workloadclassifier/workloadclassifier.apk
 -system_ext/app/xdivert/xdivert.apk
 system_ext/bin/bt_logger
 system_ext/bin/checknv
@@ -265,7 +264,6 @@ system_ext/lib/libqti-perfd-client_system.so
 system_ext/lib/libqti-util_system.so
 system_ext/lib/libqti_performance.so
 system_ext/lib/libqti_vndfwk_detect.so
-system_ext/lib/libqti_workloadclassifiermodel.so
 system_ext/lib/libsdsprpc_system.so
 system_ext/lib/libseccam-ipc.so
 system_ext/lib/libseccam.so
@@ -463,7 +461,6 @@ system_ext/lib64/libqti-perfd-client_system.so
 system_ext/lib64/libqti-util_system.so
 system_ext/lib64/libqti_performance.so
 system_ext/lib64/libqti_vndfwk_detect.so
-system_ext/lib64/libqti_workloadclassifiermodel.so
 system_ext/lib64/libsdsprpc_system.so
 system_ext/lib64/libseccam-ipc.so
 system_ext/lib64/libseccam.so
