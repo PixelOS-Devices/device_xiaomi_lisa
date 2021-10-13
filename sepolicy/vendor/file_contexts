@@ -17,3 +17,6 @@
 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_hbm     u:object_r:vendor_sysfs_fod:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui      u:object_r:vendor_sysfs_fod:s0
 /sys/devices/virtual/touch/tp_dev/fod_status                       u:object_r:vendor_sysfs_fod:s0
+
+# Thermal
+/data/vendor/thermal(/.*)?                           u:object_r:thermal_data_file:s0
