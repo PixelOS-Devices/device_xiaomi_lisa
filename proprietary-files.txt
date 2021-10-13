@@ -37,6 +37,9 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
+# QMI
+etc/sysconfig/qti_whitelist.xml
+
 # system-ext
 -system_ext/app/atfwd/atfwd.apk
 -system_ext/app/colorservice/colorservice.apk
