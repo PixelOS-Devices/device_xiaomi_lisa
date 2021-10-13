@@ -1,2 +1,6 @@
 type vendor_mfp-daemon, domain;
 type vendor_mfp-daemon_exec, exec_type, vendor_file_type, file_type;
+type vendor_fingerprint_data_file, data_file_type, file_type;
+
+allow vendor_mfp-daemon vendor_fingerprint_data_file:dir create_dir_perms;
+allow vendor_mfp-daemon vendor_fingerprint_data_file:file create_file_perms;
