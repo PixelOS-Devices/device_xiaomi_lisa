@@ -4,3 +4,4 @@ type vendor_fingerprint_data_file, data_file_type, file_type;
 
 allow vendor_mfp-daemon vendor_fingerprint_data_file:dir create_dir_perms;
 allow vendor_mfp-daemon vendor_fingerprint_data_file:file create_file_perms;
+allow vendor_mfp-daemon tee_device:chr_file rw_file_perms;
