@@ -30,6 +30,9 @@
 # Mlipay
 /(vendor|system/vendor)/bin/mlipayd@1.1          u:object_r:hal_mlipay_default_exec:s0
 
+# NFC
+/vendor/bin/hw/android\.hardware\.nfc_snxxx@1\.2-service                u:object_r:hal_nfc_default_exec:s0
+
 # Power
 /sys/devices/virtual/touch/tp_dev/double_tap                       u:object_r:vendor_sysfs_double_tap:s0
 

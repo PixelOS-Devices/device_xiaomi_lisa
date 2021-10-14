@@ -1060,10 +1060,13 @@ vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
 # NFC configs
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
-vendor/etc/libnfc-nxp_RF.conf
+vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 
 # NFC
-vendor/lib/libsn100u_fw.so
+vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
+vendor/lib64/jcos_nq_client.so
+vendor/lib64/ls_nq_client.so
+vendor/lib64/se_nq_extn_client.so
 
 # NVRAM
 vendor/bin/nv_mac

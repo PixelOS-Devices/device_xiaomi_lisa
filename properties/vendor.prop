@@ -191,7 +191,6 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.config.vc_call_vol_steps=11
 
 # NFC
-ro.boot.product.hardware.sku=nfc
 ro.vendor.nfc.repair=1
 ro.vendor.se.type=eSE,HCE,UICC
 
