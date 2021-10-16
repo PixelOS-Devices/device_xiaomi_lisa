@@ -9,6 +9,8 @@ DEVICE_PATH := device/xiaomi/lisa
 
 BOARD_VENDOR := xiaomi
 
+BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
+
 # A/B
 AB_OTA_UPDATER := true
 
