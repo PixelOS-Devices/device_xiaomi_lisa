@@ -1,2 +1,7 @@
+# Fingerprint
+persist.vendor.sys.fp.    u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.info    u:object_r:vendor_fp_info_prop:s0
+persist.vendor.sys.fp.uid    u:object_r:vendor_fp_info_prop:s0
+
 # SPU
 persist.vendor.security.spuari.              u:object_r:vendor_security_spuari_prop:s0

@@ -2,9 +2,14 @@ type vendor_mfp-daemon, domain;
 type vendor_mfp-daemon_exec, exec_type, vendor_file_type, file_type;
 type vendor_fingerprint_data_file, data_file_type, file_type;
 type vendor_fingerprint_device, dev_type;
+type vendor_fp_prop, vendor_public_property_type, vendor_property_type, property_type;
+type vendor_fp_info_prop, vendor_public_property_type, vendor_property_type, property_type;
 
 hal_server_domain(vendor_mfp-daemon, hal_fingerprint)
 init_daemon_domain(vendor_mfp-daemon)
+
+set_prop(vendor_mfp-daemon, vendor_fp_prop)
+set_prop(vendor_mfp-daemon, vendor_fp_info_prop)
 
 allow vendor_mfp-daemon vendor_fingerprint_data_file:dir create_dir_perms;
 allow vendor_mfp-daemon vendor_fingerprint_data_file:file create_file_perms;
