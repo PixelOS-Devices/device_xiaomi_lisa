@@ -64,7 +64,6 @@ etc/sysconfig/qti_whitelist.xml
 -system_ext/app/WigigTetheringRRO/WigigTetheringRRO.apk
 -system_ext/app/xdivert/xdivert.apk
 system_ext/bin/bt_logger
-system_ext/bin/checknv
 system_ext/bin/diag_callback_sample_system
 system_ext/bin/diag_dci_sample_system
 system_ext/bin/diag_mdlog_system
@@ -84,7 +83,6 @@ system_ext/etc/bluetooth/interop_database.conf
 system_ext/etc/cdma_call_conf.xml
 system_ext/etc/compatconfig/settings-platform-compat-config.xml
 system_ext/etc/dpm/dpm.conf
-system_ext/etc/init/checknv.rc
 system_ext/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc
 system_ext/etc/init/dpmd.rc
 system_ext/etc/init/perfservice.rc
