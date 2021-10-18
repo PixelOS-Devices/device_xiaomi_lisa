@@ -13,6 +13,8 @@ add_hwservice(vendor_mfp-daemon, vendor_hal_fingerprint_hwservice_xiaomi)
 set_prop(vendor_mfp-daemon, vendor_fp_prop)
 set_prop(vendor_mfp-daemon, vendor_fp_info_prop)
 
+allow vendor_mfp-daemon vendor_hal_perf_hwservice:hwservice_manager { find };
+
 allow vendor_mfp-daemon vendor_fingerprint_data_file:dir create_dir_perms;
 allow vendor_mfp-daemon vendor_fingerprint_data_file:file create_file_perms;
 allow vendor_mfp-daemon tee_device:chr_file rw_file_perms;
