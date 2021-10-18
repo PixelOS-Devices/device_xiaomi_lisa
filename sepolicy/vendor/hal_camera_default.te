@@ -1,0 +1,3 @@
+type vendor_camera_sensor_prop, property_type;
+
+set_prop(hal_camera_default, vendor_camera_sensor_prop)
