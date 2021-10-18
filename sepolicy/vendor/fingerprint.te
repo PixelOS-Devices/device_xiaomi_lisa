@@ -4,9 +4,11 @@ type vendor_fingerprint_data_file, data_file_type, file_type;
 type vendor_fingerprint_device, dev_type;
 type vendor_fp_prop, vendor_public_property_type, vendor_property_type, property_type;
 type vendor_fp_info_prop, vendor_public_property_type, vendor_property_type, property_type;
+type vendor_hal_fingerprint_hwservice_xiaomi, hwservice_manager_type;
 
 hal_server_domain(vendor_mfp-daemon, hal_fingerprint)
 init_daemon_domain(vendor_mfp-daemon)
+add_hwservice(vendor_mfp-daemon, vendor_hal_fingerprint_hwservice_xiaomi)
 
 set_prop(vendor_mfp-daemon, vendor_fp_prop)
 set_prop(vendor_mfp-daemon, vendor_fp_info_prop)
