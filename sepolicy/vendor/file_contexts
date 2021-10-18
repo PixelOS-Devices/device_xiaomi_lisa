@@ -18,6 +18,8 @@
 # Fingerprint
 /dev/goodix_fp                                                      u:object_r:vendor_fingerprint_device:s0
 /mnt/vendor/persist/goodix(/.*)?                                    u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/fpdump(/.*)?                                           u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/goodix(/.*)?                                           u:object_r:vendor_fingerprint_data_file:s0
 /vendor/bin/hw/mfp-daemon                                           u:object_r:vendor_mfp-daemon_exec:s0
 
 # FOD
