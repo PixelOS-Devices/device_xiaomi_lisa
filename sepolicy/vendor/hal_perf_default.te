@@ -1,2 +1,4 @@
 allow vendor_hal_perf_default hal_audio_default:dir r_dir_perms;
 allow vendor_hal_perf_default hal_audio_default:file r_file_perms;
+allow vendor_hal_perf_default vendor_mfp-daemon:dir r_dir_perms;
+allow vendor_hal_perf_default vendor_mfp-daemon:file r_file_perms;
