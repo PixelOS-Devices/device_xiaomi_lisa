@@ -1,3 +1,7 @@
+# Audio
+/dev/socket/audio_hw_socket                                             u:object_r:audio_socket:s0
+/dev/elliptic(.*)?                    u:object_r:sound_device:s0
+
 # Battery
 /vendor/bin/batteryd		u:object_r:batteryd_exec:s0
 /vendor/bin/batterysecret		u:object_r:batterysecret_exec:s0
