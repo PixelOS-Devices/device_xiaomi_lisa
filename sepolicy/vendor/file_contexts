@@ -10,6 +10,9 @@
 # Camera
 /mnt/vendor/persist/camera(/.*)?   u:object_r:camera_persist_file:s0
 
+# IR
+/dev/ir_spi                                      u:object_r:ir_spi_device:s0
+
 # Power
 /sys/devices/virtual/touch/tp_dev/double_tap                       u:object_r:vendor_sysfs_double_tap:s0
 
