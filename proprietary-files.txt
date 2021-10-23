@@ -577,9 +577,6 @@ system_ext/lib64/vendor.qti.voiceprint@1.0.so
 -system_ext/priv-app/seccamservice/seccamservice.apk
 -system_ext/priv-app/WfdService/WfdService.apk
 
-# odm
-odm/ueventd.rc
-
 # product
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 product/etc/permissions/ims_ext_common.xml
