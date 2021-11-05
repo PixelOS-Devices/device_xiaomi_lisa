@@ -20,6 +20,9 @@
 # Power
 /sys/devices/virtual/touch/tp_dev/double_tap                       u:object_r:vendor_sysfs_double_tap:s0
 
+# Power
+/dev/xiaomi-touch                                                  u:object_r:vendor_touchfeature_device:s0
+
 # Powershare
 /vendor/bin/hw/vendor\.lineage\.powershare@1\.0-service\.xiaomi_sm8350                           u:object_r:hal_lineage_powershare_default_exec:s0
 
