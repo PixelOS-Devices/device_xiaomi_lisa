@@ -84,6 +84,26 @@
         <item>"7,1"</item>
     </string-array>
 
+    <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
+         device from the display on/off state.
+
+         When false, autosuspend_disable() will be called before the display is turned on
+         and autosuspend_enable() will be called after the display is turned off.
+         This mode provides best compatibility for devices using legacy power management
+         features such as early suspend / late resume.
+
+         When true, autosuspend_display() and autosuspend_enable() will be called
+         independently of whether the display is being turned on or off.  This mode
+         enables the power manager to suspend the application processor while the
+         display is on.
+
+         This resource should be set to "true" when a doze component has been specified
+         to maximize power savings but not all devices support it.
+
+         Refer to autosuspend.h for details.
+    -->
+    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
+
     <!-- Power Management: Specifies whether to decouple the interactive state of the
          device from the display on/off state.
 
@@ -255,6 +275,10 @@
     <!-- Enable doze mode
          ComponentName of a dream to show whenever the system would otherwise have gone to sleep. -->
     <string translatable="false" name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+
+    <!-- If true, the doze component is not started until after the screen has been
+         turned off and the screen off animation has been performed. -->
+    <bool name="config_dozeAfterScreenOffByDefault">true</bool>
 
     <!-- Enable doze alwaysOn Display -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
