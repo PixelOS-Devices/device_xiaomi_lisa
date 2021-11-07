@@ -7,6 +7,10 @@
 # Inherit from sm8350-common
 $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
