@@ -9,6 +9,9 @@ DEVICE_PATH := device/xiaomi/lisa
 # Inherit from sm8350-common
 include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 
+# Board
+TARGET_BOOTLOADER_BOARD_NAME := lisa
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/lisa_QGKI.config
 
