@@ -22,15 +22,17 @@ import android.view.MenuItem;
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 import com.android.settingslib.collapsingtoolbar.R;
 
-public class ThermalActivity extends CollapsingToolbarBaseActivity {
+public class TouchSettingsActivity extends CollapsingToolbarBaseActivity {
 
-    private static final String TAG_THERMAL = "thermal";
+    private static final String TAG_TOUCH = "touch";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TouchSettingsFragment touchSettingsFragment = new TouchSettingsFragment();
+        touchSettingsFragment.setArguments(getIntent().getExtras());
         getFragmentManager().beginTransaction().replace(R.id.content_frame,
-                new ThermalSettingsFragment(), TAG_THERMAL).commit();
+                touchSettingsFragment, TAG_TOUCH).commit();
     }
 
     @Override

@@ -37,7 +37,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
-            android:paddingStart="56dp"
             android:singleLine="true"
             android:textAppearance="?android:attr/textAppearanceListItem"
             android:ellipsize="marquee"
@@ -56,7 +55,6 @@
 
             <SeekBar
                 android:id="@+id/seekbar"
-                android:layout_marginStart="56dp"
                 android:layout_marginEnd="16dp"
                 android:layout_gravity="center_vertical"
                 android:layout_width="match_parent"
@@ -68,8 +66,6 @@
 
         <TextView
             android:id="@android:id/summary"
-            android:paddingStart="56dp"
-            android:paddingTop="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceListItemSecondary"
