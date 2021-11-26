@@ -1696,7 +1696,6 @@ vendor/lib/libgps.utils.so
 vendor/lib/libGPTEE_vendor.so
 vendor/lib/libgpudataproducer.so
 vendor/lib/libgsl.so
-vendor/lib/libgui_vendor.so
 vendor/lib/libhdcp1prov.so
 vendor/lib/libhdcp2p2prov.so
 vendor/lib/libhdcpsrm.so
@@ -2456,7 +2455,6 @@ vendor/lib64/libgps.utils.so
 vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libgpudataproducer.so
 vendor/lib64/libgsl.so
-vendor/lib64/libgui_vendor.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
