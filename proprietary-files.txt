@@ -1736,8 +1736,6 @@ vendor/lib/libhdcpsrm.so
 vendor/lib/libhdmiedid.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/libhfp.so
-vendor/lib/libhidltransport.so
-vendor/lib/libhwbinder.so
 vendor/lib/libhydra_common.so
 vendor/lib/libI420colorconvert.so
 vendor/lib/libidl.so
@@ -2505,8 +2503,6 @@ vendor/lib64/libhdmiedid.so
 vendor/lib64/libhdmipassthru.so
 vendor/lib64/libhexagon_controller.so
 vendor/lib64/libhfp.so
-vendor/lib64/libhidltransport.so
-vendor/lib64/libhwbinder.so
 vendor/lib64/libhydra_common.so
 vendor/lib64/libI420colorconvert.so
 vendor/lib64/libidl.so
