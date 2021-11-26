@@ -169,8 +169,6 @@ system_ext/etc/permissions/privapp-permissions-qti-system-ext.xml
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
-system_ext/etc/permissions/qti_telephony_hidl_wrapper.xml
-system_ext/etc/permissions/qti_telephony_utils.xml
 system_ext/etc/permissions/RemoteSimlock.xml
 system_ext/etc/permissions/RemoteSimlockManager.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
@@ -208,8 +206,6 @@ system_ext/etc/wfdconfigsink.xml
 -system_ext/framework/qcrilhook.jar
 -system_ext/framework/qmapbridge.jar
 -system_ext/framework/qti-telephony-common.jar
--system_ext/framework/qti-telephony-hidl-wrapper.jar
--system_ext/framework/qti-telephony-utils.jar
 -system_ext/framework/remotesimlockmanagerlibrary.jar
 -system_ext/framework/uimgbalibrary.jar
 -system_ext/framework/uimgbamanagerlibrary.jar
@@ -646,7 +642,6 @@ product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
 product/etc/public.libraries-qti.txt
 product/etc/security/fsverity/play_store_fsi_cert.der
--product/framework/ims-ext-common.jar
 
 # vendor
 -vendor/app/CACertService/CACertService.apk
