@@ -669,7 +669,6 @@ vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
-vendor/bin/hw/android.hardware.health@2.1-service
 vendor/bin/hw/android.hardware.ir@1.0-service
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti
@@ -902,7 +901,6 @@ vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
-vendor/etc/init/android.hardware.health@2.1-service.rc
 vendor/etc/init/android.hardware.ir@1.0-service.rc
 vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
@@ -1560,7 +1558,6 @@ vendor/lib/hw/android.hardware.audio@6.0-impl.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so
-vendor/lib/hw/android.hardware.health@2.0-impl-2.1-qti.so
 vendor/lib/hw/android.hardware.ir@1.0-impl.so
 vendor/lib/hw/android.hardware.renderscript@1.0-impl.so
 vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so
@@ -2272,7 +2269,6 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
-vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-qti.so
 vendor/lib64/hw/android.hardware.ir@1.0-impl.so
 vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so
 vendor/lib64/hw/android.hardware.soundtrigger@2.2-impl.so
