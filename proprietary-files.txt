@@ -321,7 +321,6 @@ system_ext/lib/libqti-iopd-client_system.so
 system_ext/lib/libqti-perfd-client_system.so
 system_ext/lib/libqti-util_system.so
 system_ext/lib/libqti_performance.so
-system_ext/lib/libqti_vndfwk_detect.so
 system_ext/lib/libsdsprpc_system.so
 system_ext/lib/libseccam-ipc.so
 system_ext/lib/libseccam.so
@@ -332,7 +331,6 @@ system_ext/lib/libsystemhelper_jni.so
 system_ext/lib/libtess.so
 system_ext/lib/libtrigger-handler.so
 system_ext/lib/libupdateprof.qti.so
-system_ext/lib/libvndfwk_detect_jni.qti.so
 system_ext/lib/libwfdaac.so
 system_ext/lib/libwfdavenhancements.so
 system_ext/lib/libwfdclient.so
@@ -518,7 +516,6 @@ system_ext/lib64/libqti-iopd-client_system.so
 system_ext/lib64/libqti-perfd-client_system.so
 system_ext/lib64/libqti-util_system.so
 system_ext/lib64/libqti_performance.so
-system_ext/lib64/libqti_vndfwk_detect.so
 system_ext/lib64/libsdsprpc_system.so
 system_ext/lib64/libseccam-ipc.so
 system_ext/lib64/libseccam.so
@@ -529,7 +526,6 @@ system_ext/lib64/libsystemhelper_jni.so
 system_ext/lib64/libtess.so
 system_ext/lib64/libtrigger-handler.so
 system_ext/lib64/libupdateprof.qti.so
-system_ext/lib64/libvndfwk_detect_jni.qti.so
 system_ext/lib64/libwfdclient.so
 system_ext/lib64/libwfdcommonutils.so
 system_ext/lib64/libwfdconfigutils.so
@@ -1884,7 +1880,6 @@ vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
 vendor/lib/libqti-utils.so
-vendor/lib/libqti_vndfwk_detect.so
 vendor/lib/libqtigef.so
 vendor/lib/libqtikeymaster4.so
 vendor/lib/libqtjsonhelper.so
@@ -1957,7 +1952,6 @@ vendor/lib/libvideoNS.so
 vendor/lib/libvideooptfeature.so
 vendor/lib/libvideoutils.so
 vendor/lib/libVkLayer_q3dtools.so
-vendor/lib/libvndfwk_detect_jni.qti.so
 vendor/lib/libvorbisidec.so
 vendor/lib/libvppclient.so
 vendor/lib/libvpphcp.so
@@ -2681,7 +2675,6 @@ vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
-vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libqtjsonhelper.so
@@ -2760,7 +2753,6 @@ vendor/lib64/libvideofilter_only.so
 vendor/lib64/libvideooptfeature.so
 vendor/lib64/libvidhance.so
 vendor/lib64/libVkLayer_q3dtools.so
-vendor/lib64/libvndfwk_detect_jni.qti.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
 vendor/lib64/libvpphvx.so
