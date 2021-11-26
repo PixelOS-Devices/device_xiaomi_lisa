@@ -972,13 +972,6 @@ vendor/etc/mdss_dsi_k2_38_08_0a_dsc_cmd_mi.xml
 vendor/etc/mdss_dsi_k2_38_08_0a_mp_dsc_cmd_mi.xml
 vendor/etc/mdss_dsi_k2b_38_08_0a_dsc_cmd_mi.xml
 vendor/etc/media/video_system_specs.json
-vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_lahaina.xml
-vendor/etc/media_codecs_lahaina_vendor.xml
-vendor/etc/media_codecs_performance.xml
-vendor/etc/media_codecs_performance_lahaina.xml
-vendor/etc/media_codecs_performance_lahaina_vendor.xml
-vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/media_lahaina/video_system_specs.json
 vendor/etc/merged_language_model.lat
 vendor/etc/mi_gc_0.txt
