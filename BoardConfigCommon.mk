@@ -129,7 +129,6 @@ DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/manifests/manifest_lahaina.xml \
     $(COMMON_PATH)/manifests/AHBF@2.1-service.xml \
     $(COMMON_PATH)/manifests/android.hardware.atrace@1.0-service.xml \
-    $(COMMON_PATH)/manifests/android.hardware.boot@1.1.xml \
     $(COMMON_PATH)/manifests/android.hardware.gnss@2.1-service-qti.xml \
     $(COMMON_PATH)/manifests/android.hardware.health@2.1.xml \
     $(COMMON_PATH)/manifests/android.hardware.ir@1.0-service.xml \
