@@ -46,11 +46,6 @@ vendor/lib/rfsa/adsp/misound_res_spk.bin
 # Audio SoundFX
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libaudiopreprocessing.so
-vendor/lib/soundfx/libbundlewrapper.so
-vendor/lib/soundfx/libdownmix.so
-vendor/lib/soundfx/libdynproc.so
-vendor/lib/soundfx/libeffectproxy.so
-vendor/lib/soundfx/libldnhncr.so
 vendor/lib/soundfx/libmisoundfx.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcompostprocbundle.so
@@ -58,25 +53,16 @@ vendor/lib/soundfx/libqcomvisualizer.so
 vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
-vendor/lib/soundfx/libreverbwrapper.so
 vendor/lib/soundfx/libshoebox.so
-vendor/lib/soundfx/libvisualizer.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
-vendor/lib64/soundfx/libbundlewrapper.so
-vendor/lib64/soundfx/libdownmix.so
-vendor/lib64/soundfx/libdynproc.so
-vendor/lib64/soundfx/libeffectproxy.so
-vendor/lib64/soundfx/libldnhncr.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
-vendor/lib64/soundfx/libreverbwrapper.so
 vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libvisualizer.so
 
 # Display
 vendor/etc/display/DPU660.xml
@@ -659,7 +645,6 @@ system_ext/lib64/vendor.qti.voiceprint@1.0.so
 
 # product
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
-product/etc/permissions/ims_ext_common.xml
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
@@ -690,7 +675,6 @@ vendor/bin/hw/android.hardware.atrace@1.0-service
 vendor/bin/hw/android.hardware.audio.service
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
-vendor/bin/hw/android.hardware.cas@1.2-service
 vendor/bin/hw/android.hardware.drm@1.3-service.clearkey
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -700,7 +684,6 @@ vendor/bin/hw/android.hardware.ir@1.0-service
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
-vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/bin/hw/android.hardware.thermal@2.0-service.qti
 vendor/bin/hw/mfp-daemon
@@ -926,7 +909,6 @@ vendor/etc/init/android.hardware.atrace@1.0-service.rc
 vendor/etc/init/android.hardware.audio.service.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
-vendor/etc/init/android.hardware.cas@1.2-service.rc
 vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
 vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
@@ -935,7 +917,6 @@ vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 vendor/etc/init/android.hardware.health@2.1-service.rc
 vendor/etc/init/android.hardware.ir@1.0-service.rc
 vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
-vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
 vendor/etc/init/android.hardware.thermal@2.0-service.qti.rc
 vendor/etc/init/cnd.rc
@@ -1624,7 +1605,6 @@ vendor/lib/hw/audio.r_submix.default.so
 vendor/lib/hw/com.dsi.ant@1.0-impl.so
 vendor/lib/hw/consumerir.lahaina.so
 vendor/lib/hw/fingerprint.goodix_fod.so
-vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/local_time.default.so
 vendor/lib/hw/power.default.so
 vendor/lib/hw/sound_trigger.primary.lahaina.so
@@ -1725,8 +1705,6 @@ vendor/lib/libdrmtime.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
-vendor/lib/libeffects.so
-vendor/lib/libeffectsconfig.so
 vendor/lib/libexthwplugin.so
 vendor/lib/libface3d_dev.so
 vendor/lib/libFace3D_hlos.so
@@ -1918,13 +1896,11 @@ vendor/lib/libqtnodes.so
 vendor/lib/librcc.so
 vendor/lib/librecovery_updater.so
 vendor/lib/librecovery_updater_msm.so
-vendor/lib/libreference-ril.so
 vendor/lib/libreverse_rpc_tests_skel.so
 vendor/lib/libril-db.so
 vendor/lib/libril-qc-ltedirectdisc.so
 vendor/lib/libril-qc-radioconfig.so
 vendor/lib/libril-qcril-hook-oem.so
-vendor/lib/libril.so
 vendor/lib/librilqmimiscservices.so
 vendor/lib/librilqmiservices.so
 vendor/lib/librilutils.so
@@ -2052,8 +2028,6 @@ vendor/lib/libxml.so
 vendor/lib/libxtadapter.so
 vendor/lib/libxtwifi_server_protocol.so
 vendor/lib/libxtwifi_server_protocol_uri_v3.so
-vendor/lib/mediacas/libclearkeycasplugin.so
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/qcrild_libqcrilnrutils.so
 vendor/lib/qcrilMarshal.so
@@ -2380,7 +2354,6 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/hw/consumerir.lahaina.so
 vendor/lib64/hw/fingerprint.goodix_fod.so
-vendor/lib64/hw/gralloc.default.so
 vendor/lib64/hw/local_time.default.so
 vendor/lib64/hw/power.default.so
 vendor/lib64/hw/sound_trigger.primary.lahaina.so
@@ -2527,8 +2500,6 @@ vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libdualcam_optical_zoom_control.so
 vendor/lib64/libdualcam_video_optical_zoom.so
-vendor/lib64/libeffects.so
-vendor/lib64/libeffectsconfig.so
 vendor/lib64/libexthwplugin.so
 vendor/lib64/libface3d_dev.so
 vendor/lib64/libFace3D_hlos.so
@@ -2752,7 +2723,6 @@ vendor/lib64/libqtnodes.so
 vendor/lib64/librcc.so
 vendor/lib64/librecovery_updater.so
 vendor/lib64/librecovery_updater_msm.so
-vendor/lib64/libreference-ril.so
 vendor/lib64/libreffeature.so
 vendor/lib64/librelight_only.so
 vendor/lib64/libremosaic_wrapper.so
@@ -2763,7 +2733,6 @@ vendor/lib64/libril-db.so
 vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-radioconfig.so
 vendor/lib64/libril-qcril-hook-oem.so
-vendor/lib64/libril.so
 vendor/lib64/librilqmimiscservices.so
 vendor/lib64/librilqmiservices.so
 vendor/lib64/librilutils.so
@@ -2850,8 +2819,6 @@ vendor/lib64/libxml.so
 vendor/lib64/libxtadapter.so
 vendor/lib64/libxtwifi_server_protocol.so
 vendor/lib64/libxtwifi_server_protocol_uri_v3.so
-vendor/lib64/mediacas/libclearkeycasplugin.so
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/qcrild_libqcrilnrutils.so
 vendor/lib64/qcrilMarshal.so
