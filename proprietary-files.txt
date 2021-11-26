@@ -1195,11 +1195,6 @@ vendor/etc/sensors/proto/sns_timer.proto
 vendor/etc/sensors/proto/sns_ultra_violet.proto
 vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto
 vendor/etc/sensors/sns_reg_config
-vendor/etc/sound_trigger_mixer_paths.xml
-vendor/etc/sound_trigger_mixer_paths_cdp.xml
-vendor/etc/sound_trigger_mixer_paths_hdk.xml
-vendor/etc/sound_trigger_mixer_paths_qrd.xml
-vendor/etc/sound_trigger_platform_info.xml
 vendor/etc/spk.wav
 vendor/etc/spk_hp.wav
 vendor/etc/ssg/ta_config.json
