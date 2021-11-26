@@ -973,13 +973,6 @@ vendor/etc/mdss_dsi_k2_38_08_0a_mp_dsc_cmd_mi.xml
 vendor/etc/mdss_dsi_k2b_38_08_0a_dsc_cmd_mi.xml
 vendor/etc/media/video_system_specs.json
 vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_google_audio.xml
-vendor/etc/media_codecs_google_c2.xml
-vendor/etc/media_codecs_google_c2_audio.xml
-vendor/etc/media_codecs_google_c2_video.xml
-vendor/etc/media_codecs_google_telephony.xml
-vendor/etc/media_codecs_google_video.xml
-vendor/etc/media_codecs_google_video_le.xml
 vendor/etc/media_codecs_lahaina.xml
 vendor/etc/media_codecs_lahaina_vendor.xml
 vendor/etc/media_codecs_performance.xml
