@@ -334,6 +334,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-impl \
+    android.hardware.media.omx@1.0-service \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
@@ -372,7 +374,8 @@ PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
     libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor \
-    libstagefright_softomx.vendor
+    libstagefright_softomx.vendor \
+    libstagefright_omx.vendor
 
 # Network
 PRODUCT_PACKAGES += \
