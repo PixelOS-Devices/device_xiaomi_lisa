@@ -48,3 +48,8 @@
 
 # Vibrator
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi_sm8350                            u:object_r:hal_vibrator_default_exec:s0
+
+# Xiaomi MAC
+/vendor/bin/nv_mac                             u:object_r:vendor_wcnss_service_exec:s0
+/data/vendor/mac_addr(/.*)?                    u:object_r:vendor_wifi_vendor_data_file:s0
+/data/vendor/wlan_logs(/.*)?                   u:object_r:vendor_wifi_vendor_data_file:s0
