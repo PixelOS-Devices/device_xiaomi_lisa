@@ -352,12 +352,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
 
-# RCS
-PRODUCT_PACKAGES += \
-    com.android.ims.rcsmanager \
-    PresencePolling \
-    RcsService
-
 # Recovery
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc
