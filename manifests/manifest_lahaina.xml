@@ -498,6 +498,15 @@
         </interface>
         <fqname>@1.0::IMiPostProcService/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.lineage.livedisplay</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IPictureAdjustment</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <sepolicy>
         <version>30.0</version>
     </sepolicy>
