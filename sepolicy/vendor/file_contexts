@@ -14,6 +14,9 @@
 # IR
 /dev/ir_spi                                      u:object_r:ir_spi_device:s0
 
+# Mlipay
+/(vendor|system/vendor)/bin/mlipayd@1.1          u:object_r:hal_mlipay_default_exec:s0
+
 # Power
 /sys/devices/virtual/touch/tp_dev/double_tap                       u:object_r:vendor_sysfs_double_tap:s0
 
