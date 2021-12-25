@@ -307,10 +307,3 @@ vendor.usb.use_ffs_mtp=1
 
 # Wifi
 wifi.aware.interface=wifi-aware0
-ro.vendor.net.enable_dual_wifi=1
-ro.vendor.net.enable_passpoint_r1=1
-ro.vendor.net.enable_sla=1
-wifi.interface=wlan0
-
-# Wifi Display
-persist.debug.wfd.enable=1
