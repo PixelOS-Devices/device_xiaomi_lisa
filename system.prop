@@ -1,5 +1,4 @@
 # Bluetooth
-persist.vendor.btstack.aac_frm_ctl.enabled=true
 ro.bluetooth.library_name=libbluetooth_qti.so
 
 # CNE
