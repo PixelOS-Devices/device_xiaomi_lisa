@@ -37,6 +37,7 @@ PRODUCT_PACKAGES += \
     libvolumelistener
 
 PRODUCT_PACKAGES += \
+    audioadsprpcd \
     audio.a2dp.default \
     audio.r_submix.default \
     audio.primary.default \
