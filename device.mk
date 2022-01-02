@@ -24,5 +24,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
 
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.product.hardware.sku=nfc
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/lisa/lisa-vendor.mk)
