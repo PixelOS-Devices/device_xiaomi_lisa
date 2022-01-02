@@ -323,6 +323,9 @@ PRODUCT_PACKAGES += \
     jcos_nq_client \
     ls_nq_client \
     se_nq_extn_client
+    
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.product.hardware.sku=nfc
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
