@@ -250,6 +250,7 @@ vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # USB
 vendor.usb.use_ffs_mtp=1
+persist.vendor.usb.config=mtp,adb
 
 # Wifi
 wifi.aware.interface=wifi-aware0
