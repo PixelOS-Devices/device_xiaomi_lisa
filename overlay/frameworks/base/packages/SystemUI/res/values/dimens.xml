@@ -25,5 +25,4 @@
     <dimen name="status_bar_padding_top">9dp</dimen>
     <dimen name="status_bar_padding_start">3dp</dimen>
     <dimen name="status_bar_padding_end">4dp</dimen>
-    <dimen name="rounded_corner_content_padding">16dp</dimen>
 </resources>
