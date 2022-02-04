@@ -135,6 +135,13 @@ ro.crypto.volume.metadata.method=dm-default-key
 # Dexopt
 pm.dexopt.first-boot=quicken
 pm.dexopt.bg-dexopt=everything
+pm.dexopt.boot=verify
+pm.dexopt.install=speed-profile
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.dex2oat64.enabled=true
 
 # DPM
 persist.vendor.dpm.feature=1
