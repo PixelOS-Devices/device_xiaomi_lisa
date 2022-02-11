@@ -1,4 +1,7 @@
 # Camera
+camera.                  u:object_r:vendor_camera_prop:s0
+persist.camera.          u:object_r:vendor_camera_prop:s0
+persist.vendor.camera    u:object_r:vendor_camera_prop:s0
 vendor.camera.sensor.    u:object_r:vendor_camera_sensor_prop:s0
 ro.boot.camera.config    u:object_r:vendor_camera_sensor_prop:s0
 
