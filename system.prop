@@ -32,6 +32,10 @@ vendor.mm.enable.qcom_parser=16777215
 # NFC
 ro.nfc.port=I2C
 
+# SoC
+ro.soc.manufacturer=QTI
+ro.soc.model=SM7325
+
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
