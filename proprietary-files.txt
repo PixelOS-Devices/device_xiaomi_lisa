@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from missi-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# All unpinned blobs below are extracted from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
@@ -514,6 +514,15 @@ vendor/etc/mdss_dsi_k9d_36_02_0a_dsc_cmd_mi.xml
 vendor/etc/mdss_dsi_k9d_42_0d_0b_dsc_cmd_mi.xml
 vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_0d_0b_cmd_mode_dsc_dsi_panel.xml
+
+# Graphics (Adreno firmware)
+vendor/firmware/a660_gmu.bin
+vendor/firmware/a660_sqe.fw
+vendor/firmware/a660_zap.b00
+vendor/firmware/a660_zap.b01
+vendor/firmware/a660_zap.b02
+vendor/firmware/a660_zap.elf
+vendor/firmware/a660_zap.mdt
 
 # Fingerprint
 vendor/etc/init/init.mfp-daemon.rc
