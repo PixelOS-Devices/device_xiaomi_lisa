@@ -61,6 +61,18 @@ on property:vendor.post_boot.parsed=1
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
 
+    service vendor.qti.hardware.display.composer /vendor/bin/hw/vendor.qti.hardware.display.composer-service
+    override
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
+    socket pps stream 0660 system system
+    task_profiles ProcessCapacityHigh HighPerformance
+
 on property:ro.board.platform=lahaina
     # Setup foreground cpuset for display composer.
     write /dev/cpuset/foreground/cpus 0-6
+
+
