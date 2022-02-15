@@ -198,9 +198,6 @@ debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.config.vc_call_vol_steps=11
-ro.media.xml_variant.codecs=_lahaina
-ro.media.xml_variant.codecs_performance=_lahaina
-vendor.media.target_variant=_lahaina
 
 # NFC
 ro.vendor.nfc.repair=1
