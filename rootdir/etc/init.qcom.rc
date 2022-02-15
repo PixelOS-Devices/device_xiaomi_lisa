@@ -92,7 +92,7 @@ on boot
     chown system system /sys/class/backlight/panel1-backlight/max_brightness
 
     # Create directory used for display
-    mkdir /mnt/vendor//display 0770 system graphics
+    mkdir /mnt/vendor/persist/display 0770 system graphics
 
     # Create vpp directory
     mkdir /mnt/vendor/persist/vpp 0770 media media
