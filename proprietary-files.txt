@@ -18,6 +18,8 @@ vendor/lib/libqtigef.so
 vendor/lib/libssrec.so
 
 # Audio FX modules
+system_ext/etc/permissions/audiosphere.xml
+system_ext/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
 
