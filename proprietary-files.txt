@@ -2,10 +2,8 @@
 
 # ADSP
 vendor/bin/adsprpcd
-vendor/bin/loadalgo
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libloadalgo_stub.so
 
 # Audio
 vendor/lib/libacdb-fts.so
