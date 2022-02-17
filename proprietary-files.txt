@@ -167,7 +167,7 @@ vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 
 # Display (HDR)
-vendor/lib64/libhdr_tm.so|1102137c99d54609f9eb2b1b5495a9e8f044b396
+vendor/lib64/libhdr_tm.so
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
@@ -183,20 +183,20 @@ vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # Display (SDM)
-vendor/lib64/libdisplayqos.so|fd1704d31d1f567952500f32ed8b6496024b11ba
-vendor/lib64/libdisplayskuutils.so|f1cceb91b2afc210444b543b9f11a824537bff5b
-vendor/lib64/libdpps.so|299b2a604f1546e59e3fdaf4c2f7e12bc2c9b79a
-vendor/lib64/libqdcm-mode-parser.so|207143ab4dda0886bde2a0333d7a1bcd7af6f8e1
-vendor/lib64/libqseed3.so|d62c37baf259250cadfcff8734e82054ed87bb96
-vendor/lib64/librcmask.so|140550a78090ddfca790c1c3331f63da128be7d5
-vendor/lib64/libsdm-color.so|b8d69ac24d482033f4f059b849f4f6dbe3970626
-vendor/lib64/libsdm-colormgr-algo.so|96c3f3e62453e580dfab8f06b0e92d340207e255
-vendor/lib64/libsdm-diag.so|70a6e1ba046679d1e715e6cdafa13a6f70ff15d1
-vendor/lib64/libsdm-disp-vndapis.so|dc3ff8c971bbcb0d1b9e5079324d1d1d05a1fd39
-vendor/lib64/libsdmextension.so|8c6b2dbf4bf2c21aa34246cbd22d494723de58aa
-vendor/lib64/libsnapdragoncolor-manager.so|0eed8af5f75003144acf7a64387382da275b57f3
-vendor/lib64/libsnapdragoncolor-qdcm.so|66e100714fc1b260e902453fe6746953e500ccb5
-vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
+vendor/lib64/libdisplayqos.so
+vendor/lib64/libdisplayskuutils.so
+vendor/lib64/libdpps.so
+vendor/lib64/libqdcm-mode-parser.so
+vendor/lib64/libqseed3.so
+vendor/lib64/librcmask.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-colormgr-algo.so
+vendor/lib64/libsdm-diag.so
+vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libsnapdragoncolor-manager.so
+vendor/lib64/libsnapdragoncolor-qdcm.so
+vendor/lib64/libtinyxml2_1.so
 
 # DPM
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
