@@ -23,9 +23,3 @@ PRODUCT_MODEL := Xiaomi Mi 11 Lite 5G NE
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys"
-
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := Xiaomi/lisa_global/lisa:11/RKQ1.210503.001/V12.5.14.0.RKOMIXM:user/release-keys
