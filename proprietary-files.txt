@@ -547,10 +547,6 @@ vendor/firmware/vpu20_4v.mbn
 vendor/firmware/vpu20_4v.mdt
 vendor/firmware/vpu20_4v_unsigned.mbn
 
-# Mink-Lowi Interface daemon
-vendor/bin/mlid
-vendor/lib64/libminksocket.so
-
 # Mlipay
 -vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
 vendor/bin/mlipayd@1.1
