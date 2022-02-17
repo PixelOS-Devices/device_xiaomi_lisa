@@ -4,6 +4,7 @@
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libadsprpc.so
 
 # Audio
 vendor/lib/libacdb-fts.so
@@ -15,7 +16,6 @@ vendor/lib/libadsprpc.so
 vendor/lib/libaudcal.so
 vendor/lib/libqtigef.so
 vendor/lib/libssrec.so
-vendor/lib64/libadsprpc.so
 
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
