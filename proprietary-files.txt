@@ -690,12 +690,6 @@ vendor/lib64/libqmi_legacy.so
 vendor/lib64/libqmiservices.so
 vendor/lib64/libqrtr.so
 
-# QTI service tracker
--vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
-vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
-vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
-vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
-
 # RIL
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
