@@ -63,8 +63,11 @@ vendor/lib/rfsa/adsp/misound_res_spk.bin
 # Audio Hardware
 vendor/lib/hw/audio.primary.lahaina.so
 vendor/lib/liba2dpoffload.so
+vendor/lib/libadm.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioroute_ext.so
+vendor/lib/libqtigef.so
+vendor/lib/libssrec.so
 vendor/lib/libvideoNS.so
 
 # Audio firmware
@@ -503,7 +506,7 @@ vendor/etc/display/advanced_sf_offsets.xml
 vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_0d_0b_cmd_mode_dsc_dsi_panel.xml
 
-# Graphics (Adreno firmware)
+# Graphics firmware
 vendor/firmware/a660_gmu.bin
 vendor/firmware/a660_sqe.fw
 vendor/firmware/a660_zap.b00
@@ -521,6 +524,41 @@ vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.lahaina.so
 -product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
+# IPA firmware
+vendor/etc/init/ipa_fws.rc
+vendor/firmware/yupik_ipa_fws.b00
+vendor/firmware/yupik_ipa_fws.b01
+vendor/firmware/yupik_ipa_fws.b02
+vendor/firmware/yupik_ipa_fws.b03
+vendor/firmware/yupik_ipa_fws.b04
+vendor/firmware/yupik_ipa_fws.elf
+vendor/firmware/yupik_ipa_fws.mdt
+
+# Media (VPU firmware)
+vendor/firmware/vpu20_1v.b00
+vendor/firmware/vpu20_1v.b01
+vendor/firmware/vpu20_1v.b02
+vendor/firmware/vpu20_1v.b03
+vendor/firmware/vpu20_1v.b04
+vendor/firmware/vpu20_1v.b05
+vendor/firmware/vpu20_1v.b06
+vendor/firmware/vpu20_1v.b07
+vendor/firmware/vpu20_1v.b08
+vendor/firmware/vpu20_1v.b09
+vendor/firmware/vpu20_1v.b10
+vendor/firmware/vpu20_1v.b11
+vendor/firmware/vpu20_1v.b12
+vendor/firmware/vpu20_1v.b13
+vendor/firmware/vpu20_1v.b14
+vendor/firmware/vpu20_1v.b15
+vendor/firmware/vpu20_1v.b16
+vendor/firmware/vpu20_1v.b17
+vendor/firmware/vpu20_1v.b18
+vendor/firmware/vpu20_1v.b19
+vendor/firmware/vpu20_1v.mbn
+vendor/firmware/vpu20_1v.mdt
+vendor/firmware/vpu20_1v_unsigned.mbn
 
 # Sensor Calibrate
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
