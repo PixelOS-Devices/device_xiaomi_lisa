@@ -66,10 +66,6 @@ vendor/lib/liba2dpoffload.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioroute_ext.so
 vendor/lib/libvideoNS.so
-vendor/lib64/hw/audio.primary.lahaina.so
-vendor/lib64/liba2dpoffload.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudioroute_ext.so
 
 # Audio firmware
 vendor/firmware/tfa98xx.cnt
