@@ -37,7 +37,6 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.r_submix.default \
     audio.primary.default \
-    audio.primary.lahaina \
     audio.usb.default \
     libaudio-resampler \
     libtinycompress
@@ -47,12 +46,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl:32 \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.3-impl
-
-PRODUCT_PACKAGES += \
-    libbatterylistener \
-    libhdmiedid \
-    libhfp \
-    libsndmonitor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs.xml \
