@@ -177,7 +177,6 @@ vendor/lib64/libI420colorconvert.so
 vendor/lib64/libMegviiFacepp-0.5.2.so
 vendor/lib64/libSNPE.so
 vendor/lib64/lib_sr_models.so
-vendor/lib64/libadsprpc.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libalAILDC.so
 vendor/lib64/libalCFR.so
@@ -222,7 +221,6 @@ vendor/lib64/libmialgo_ellc.so
 vendor/lib64/libmialgo_ie_capture.so
 vendor/lib64/libmialgo_ie_preview.so
 vendor/lib64/libmialgo_image_colourkeeping.so
-vendor/lib64/libmialgo_pureShot.so
 vendor/lib64/libmialgo_pureShot.so
 vendor/lib64/libmialgo_rfs.so
 vendor/lib64/libmialgo_sd.so
