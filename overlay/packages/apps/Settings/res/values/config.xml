@@ -23,4 +23,8 @@
 
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">true</bool>
+
+    <!-- Location of the fingerprint sensor (power button) -->
+    <item name="fingerprint_sensor_location_fraction_x" type="fraction">100%</item>
+    <item name="fingerprint_sensor_location_fraction_y" type="fraction">44%</item>
 </resources>
