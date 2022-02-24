@@ -1,8 +1,34 @@
 Common_CFlags = ["-Wall"]
 Common_CFlags += ["-Werror"]
 
+soong_config_module_type {
+    name: "vibrator_effect_stream",
+    module_type: "cc_defaults",
+    config_namespace: "xiaomiSm8350Vars",
+    bool_variables: ["vibrator_use_effect_stream"],
+    properties: [
+        "cflags",
+        "shared_libs",
+    ],
+}
+
+vibrator_effect_stream {
+    name: "vibrator_effect_stream_defaults",
+    soong_config_variables: {
+        vibrator_use_effect_stream: {
+            cflags: ["-DUSE_EFFECT_STREAM"],
+            shared_libs: [
+                "libqtivibratoreffect",
+            ],
+        },
+    },
+}
+
 cc_library_shared {
     name: "vendor.qti.hardware.vibrator.impl.xiaomi_sm8350",
+    defaults: [
+        "vibrator_effect_stream_defaults",
+    ],
     vendor: true,
     cflags: Common_CFlags,
     srcs: [
@@ -12,7 +38,6 @@ cc_library_shared {
         "libcutils",
         "libutils",
         "liblog",
-        "libqtivibratoreffect",
         "libbinder_ndk",
         "android.hardware.vibrator-ndk_platform",
     ],

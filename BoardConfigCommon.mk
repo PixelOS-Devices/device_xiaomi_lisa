@@ -180,6 +180,12 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
+# Soong
+SOONG_CONFIG_NAMESPACES += xiaomiSm8350Vars
+SOONG_CONFIG_xiaomiSm8350Vars += \
+    vibrator_use_effect_stream
+SOONG_CONFIG_xiaomiSm8350Vars_vibrator_use_effect_stream ?= false
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
