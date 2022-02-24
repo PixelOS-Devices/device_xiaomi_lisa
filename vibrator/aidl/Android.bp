@@ -18,7 +18,7 @@ vibrator_effect_stream {
         vibrator_use_effect_stream: {
             cflags: ["-DUSE_EFFECT_STREAM"],
             shared_libs: [
-                "libqtivibratoreffect",
+                "libxiaomivibratoreffect",
             ],
         },
     },
