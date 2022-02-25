@@ -678,6 +678,3 @@ vendor/etc/thermald-devices.conf
 vendor/firmware/aw8624_haptic.bin
 vendor/firmware/aw8624_rtp.bin
 vendor/firmware/osc_rtp_24K_5s.bin
-
-# WiFi
-vendor/etc/init/init.vendor.wlan.rc
