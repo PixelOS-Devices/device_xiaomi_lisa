@@ -174,9 +174,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
 
-PRODUCT_PACKAGES += \
-    libdrm
-
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
