@@ -195,12 +195,6 @@
          and one pSIM) -->
     <integer name="config_num_physical_slots">2</integer>
 
-    <!-- Fast brightness animation ramp rate in brightness units per second-->
-    <integer name="config_brightness_ramp_rate_fast">308</integer>
-
-    <!-- Slow brightness animation ramp rate in brightness units per second-->
-    <integer name="config_brightness_ramp_rate_slow">246</integer>
-
     <!-- Minimum screen brightness setting allowed by power manager.
          The user is forbidden from setting the brightness below this level.
          Equivalent to 1/255. -->
