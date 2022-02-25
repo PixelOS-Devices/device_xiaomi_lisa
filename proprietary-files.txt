@@ -756,6 +756,7 @@ vendor/lib64/vendor.qti.hardware.vpp@2.0.so
 
 # WiFi
 vendor/bin/cnss-daemon
+vendor/etc/init/init.vendor.wlan.rc
 vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
 
