@@ -278,7 +278,6 @@ ro.incremental.enable=yes
 vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # USB
-vendor.usb.diag.func.name=ffs
 vendor.usb.use_ffs_mtp=1
 
 # Wifi
