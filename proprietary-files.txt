@@ -161,7 +161,7 @@ vendor/lib64/vendor.display.postproc@1.0.so
 
 # DPM
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
-framework/tcmclient.jar
+system/framework/tcmclient.jar
 system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
@@ -706,7 +706,7 @@ vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
 # Soter service (Tencent)
--app/SoterService/SoterService.apk
+-system/app/SoterService/SoterService.apk
 
 # Thermal
 vendor/bin/mi_thermald
@@ -765,7 +765,7 @@ vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
 
 # WiFi Display
--framework/WfdCommon.jar
+-system/framework/WfdCommon.jar
 -system_ext/priv-app/WfdService/WfdService.apk
 system_ext/bin/wfdservice
 system_ext/etc/init/wfdservice.rc
