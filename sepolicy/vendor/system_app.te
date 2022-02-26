@@ -1,0 +1,2 @@
+# Zygote
+allow system_app zygote:unix_stream_socket { getopt };
