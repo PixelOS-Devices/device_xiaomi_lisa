@@ -118,9 +118,6 @@ DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/manifests/vendor.qti.gnss@4.0-service.xml \
     $(COMMON_PATH)/manifests/vendor.qti.hardware.servicetracker@1.2-service.xml
 
-# Media
-TARGET_USES_ION := true
-
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 201326592
 BOARD_SUPER_PARTITION_SIZE := 9126805504
