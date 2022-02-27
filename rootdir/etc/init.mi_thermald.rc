@@ -1,4 +1,8 @@
 on charger
+    wait /sys/class/power_supply/battery/temp
+    start mi_thermald
+on boot
+    wait /sys/class/power_supply/battery/temp
     start mi_thermald
 
 service mi_thermald /system/vendor/bin/mi_thermald
