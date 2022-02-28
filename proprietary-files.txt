@@ -710,12 +710,7 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
 # Thermal
 vendor/bin/mi_thermald
-
-# Thermal engine
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
-vendor/bin/thermal-engine
-vendor/etc/init/init_thermal-engine.rc
+vendor/lib64/libthermalclient.so
 
 # Time services
 -vendor/app/TimeService/TimeService.apk
