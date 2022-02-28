@@ -1,5 +1,6 @@
 # Bluetooth
 ro.bluetooth.library_name=libbluetooth_qti.so
+vendor.bluetooth.soc=hastings
 
 # CNE
 persist.vendor.cne.feature=1
