@@ -134,7 +134,6 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libgui_vendor \
     Snap
 
 PRODUCT_PACKAGES += \
