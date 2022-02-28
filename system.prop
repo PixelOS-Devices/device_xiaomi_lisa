@@ -33,15 +33,15 @@ ro.netflix.bsp_rev=Q875-32408-1
 # NFC
 ro.nfc.port=I2C
 
+# QC framework value-adds
+ro.vendor.qti.va_aosp.support=1
+
 # Qcom
 ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Radio
 DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
-
-# QC framework value-adds
-ro.vendor.qti.va_aosp.support=1
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
