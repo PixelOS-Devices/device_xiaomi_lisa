@@ -477,3 +477,9 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   in_temp_raw                     0664    system  system
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   in_temp_scale                   0664    system  system
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   in_temp_scale_available         0664    system  system
+
+# mius iio devices
+/dev/iio:device*                                        0660   system     system
+/sys/bus/iio/devices/iio:device* buffer/enable                  0600 system system
+/sys/bus/iio/devices/iio:device* scan_elements/in_proximity_en  0600 system system
+/sys/bus/iio/devices/iio:device* scan_elements/in_timestamp_en  0600 system system
