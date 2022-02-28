@@ -219,9 +219,6 @@ ro.vendor.se.type=eSE,HCE,UICC
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf.scroll_opt=0
 
-# Qcom
-ro.vendor.qti.sys.fw.bservice_enable=true
-
 # Qcomsysd
 persist.vendor.qcomsysd.enabled=1
 

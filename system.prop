@@ -39,6 +39,9 @@ ro.netflix.bsp_rev=Q875-32408-1
 # NFC
 ro.nfc.port=I2C
 
+# Qcom
+ro.vendor.qti.sys.fw.bservice_enable=true
+
 # Radio
 DEVICE_PROVISIONED=1
 keyguard.no_require_sim=true
