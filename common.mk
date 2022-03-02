@@ -54,13 +54,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     liba2dpoffload \
     libbatterylistener \
-    libcirrusspkrprot \
-    libcomprcapture \
-    libexthwplugin \
     libhdmiedid \
     libhfp \
-    libsndmonitor \
-    libspkrprot
+    libsndmonitor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs.xml \
