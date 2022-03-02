@@ -106,16 +106,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
 DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/hidl/manifest_lahaina.xml \
     $(COMMON_PATH)/hidl/manifest_lineage.xml \
-    $(COMMON_PATH)/hidl/manifest_xiaomi.xml \
-    $(COMMON_PATH)/hidl/android.hardware.atrace@1.0-service.xml \
-    $(COMMON_PATH)/hidl/android.hardware.gnss@2.1-service-qti.xml \
-    $(COMMON_PATH)/hidl/android.hardware.neuralnetworks@1.3-service-qti.xml \
-    $(COMMON_PATH)/hidl/c2_manifest_vendor.xml \
-    $(COMMON_PATH)/hidl/fod.xml \
-    $(COMMON_PATH)/hidl/manifest_android.hardware.drm@1.3-service.widevine.xml \
-    $(COMMON_PATH)/hidl/vendor.qti.diag.hal.service.xml \
-    $(COMMON_PATH)/hidl/vendor.qti.gnss@4.0-service.xml \
-    $(COMMON_PATH)/hidl/vendor.qti.hardware.servicetracker@1.2-service.xml
+    $(COMMON_PATH)/hidl/manifest_xiaomi.xml
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
