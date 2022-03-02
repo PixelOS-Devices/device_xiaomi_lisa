@@ -1,0 +1,11 @@
+<manifest version="1.0" type="device">
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.campostproc</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMiPostProcService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>
