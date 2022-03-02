@@ -96,24 +96,24 @@ BOARD_KERNEL_CMDLINE += ip6table_raw.raw_before_defrag=1
 BOARD_KERNEL_CMDLINE += video=vfb:640x400,bpp=32,memsize=3072000
 
 # HIDL
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/hidl/compatibility_matrix.xml
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(COMMON_PATH)/framework_compatibility_matrix.xml \
+    $(COMMON_PATH)/hidl/framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
-    $(COMMON_PATH)/manifests/manifest_lahaina.xml \
-    $(COMMON_PATH)/manifests/AHBF@2.1-service.xml \
-    $(COMMON_PATH)/manifests/android.hardware.atrace@1.0-service.xml \
-    $(COMMON_PATH)/manifests/android.hardware.gnss@2.1-service-qti.xml \
-    $(COMMON_PATH)/manifests/android.hardware.neuralnetworks@1.3-service-qti.xml \
-    $(COMMON_PATH)/manifests/c2_manifest_vendor.xml \
-    $(COMMON_PATH)/manifests/fod.xml \
-    $(COMMON_PATH)/manifests/manifest_android.hardware.drm@1.3-service.widevine.xml \
-    $(COMMON_PATH)/manifests/vendor.qti.diag.hal.service.xml \
-    $(COMMON_PATH)/manifests/vendor.qti.gnss@4.0-service.xml \
-    $(COMMON_PATH)/manifests/vendor.qti.hardware.servicetracker@1.2-service.xml
+    $(COMMON_PATH)/hidl/manifest_lahaina.xml \
+    $(COMMON_PATH)/hidl/AHBF@2.1-service.xml \
+    $(COMMON_PATH)/hidl/android.hardware.atrace@1.0-service.xml \
+    $(COMMON_PATH)/hidl/android.hardware.gnss@2.1-service-qti.xml \
+    $(COMMON_PATH)/hidl/android.hardware.neuralnetworks@1.3-service-qti.xml \
+    $(COMMON_PATH)/hidl/c2_manifest_vendor.xml \
+    $(COMMON_PATH)/hidl/fod.xml \
+    $(COMMON_PATH)/hidl/manifest_android.hardware.drm@1.3-service.widevine.xml \
+    $(COMMON_PATH)/hidl/vendor.qti.diag.hal.service.xml \
+    $(COMMON_PATH)/hidl/vendor.qti.gnss@4.0-service.xml \
+    $(COMMON_PATH)/hidl/vendor.qti.hardware.servicetracker@1.2-service.xml
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
