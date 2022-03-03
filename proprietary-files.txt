@@ -451,8 +451,6 @@ vendor/lib64/unnhal-acc-gpu.so
 vendor/lib64/unnhal-acc-htp.so
 
 # NFC
-vendor/etc/libnfc-nxp.conf
-vendor/etc/libnfc-nxp_RF.conf
 vendor/lib/libsn100u_fw.so
 
 # NVRAM
