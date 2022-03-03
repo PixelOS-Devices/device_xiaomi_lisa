@@ -71,7 +71,9 @@ vendor/lib/rfsa/adsp/misound_res_spk.bin
 vendor/lib/hw/audio.primary.lahaina.so
 vendor/lib/libadm.so
 vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudioparsers.so
 vendor/lib/libaudioroute_ext.so
+vendor/lib/libhdmipassthru.so
 vendor/lib/libqtigef.so
 vendor/lib/libssrec.so
 vendor/lib/libvideoNS.so
