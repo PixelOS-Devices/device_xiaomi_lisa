@@ -131,6 +131,7 @@ vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libdpps.so
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libqdcm-mode-parser.so
+vendor/lib64/libqrtrclient.so
 vendor/lib64/libqseed3.so
 vendor/lib64/librcmask.so
 vendor/lib64/libsdm-color.so
