@@ -286,7 +286,7 @@ vendor/lib64/libarcsoft_portrait_lighting_c.so
 vendor/lib64/libarcsoft_qnnhtp.so
 vendor/lib64/libarcsoft_super_night_raw.so
 
-# Camera (camerax)
+# Camera camerax
 vendor/lib/libcamxexternalformatutils.so
 vendor/lib64/libcamxexternalformatutils.so
 vendor/lib64/libcamxfacialfeatures.so
@@ -553,6 +553,24 @@ vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nxp_RF.conf
 
+# Sensors
+vendor/bin/init.qcom.sensors.sh
+vendor/bin/sensors.qti
+vendor/bin/sscrpcd
+vendor/etc/init/init.vendor.sensors.rc
+vendor/etc/init/vendor.sensors.qti.rc
+vendor/etc/init/vendor.sensors.sscrpcd.rc
+vendor/lib64/libnotifyaudiohal.so
+vendor/lib64/libsensorcal.so
+vendor/lib64/libsensorslog.so
+vendor/lib64/libssc.so
+vendor/lib64/libssc_default_listener.so
+vendor/lib64/libssccalapi.so
+vendor/lib64/libultrasound.so
+vendor/lib64/sensors.mius.proximity.so
+vendor/lib64/sensors.ssc.so
+vendor/lib64/sensors.touch.detect.so
+
 # Sensors Configs
 vendor/etc/sensors/config/ak991x_dri_0.json
 vendor/etc/sensors/config/icm4x6xx_0.json
@@ -612,24 +630,6 @@ vendor/etc/sensors/config/tsl2540_0.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/sns_reg_config
-
-# Sensors
-vendor/bin/init.qcom.sensors.sh
-vendor/bin/sensors.qti
-vendor/bin/sscrpcd
-vendor/etc/init/init.vendor.sensors.rc
-vendor/etc/init/vendor.sensors.qti.rc
-vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/lib64/libnotifyaudiohal.so
-vendor/lib64/libsensorcal.so
-vendor/lib64/libsensorslog.so
-vendor/lib64/libssc.so
-vendor/lib64/libssc_default_listener.so
-vendor/lib64/libssccalapi.so
-vendor/lib64/libultrasound.so
-vendor/lib64/sensors.mius.proximity.so
-vendor/lib64/sensors.ssc.so
-vendor/lib64/sensors.touch.detect.so
 
 # Touchscreen firmware
 vendor/firmware/goodix_gt9897t_cfg_k9d.bin
