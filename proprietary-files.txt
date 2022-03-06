@@ -82,26 +82,6 @@ vendor/lib/libvideoNS.so
 vendor/firmware/tfa98xx.cnt
 
 # Camera
-vendor/lib64/camera/plugins/com.qcom.plugin.gpu.so
-vendor/lib64/camera/plugins/com.qcom.plugin.offlinepostproc.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.bodyslim.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.capbokeh.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.dc.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.depurple.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.ellc.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.fusion.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.hdr.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.ldc.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.memcpy.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.miaiie.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.mibokeh.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.misegment.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.rearsupernight.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.sigframe.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.skinbeautifier.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.sr.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.supermoon.so
-vendor/lib64/camera/plugins/com.xiaomi.plugin.supernight.so
 vendor/lib64/camera/com.qti.actuator.lisa_ofilm_s5kgw3_dw9800_wide.so
 vendor/lib64/camera/com.qti.actuator.lisa_semco_s5kgw3_dw9800_wide.so
 vendor/lib64/camera/com.qti.eeprom.lisa_ofilm_imx355_gt24p64e_ultra_eeprom.so
@@ -476,6 +456,28 @@ vendor/etc/camera/vidhance_calibration
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP_170.elf
+
+# Camera plugins
+vendor/lib64/camera/plugins/com.qcom.plugin.gpu.so
+vendor/lib64/camera/plugins/com.qcom.plugin.offlinepostproc.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.bodyslim.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.capbokeh.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.dc.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.depurple.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.ellc.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.fusion.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.hdr.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.ldc.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.memcpy.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.miaiie.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.mibokeh.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.misegment.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.rearsupernight.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.sigframe.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.skinbeautifier.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.sr.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.supermoon.so
+vendor/lib64/camera/plugins/com.xiaomi.plugin.supernight.so
 
 # Camera sensors
 vendor/lib64/libmmcamera_bestats.so
