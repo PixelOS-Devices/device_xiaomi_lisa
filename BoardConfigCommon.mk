@@ -64,6 +64,19 @@ TARGET_SCREEN_DENSITY := 440
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
+# HIDL
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/hidl/compatibility_matrix.xml
+
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(COMMON_PATH)/hidl/vendor_framework_compatibility_matrix.xml \
+    $(COMMON_PATH)/hidl/xiaomi_framework_compatibility_matrix.xml \
+    vendor/lineage/config/device_framework_matrix.xml
+
+DEVICE_MANIFEST_FILE := \
+    $(COMMON_PATH)/hidl/manifest_lahaina.xml \
+    $(COMMON_PATH)/hidl/manifest_lineage.xml \
+    $(COMMON_PATH)/hidl/manifest_xiaomi.xml
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image
@@ -92,19 +105,6 @@ BOARD_KERNEL_CMDLINE += pcie_ports=compat
 BOARD_KERNEL_CMDLINE += iptable_raw.raw_before_defrag=1
 BOARD_KERNEL_CMDLINE += ip6table_raw.raw_before_defrag=1
 BOARD_KERNEL_CMDLINE += video=vfb:640x400,bpp=32,memsize=3072000
-
-# HIDL
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/hidl/compatibility_matrix.xml
-
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(COMMON_PATH)/hidl/vendor_framework_compatibility_matrix.xml \
-    $(COMMON_PATH)/hidl/xiaomi_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
-
-DEVICE_MANIFEST_FILE := \
-    $(COMMON_PATH)/hidl/manifest_lahaina.xml \
-    $(COMMON_PATH)/hidl/manifest_lineage.xml \
-    $(COMMON_PATH)/hidl/manifest_xiaomi.xml
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
