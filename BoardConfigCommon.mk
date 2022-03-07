@@ -57,9 +57,6 @@ TARGET_USE_QTI_BT_STACK := true
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
-# Build broken
-BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
-
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
