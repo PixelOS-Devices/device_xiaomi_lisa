@@ -770,4 +770,10 @@
         <item>956</item> <!--item>sensorLocationY</item-->
         <item>200</item> <!--item>sensorRadius</item-->
     </array>
+    
+    <!-- Whether UI for multi user should be shown -->
+    <bool name="config_enableMultiUserUI">true</bool>
+
+    <!--  Maximum number of supported users -->
+    <integer name="config_multiuserMaximumUsers">5</integer>
 </resources>
