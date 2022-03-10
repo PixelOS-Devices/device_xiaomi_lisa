@@ -468,6 +468,9 @@ vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
 
+# Charger (Mi Turbo Charge)
+vendor/bin/batterysecret
+
 # Display calibration
 vendor/etc/display/DPU660.xml
 vendor/etc/display/DPU670.xml
