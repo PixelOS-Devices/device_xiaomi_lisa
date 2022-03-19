@@ -76,9 +76,9 @@ public class DiracSettingsFragment extends PreferenceFragment implements
         mPreset.setEnabled(!hifiEnable && enhancerEnabled);
         mHifi.setEnabled(enhancerEnabled);
 
-        mHeadsetType = (ListPreference) findPreference(PREF_SCENE);
-        mHeadsetType.setOnPreferenceChangeListener(this);
-        mHeadsetType.setEnabled(enhancerEnabled);
+        mScenes = (ListPreference) findPreference(PREF_SCENE);
+        mScenes.setOnPreferenceChangeListener(this);
+        mScenes.setEnabled(enhancerEnabled);
     }
 
     @Override
