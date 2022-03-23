@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from lisa_global-user 11 RKQ1.210503.001 V12.5.14.0.RKOMIXM release-keys
+# All unpinned blobs below are extracted from lisa_global-user 12 SKQ1.211006.001 V13.0.3.0.SKOINXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
