@@ -13,6 +13,9 @@ include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := lisa
 
+# Firmware
+-include vendor/xiaomi/lisa-firmware/BoardConfigVendor.mk
+
 # Kernel
 TARGET_KERNEL_CONFIG := lisa_defconfig
 
