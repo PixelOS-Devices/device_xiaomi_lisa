@@ -7,6 +7,7 @@
 /vendor/bin/batteryd		u:object_r:batteryd_exec:s0
 /vendor/bin/batterysecret		u:object_r:batterysecret_exec:s0
 /mnt/vendor/persist/subsys(/.*)?                u:object_r:persist_subsys_file:s0
+/sys/devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,ucsi/typec/port0/data_role        u:object_r:vendor_sysfs_usb_supply:s0
 
 # Camera
 /mnt/vendor/persist/camera(/.*)?   u:object_r:camera_persist_file:s0
