@@ -25,9 +25,9 @@
 # Fingerprint
 /dev/goodix_fp                                                      u:object_r:vendor_fingerprint_device:s0
 /mnt/vendor/persist/goodix(/.*)?                                    u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/fpc(/.*)?                                              u:object_r:vendor_fingerprint_data_file:s0
 /data/vendor/fpdump(/.*)?                                           u:object_r:vendor_fingerprint_data_file:s0
 /data/vendor/goodix(/.*)?                                           u:object_r:vendor_fingerprint_data_file:s0
-/vendor/bin/hw/mfp-daemon                                           u:object_r:vendor_mfp-daemon_exec:s0
 
 # FOD
 /vendor/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1.0-service\.xiaomi_sm8350            u:object_r:hal_lineage_fod_default_exec:s0
