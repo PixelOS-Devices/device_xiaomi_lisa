@@ -23,6 +23,9 @@ $(call inherit-product-if-exists, vendor/xiaomi/lisa/lisa-vendor.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Call the MiuiCamera setup
+$(call inherit-product-if-exists, vendor/xiaomi/lisa-miuicamera/products/miuicamera.mk)
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
