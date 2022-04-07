@@ -31,5 +31,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <Library>
         <Name>libsnapdragoncolor-qdcm.so</Name>
         <ProcessingOrder>1</ProcessingOrder>
+      </Library>
+    <Library>
+        <Name>libmi-stc-HW-modulate.so</Name>
+        <ProcessingOrder>2</ProcessingOrder>
     </Library>
 </StcLibraries>

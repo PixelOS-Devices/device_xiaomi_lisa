@@ -724,6 +724,7 @@ vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_0d_0b_cmd_mode_dsc_dsi_panel.xml
+vendor/lib64/libmi-stc-HW-modulate.so
 
 # Display postprocessing - LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
 vendor/bin/hw/vendor.display.color@1.0-service|347fda7fe824e405829e1772739e999937421a58
