@@ -5,7 +5,7 @@ type vendor_fp_info_prop, vendor_public_property_type, vendor_property_type, pro
 type vendor_hal_fingerprint_hwservice_xiaomi, hwservice_manager_type;
 
 # Binder
-allow hal_fingerprint_default vendor_hal_fingerprint_hwservice_xiaomi:hwservice_manager find;
+add_hwservice(hal_fingerprint_default, vendor_hal_fingerprint_hwservice_xiaomi)
 allow hal_fingerprint_default vendor_hal_perf_default:binder call;
 allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
 
@@ -25,6 +25,8 @@ allow hal_fingerprint_default vendor_sysfs_fingerprint:file rw_file_perms;
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
 allow hal_fingerprint_default vendor_fingerprint_device:chr_file rw_file_perms;
+allow hal_fingerprint_default input_device:dir r_dir_perms;
+allow hal_fingerprint_default input_device:chr_file rw_file_perms;
 
 # Data
 allow hal_fingerprint_default vendor_fingerprint_data_file:dir rw_dir_perms;
