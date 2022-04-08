@@ -9,6 +9,9 @@ add_hwservice(hal_fingerprint_default, vendor_hal_fingerprint_hwservice_xiaomi)
 allow hal_fingerprint_default vendor_hal_perf_default:binder call;
 allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
 
+# Netlink_socket
+allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
+
 # Props
 set_prop(hal_fingerprint_default, vendor_fp_prop)
 set_prop(hal_fingerprint_default, vendor_fp_info_prop)
