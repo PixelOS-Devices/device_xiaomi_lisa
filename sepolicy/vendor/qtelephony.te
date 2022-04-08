@@ -1,0 +1,2 @@
+allow vendor_qtelephony hal_telephony_hwservice:hwservice_manager find;
+
