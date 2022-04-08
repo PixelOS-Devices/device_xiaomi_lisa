@@ -719,6 +719,12 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
+# Diag
+vendor/bin/diag-router
+vendor/etc/init/vendor.qti.diag.rc
+-vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
+vendor/lib64/vendor.qti.diaghal@1.0.so
+
 # Display calibration
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
