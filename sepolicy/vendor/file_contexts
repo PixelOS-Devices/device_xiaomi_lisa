@@ -23,9 +23,6 @@
 # Power
 /dev/xiaomi-touch                                                  u:object_r:vendor_touchfeature_device:s0
 
-# Powershare
-/vendor/bin/hw/vendor\.lineage\.powershare@1\.0-service\.lisa                           u:object_r:hal_lineage_powershare_default_exec:s0
-
 # Sensors
 /sys/bus/iio/devices                                                                                                            u:object_r:vendor_sysfs_iio:s0
 /sys/devices/platform/us_prox.0/iio:device1(/.*)?                                                                               u:object_r:vendor_sysfs_iio:s0
@@ -39,12 +36,6 @@
 /data/vendor/fpdump(/.*)?                                           u:object_r:vendor_fingerprint_data_file:s0
 /data/vendor/goodix(/.*)?                                           u:object_r:vendor_fingerprint_data_file:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.lisa u:object_r:hal_fingerprint_default_exec:s0
-
-# FOD
-/vendor/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1.0-service\.lisa            u:object_r:hal_lineage_fod_default_exec:s0
-/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_hbm     u:object_r:vendor_sysfs_fod:s0
-/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui      u:object_r:vendor_sysfs_fod:s0
-/sys/devices/virtual/touch/tp_dev/fod_status                       u:object_r:vendor_sysfs_fod:s0
 
 # Thermal
 /data/vendor/thermal(/.*)?                           u:object_r:thermal_data_file:s0
