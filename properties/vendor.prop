@@ -24,6 +24,7 @@ ro.audio.monitorRotation=true
 ro.vendor.audio.scenario.support=true
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
+ro.vendor.audio.soundfx.type=mi
 ro.vendor.audio.soundfx.usb=true
 ro.vendor.audio.soundtrigger.adjconf=true
 ro.vendor.audio.soundtrigger.appdefine.cnn.level=45
