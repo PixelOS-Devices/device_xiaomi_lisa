@@ -1,0 +1,14 @@
+#
+# Copyright (C) 2023 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on boot && property:ro.boot.hwc=CN
+    setprop bluetooth.device.default_name "Mi 11 LE"
+
+on boot && property:ro.boot.hwc=GL
+    setprop bluetooth.device.default_name "Xiaomi 11 Lite 5G NE"
+
+on boot && property:ro.boot.hwc=IN
+    setprop bluetooth.device.default_name "Xiaomi 11 Lite NE"
