@@ -25,7 +25,6 @@ allow battery_daemons rootfs:dir w_dir_perms;
 
 allow battery_daemons kmsg_device:chr_file rw_file_perms;
 allow battery_daemons persist_subsys_file:file w_file_perms;
-allow battery_daemons sysfs:file w_file_perms;
 allow battery_daemons vendor_sysfs_battery_supply:file w_file_perms;
 allow battery_daemons sysfs_usb:file w_file_perms;
 allow battery_daemons vendor_sysfs_usb_supply:file w_file_perms;
