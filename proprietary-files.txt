@@ -971,6 +971,23 @@ vendor/lib/libqcodec2_platform.so
 vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
 
+# Media (Dolby Vision)
+vendor/bin/hw/dolbycodec2
+vendor/etc/dolby_vision.cfg
+vendor/etc/init/dolbycodec2.rc
+vendor/etc/media_codecs_system_default_yupik.xml
+vendor/etc/media_codecs_with_dolby_yupik.xml
+-vendor/etc/vintf/manifest/c2_manifest_vendor.xml:odm/etc/vintf/manifest/c2_manifest_xiaomi.xml
+vendor/lib/c2.dolby.avc.dec.so
+vendor/lib/c2.dolby.avc.sec.dec.so
+vendor/lib/c2.dolby.client.so
+vendor/lib/c2.dolby.egl.so
+vendor/lib/c2.dolby.hevc.dec.so
+vendor/lib/c2.dolby.hevc.sec.dec.so
+vendor/lib/c2.dolby.store.so
+vendor/lib/libdolbyottcameracontrol.so
+vendor/lib/libdovi.so
+
 # Media (VPU firmware)
 vendor/firmware/vpu20_1v.b00
 vendor/firmware/vpu20_1v.b01

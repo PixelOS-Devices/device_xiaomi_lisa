@@ -61,9 +61,9 @@ function blob_fixup() {
         vendor/etc/camera/pure*_parameter.xml)
             sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
             ;;
-        vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
-            sed -ni '/ozoaudio/!p' "${2}"
-            sed -ni '/dolby/!p' "${2}"
+        odm/etc/vintf/manifest/c2_manifest_xiaomi.xml)
+            sed -i 's|<hal format="hidl">|<hal format="hidl" override="true">|g' "${2}"
+            sed -i "/ozoaudio/d" "${2}"
             ;;
         vendor/lib64/android.hardware.secure_element@1.0-impl.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
