@@ -37,6 +37,9 @@
 /data/vendor/goodix(/.*)?                                           u:object_r:vendor_fingerprint_data_file:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.lisa u:object_r:hal_fingerprint_default_exec:s0
 
+# Sensors Fix script
+/vendor/bin/init\.sensors_fix\.sh	      u:object_r:vendor_init-qcom-sensors-sh_exec:s0
+
 # Thermal
 /data/vendor/thermal(/.*)?                           u:object_r:thermal_data_file:s0
 /vendor/bin/mi_thermald                              u:object_r:mi_thermald_exec:s0
