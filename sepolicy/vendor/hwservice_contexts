@@ -10,3 +10,6 @@ com.fingerprints.extension::IFingerprintOptical                                 
 
 # Mlipay
 vendor.xiaomi.hardware.mlipay::IMlipayService                                 u:object_r:hal_mlipay_hwservice:s0
+
+# Camera
+vendor.xiaomi.hardware.campostproc::IMiPostProcService                               u:object_r:hal_xiaomi_camera_hwservice:s0
