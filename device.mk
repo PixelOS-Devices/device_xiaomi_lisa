@@ -36,6 +36,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.r_submix.default \
+    audio.primary.default \
+    audio.primary.lahaina \
     audio.usb.default \
     libaudio-resampler \
     libtinycompress
