@@ -104,7 +104,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     libbthost_if \
-    libbluetooth_audio_session
+    libbluetooth_audio_session \
+    libbthost_if.vendor \
+    libldacBT_bco.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
