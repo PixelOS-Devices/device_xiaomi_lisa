@@ -98,6 +98,8 @@ vendor/lib/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libmisoundfx.so
 
 # Audio Hardware
+vendor/lib/liba2dpoffload.so
+vendor/lib64/liba2dpoffload.so
 vendor/lib/hw/audio.primary.lahaina.so
 vendor/lib/libadm.so
 vendor/lib/libaudio_log_utils.so
