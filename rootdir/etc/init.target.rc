@@ -83,6 +83,11 @@ on fs
     mkdir /mnt/vendor/persist/haptics 0755 system system
     mkdir /mnt/vendor/persist/audio 0755 system system
 
+    mkdir /mnt/vendor/dsp 0770 root root
+    copy /vendor/dsp/cdsp/fastrpc_shell_3 /mnt/vendor/dsp/fastrpc_shell_3
+    chmod 0644 /mnt/vendor/dsp/fastrpc_shell_3
+    mount none /mnt/vendor/dsp/fastrpc_shell_3 /vendor/dsp/cdsp/fastrpc_shell_3 bind
+
 on fs && property:ro.boot.product.vendor.sku=lahaina
     mkdir /mnt/vendor/spunvm 0660 system system
     wait /dev/block/bootdevice/by-name/spunvm
