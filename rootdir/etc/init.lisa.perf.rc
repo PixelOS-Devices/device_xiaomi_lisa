@@ -32,3 +32,6 @@ on property:vendor.post_boot.parsed=1
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us 3000
     write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us 1000
     write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us 3000
+
+    # Configure scheduler
+    write /proc/sys/kernel/sched_group_downmigrate 25
