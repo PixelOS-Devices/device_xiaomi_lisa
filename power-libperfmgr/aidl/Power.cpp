@@ -25,12 +25,22 @@
 #include <android-base/properties.h>
 #include <android-base/stringprintf.h>
 #include <android-base/strings.h>
+#include <sys/ioctl.h>
 
 #include <utils/Log.h>
 
 #include "PowerHintSession.h"
 #include "PowerSessionManager.h"
 #include "disp-power/DisplayLowPower.h"
+
+// defines from drivers/input/touchscreen/xiaomi/xiaomi_touch.h
+#define SET_CUR_VALUE 0
+#define Touch_Doubletap_Mode 14
+
+#define TOUCH_DEV_PATH "/dev/xiaomi-touch"
+#define TOUCH_ID 0
+#define TOUCH_MAGIC 0x5400
+#define TOUCH_IOC_SETMODE TOUCH_MAGIC + SET_CUR_VALUE
 
 namespace aidl {
 namespace google {
@@ -96,6 +106,14 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
     LOG(DEBUG) << "Power setMode: " << toString(type) << " to: " << enabled;
     PowerSessionManager::getInstance()->updateHintMode(toString(type), enabled);
     switch (type) {
+        case Mode::DOUBLE_TAP_TO_WAKE:
+            {
+                int fd = open(TOUCH_DEV_PATH, O_RDWR);
+                int arg[3] = {TOUCH_ID, Touch_Doubletap_Mode, enabled ? 1 : 0};
+                ioctl(fd, TOUCH_IOC_SETMODE, &arg);
+                close(fd);
+                [[fallthrough]];   
+            }
         case Mode::LOW_POWER:
             mDisplayLowPower->SetDisplayLowPower(enabled);
             if (enabled) {
@@ -145,8 +163,6 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
                 break;
             }
             [[fallthrough]];
-        case Mode::DOUBLE_TAP_TO_WAKE:
-            [[fallthrough]];
         case Mode::FIXED_PERFORMANCE:
             [[fallthrough]];
         case Mode::EXPENSIVE_RENDERING:
@@ -181,8 +197,8 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
 
 ndk::ScopedAStatus Power::isModeSupported(Mode type, bool *_aidl_return) {
     bool supported = mHintManager->IsHintSupported(toString(type));
-    // LOW_POWER handled insides PowerHAL specifically
-    if (type == Mode::LOW_POWER) {
+    if (type == Mode::DOUBLE_TAP_TO_WAKE || type == Mode::LOW_POWER)
+    {   
         supported = true;
     }
     LOG(INFO) << "Power mode " << toString(type) << " isModeSupported: " << supported;
