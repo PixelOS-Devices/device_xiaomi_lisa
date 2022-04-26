@@ -93,12 +93,14 @@
       "Values": [
         "0",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "Comments": [
         "0 => 550000000",
         "1 => 450000000",
-        "2 => 315000000"
+        "2 => 315000000",
+        "3 => 180000000"
       ],
       "ResetOnInit": false
     },
@@ -279,7 +281,7 @@
         ""
       ],
       "Type": "Property"
-    },  
+    },
     {
       "Name": "PowerHALRenderingState",
       "Path": "vendor.powerhal.rendering",
@@ -502,7 +504,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "1"
+      "Value": "0"
     },
     {
       "PowerHint": "ML_ACC",
