@@ -126,10 +126,3 @@ on property:vendor.post_boot.parsed=1
 on property:ro.board.platform=lahaina
     # Setup foreground cpuset for display composer.
     write /dev/cpuset/foreground/cpus 0-6
-
-service poweropt-service /vendor/bin/poweropt-service
-    override
-    class main
-    user root
-    group system
-    disabled
