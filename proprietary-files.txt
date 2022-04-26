@@ -587,6 +587,9 @@ vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
+# Charger (Mi Turbo Charge)
+vendor/bin/batterysecret
+
 # CNE
 -vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
