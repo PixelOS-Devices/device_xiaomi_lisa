@@ -619,11 +619,11 @@ vendor/lib64/libqdcm-mode-parser.so
 vendor/lib64/libqrtrclient.so
 vendor/lib64/libqseed3.so
 vendor/lib64/librcmask.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
+vendor/lib64/libsdm-colormgr-algo.so|96c3f3e62453e580dfab8f06b0e92d340207e255
+vendor/lib64/libsdm-color.so|b8d69ac24d482033f4f059b849f4f6dbe3970626
+vendor/lib64/libsdm-diag.so|70a6e1ba046679d1e715e6cdafa13a6f70ff15d1
+vendor/lib64/libsdm-disp-vndapis.so|dc3ff8c971bbcb0d1b9e5079324d1d1d05a1fd39
+vendor/lib64/libsdmextension.so|8c6b2dbf4bf2c21aa34246cbd22d494723de58aa
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
 vendor/lib64/libtinyxml2_1.so
