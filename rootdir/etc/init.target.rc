@@ -62,6 +62,10 @@ on init
     write /dev/cpuctl/top-app/cpu.rt_runtime_us 950000
     write /dev/cpuctl/rt/cpu.rt_runtime_us 950000
 
+    # Setup permission for Power HAL
+    chown system system /dev/cpu_dma_latency
+    chmod 0664 /dev/cpu_dma_latency
+    
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     chown system system /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
