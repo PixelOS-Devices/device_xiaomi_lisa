@@ -92,6 +92,9 @@ on post-fs
     # Set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
 
+    # Apply sensors fix
+    start init-sensors_fix-sh
+
 on late-fs
     wait_for_prop hwservicemanager.ready true
     mount_all --late
@@ -184,4 +187,10 @@ service vendor.nv_mac /vendor/bin/nv_mac
     class late_start
     user system
     group system inet net_admin wifi net_raw
+    oneshot
+
+service init-sensors_fix-sh /vendor/bin/init.sensors_fix.sh
+    class main
+    user system
+    group system
     oneshot
