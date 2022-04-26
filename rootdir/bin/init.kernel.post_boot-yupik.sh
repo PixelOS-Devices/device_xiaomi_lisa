@@ -166,9 +166,6 @@ echo 1 > /sys/devices/system/cpu/cpu7/core_ctl/task_thres
 # plus misfit tasks on silver cores) to trigger assitance from gold+.
 echo 1 > /sys/devices/system/cpu/cpu7/core_ctl/nr_prev_assist_thresh
 
-# Disable Core control on silver
-echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
-
 # Setting b.L scheduler parameters
 echo 71 95 > /proc/sys/kernel/sched_upmigrate
 echo 65 85 > /proc/sys/kernel/sched_downmigrate
@@ -176,30 +173,19 @@ echo 100 > /proc/sys/kernel/sched_group_upmigrate
 echo 85 > /proc/sys/kernel/sched_group_downmigrate
 echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
-
 echo 0 > /proc/sys/kernel/sched_coloc_busy_hysteresis_enable_cpus
-
-# cpuset parameters
-echo 0-3 > /dev/cpuset/background/cpus
-echo 0-3 > /dev/cpuset/system-background/cpus
 
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/kernel/sched_boost
 
 # configure governor settings for silver cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
-echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
-echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
 echo 1152000 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
-echo 691200 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
 
 # configure governor settings for gold cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
-echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
-echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
 echo 1228800 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
-echo 691200 > /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
 echo 85 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_load
 echo -6 > /sys/devices/system/cpu/cpu4/sched_load_boost
 echo -6 > /sys/devices/system/cpu/cpu5/sched_load_boost
@@ -209,10 +195,7 @@ echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
 
 # configure governor settings for gold+ cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy7/scaling_governor
-echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us
-echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us
 echo 1324800 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
-echo 806400 > /sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq
 echo 85 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_load
 echo -6 > /sys/devices/system/cpu/cpu7/sched_load_boost
 echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/rtg_boost_freq
@@ -280,7 +263,7 @@ do
 		elif [ ${ddr_type:4:2} == $ddr_type5 ]; then
 			echo "1144 1720 2086 2929 3879 5931 6515 7980 12191" > $llccbw/bw_hwmon/mbps_zones
 		fi
-		echo 4 > $llccbw/bw_hwmon/sample_ms
+	        echo 4 > $llccbw/bw_hwmon/sample_ms
 		echo 68 > $llccbw/bw_hwmon/io_percent
 		echo 20 > $llccbw/bw_hwmon/hist_memory
 		echo 0 > $llccbw/bw_hwmon/hyst_length
