@@ -35,6 +35,9 @@ on property:vendor.post_boot.parsed=1
 
     # Configure scheduler
     write /proc/sys/kernel/sched_group_downmigrate 25
+    write /sys/devices/system/cpu/cpu0/core_ctl/enable 0
+    write /sys/devices/system/cpu/cpu4/core_ctl/enable 0
+    write /sys/devices/system/cpu/cpu7/core_ctl/enable 0
 
     # Configure uclamp
     write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
