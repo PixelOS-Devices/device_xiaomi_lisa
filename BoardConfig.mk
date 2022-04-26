@@ -71,6 +71,7 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 
 # Display
 TARGET_SCREEN_DENSITY := 440
+TARGET_USES_VULKAN := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
