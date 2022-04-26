@@ -58,7 +58,7 @@ function blob_fixup() {
         system_ext/lib64/libwfdnative.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
-        vendor/etc/camera/pureShot_parameter.xml)
+        vendor/etc/camera/pure*_parameter.xml)
             sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
             ;;
         vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
