@@ -65,9 +65,6 @@ function blob_fixup() {
             sed -i 's|<hal format="hidl">|<hal format="hidl" override="true">|g' "${2}"
             sed -i "/ozoaudio/d" "${2}"
             ;;
-        vendor/lib64/android.hardware.secure_element@1.0-impl.so)
-            "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
-            ;;
         vendor/lib64/hw/camera.xiaomi.so)
             # Before
             # 21 00 80 52     mov        w1,#0x1
