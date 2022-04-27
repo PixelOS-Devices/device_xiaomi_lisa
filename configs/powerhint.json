@@ -256,15 +256,6 @@
       "HoldFd": true
     },
     {
-      "Name": "UfsClkGateEnable",
-      "Path": "/sys/bus/platform/devices/1d84000.ufshc/clkgate_enable",
-      "Values": [
-        "0",
-        "1"
-      ],
-      "ResetOnInit": false
-    },
-    {
       "Name": "F2fsRecessModeEnable",
       "Path": "/dev/sys/fs/by-name/userdata/gc_urgent",
       "Values": [
@@ -393,12 +384,6 @@
       "Value": "5161"
     },
     {
-      "PowerHint": "INTERACTION",
-      "Node": "UfsClkGateEnable",
-      "Duration": 200,
-      "Value": "0"
-    },
-    {
       "PowerHint": "DEVICE_IDLE",
       "Node": "F2fsRecessModeEnable",
       "Duration": 0,
@@ -487,12 +472,6 @@
       "Node": "LLCCBWMinFreq",
       "Duration": 3000,
       "Value": "8136"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "UfsClkGateEnable",
-      "Duration": 3000,
-      "Value": "0"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
