@@ -767,7 +767,7 @@
     <array name="config_sfps_sensor_props_0" translatable="false">
         <item>local:4630946480857061762</item> <!--item>displayId</item-->
         <item>1080</item> <!--item>sensorLocationX</item-->
-        <item>970</item> <!--item>sensorLocationY</item-->
+        <item>956</item> <!--item>sensorLocationY</item-->
         <item>200</item> <!--item>sensorRadius</item-->
     </array>
 </resources>
