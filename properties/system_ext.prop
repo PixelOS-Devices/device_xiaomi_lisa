@@ -7,3 +7,7 @@ vendor.media.target_variant=_yupik_v1
 # Telephony
 ro.telephony.sim_slots.count=2
 telephony.active_modems.max_count=2
+
+# WFD
+persist.debug.wfd.enable=1
+vendor.wfdservice64=enable
