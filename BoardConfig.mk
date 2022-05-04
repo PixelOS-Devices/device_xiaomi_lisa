@@ -73,6 +73,11 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 TARGET_SCREEN_DENSITY := 440
 TARGET_USES_VULKAN := true
 
+# Dolby Vision
+SOONG_CONFIG_NAMESPACES += dolby_vision
+SOONG_CONFIG_dolby_vision += enabled
+SOONG_CONFIG_dolby_vision_enabled := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
