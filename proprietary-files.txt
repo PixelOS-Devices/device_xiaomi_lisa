@@ -741,28 +741,29 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
-# Display
+# Display configs
 vendor/etc/display/DPU660.xml
 vendor/etc/display/DPU670.xml
 vendor/etc/display/DPU720.xml
 vendor/etc/display/DPU7__.xml
 vendor/etc/display/advanced_sf_offsets.xml
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdisplayskuutils.so
-vendor/lib64/libdpps.so
-vendor/lib64/libhdr_tm.so
-vendor/lib64/libqdcm-mode-parser.so
-vendor/lib64/libqrtrclient.so
-vendor/lib64/libqseed3.so
-vendor/lib64/librcmask.so
-vendor/lib64/libsdm-color.so|b8d69ac24d482033f4f059b849f4f6dbe3970626
-vendor/lib64/libsdm-colormgr-algo.so|96c3f3e62453e580dfab8f06b0e92d340207e255
-vendor/lib64/libsdm-diag.so|70a6e1ba046679d1e715e6cdafa13a6f70ff15d1
+
+# Display - LA.UM.9.14.r1-18900-LAHAINA.QSSI12.0
+vendor/lib64/libdisplayqos.so|aa222f4c1a2d2fb60944c44f8a82621d6bc75184
+vendor/lib64/libdisplayskuutils.so|5afcd261783ca109c9d63e8d08c879b76fb4efd6
+vendor/lib64/libdpps.so|a5ef371c8df8af548db93adbd8757d2bf3c73da8
+vendor/lib64/libhdr_tm.so|7954c5cd5c0b23fe8d0609361c22d24c59f1448b
+vendor/lib64/libqdcm-mode-parser.so|207143ab4dda0886bde2a0333d7a1bcd7af6f8e1
+vendor/lib64/libqseed3.so|d62c37baf259250cadfcff8734e82054ed87bb96
+vendor/lib64/librcmask.so|bd022c259cf8fe64b8e7efef04ec614f499eec03
+vendor/lib64/libsdm-color.so|aeb07689c1bfc885ef9c846c0148e6f1e3f7f0ac
+vendor/lib64/libsdm-colormgr-algo.so|5416a3b9b0735099c9b86f451f41386711787ea4
+vendor/lib64/libsdm-diag.so|720089c4bc66897e1bfd84e7983b3c34f2c4eec8
 vendor/lib64/libsdm-disp-vndapis.so|dc3ff8c971bbcb0d1b9e5079324d1d1d05a1fd39
-vendor/lib64/libsdmextension.so|8c6b2dbf4bf2c21aa34246cbd22d494723de58aa
-vendor/lib64/libsnapdragoncolor-manager.so
-vendor/lib64/libsnapdragoncolor-qdcm.so
-vendor/lib64/libtinyxml2_1.so
+vendor/lib64/libsdmextension.so|85d04d20a022d79134eeba08bb4ec139d59e3479
+vendor/lib64/libsnapdragoncolor-manager.so|e7f55a1ba843bb570afa6bbf16bb61dc01ec74ea
+vendor/lib64/libsnapdragoncolor-qdcm.so|673c41753603bacb197674df567723dfd928384e
+vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
 
 # Embedded Secure Element power manager
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
@@ -1179,6 +1180,7 @@ vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmi_legacy.so
 vendor/lib64/libqmiservices.so
 vendor/lib64/libqrtr.so
+vendor/lib64/libqrtrclient.so
 
 # RIL
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
