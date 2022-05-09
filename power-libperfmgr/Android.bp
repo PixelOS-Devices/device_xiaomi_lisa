@@ -18,7 +18,7 @@ package {
 }
 
 cc_library {
-    name: "libdisppower",
+    name: "libdisppower-pixel",
     proprietary: true,
     srcs: [
         "disp-power/DisplayLowPower.cpp",
@@ -42,10 +42,10 @@ cc_library_headers {
 }
 
 cc_binary {
-    name: "android.hardware.power-service.lisa-libperfmgr",
+    name: "android.hardware.power-service.pixel-libperfmgr",
     relative_install_path: "hw",
-    init_rc: ["aidl/android.hardware.power-service.lisa-libperfmgr.rc"],
-    vintf_fragments: ["aidl/android.hardware.power-service.lisa.xml"],
+    init_rc: ["aidl/android.hardware.power-service.pixel-libperfmgr.rc"],
+    vintf_fragments: ["aidl/android.hardware.power-service.pixel.xml"],
     vendor: true,
     shared_libs: [
         "android.hardware.power-V2-ndk_platform",
@@ -54,7 +54,7 @@ cc_binary {
         "liblog",
         "libutils",
         "libbinder_ndk",
-        "libdisppower",
+        "libdisppower-pixel",
         "libperfmgr",
         "libprocessgroup",
         "pixel-power-ext-V1-ndk_platform",
