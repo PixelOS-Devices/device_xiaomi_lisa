@@ -1,3 +1,4 @@
+#! /vendor/bin/sh
 #=============================================================================
 # Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
 # All Rights Reserved.
@@ -30,58 +31,26 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #=============================================================================
 
-on init
-    # Update scheduler tunables
-    write /dev/cpuctl/foreground/cpu.uclamp.sched_boost_no_override 1
-    write /dev/cpuctl/top-app/cpu.uclamp.sched_boost_no_override 1
-    write /dev/cpuctl/background/cpu.uclamp.colocate 0
-    write /dev/cpuctl/foreground/cpu.uclamp.colocate 0
-    write /dev/cpuctl/top-app/cpu.uclamp.colocate 1
+verify_pasr_support()
+{
+	ddr_type=`od -An -tx /proc/device-tree/memory/ddr_device_type`
+	ddr_type5="08"
 
-on early-boot
-    # Allow subsystem (modem etc) debugging
-    write /sys/kernel/boot_adsp/boot 1
-    write /sys/kernel/boot_cdsp/boot 1
-    write /sys/kernel/boot_slpi/boot 1
-    write /sys/devices/virtual/cvp/cvp/boot 1
+         if [ -d /sys/kernel/mem-offline ]; then
+		#only LPDDR5 supports PAAR
+		if [ ${ddr_type:4:2} != $ddr_type5 ]; then
+			setprop vendor.pasr.activemode.enabled false
+		fi
 
-on boot
-    # Set the io-scheduler to bfq on all mq support devices
-    write /sys/block/sda/queue/scheduler bfq
-    write /sys/block/sdb/queue/scheduler bfq
-    write /sys/block/sdc/queue/scheduler bfq
-    write /sys/block/sdd/queue/scheduler bfq
-    write /sys/block/sde/queue/scheduler bfq
-    write /sys/block/sdf/queue/scheduler bfq
+                setprop vendor.pasr.enabled true
+         fi
+}
 
-    # Update io-scheduler tunables
-    write /sys/block/sda/queue/iosched/slice_idle 0
-    write /sys/block/sdb/queue/iosched/slice_idle 0
-    write /sys/block/sdc/queue/iosched/slice_idle 0
-    write /sys/block/sdd/queue/iosched/slice_idle 0
-    write /sys/block/sde/queue/iosched/slice_idle 0
-    write /sys/block/sdf/queue/iosched/slice_idle 0
-
-service kernel-boot /vendor/bin/sh /vendor/bin/init.qti.kernel.sh
-    class core
-    user root
-    group root
-    disabled
-    oneshot
-
-service kernel-post-boot /vendor/bin/sh /vendor/bin/init.kernel.post_boot.sh
-    class core
-    user root
-    group root system wakelock graphics
-    disabled
-    oneshot
-
-on property:sys.boot_completed=1
-    write /dev/kmsg "Boot completed "
-    start kernel-boot
-    start kernel-post-boot
-
-service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
-    class core
-    user root
-    group root
+start_msm_irqbalance()
+{
+         if [ -f /vendor/bin/msm_irqbalance ]; then
+                start vendor.msm_irqbalance
+         fi
+}
+start_msm_irqbalance
+verify_pasr_support
