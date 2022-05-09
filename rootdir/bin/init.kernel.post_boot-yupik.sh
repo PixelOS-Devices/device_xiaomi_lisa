@@ -353,7 +353,4 @@ echo s2idle > /sys/power/mem_sleep
 
 configure_memory_parameters
 
-# Enable PowerHAL hint processing
-setprop vendor.powerhal.init 1
-
 setprop vendor.post_boot.parsed 1
