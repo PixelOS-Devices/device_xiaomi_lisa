@@ -31,6 +31,7 @@
 
 #include "PowerHintSession.h"
 #include "PowerSessionManager.h"
+#include "disp-power/DisplayLowPower.h"
 
 // defines from drivers/input/touchscreen/xiaomi/xiaomi_touch.h
 #define SET_CUR_VALUE 0
@@ -56,8 +57,9 @@ constexpr char kPowerHalRenderingProp[] = "vendor.powerhal.rendering";
 constexpr char kPowerHalAdpfRateProp[] = "vendor.powerhal.adpf.rate";
 constexpr int64_t kPowerHalAdpfRateDefault = -1;
 
-Power::Power(std::shared_ptr<HintManager> hm)
+Power::Power(std::shared_ptr<HintManager> hm, std::shared_ptr<DisplayLowPower> dlpw)
     : mHintManager(hm),
+      mDisplayLowPower(dlpw),
       mInteractionHandler(nullptr),
       mSustainedPerfModeOn(false),
       mAdpfRateNs(
@@ -109,6 +111,12 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
                 [[fallthrough]];   
             }
         case Mode::LOW_POWER:
+            mDisplayLowPower->SetDisplayLowPower(enabled);
+            if (enabled) {
+                mHintManager->DoHint(toString(type));
+            } else {
+                mHintManager->EndHint(toString(type));
+            }
             break;
         case Mode::SUSTAINED_PERFORMANCE:
             if (enabled) {
@@ -150,7 +158,7 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
 
 ndk::ScopedAStatus Power::isModeSupported(Mode type, bool *_aidl_return) {
     bool supported = mHintManager->IsHintSupported(toString(type));
-    if (type == Mode::DOUBLE_TAP_TO_WAKE)
+    if (type == Mode::DOUBLE_TAP_TO_WAKE || type == Mode::LOW_POWER)
     {   
         supported = true;
     }
