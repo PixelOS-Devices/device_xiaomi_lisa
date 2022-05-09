@@ -289,13 +289,13 @@ do
 		echo 40 > $l3bw/polling_interval
 	done
 
-#	# configure mem_latency settings for LLCC and DDR scaling and qoslat
-#	for memlat in $device/*lat/devfreq/*lat
-#	do
-#		cat $memlat/available_frequencies | cut -d " " -f 1 > $memlat/min_freq
-#		echo 8 > $memlat/polling_interval
-#		echo 400 > $memlat/mem_latency/ratio_ceil
-#	done
+	# configure mem_latency settings for LLCC and DDR scaling and qoslat
+	for memlat in $device/*lat/devfreq/*lat
+	do
+		cat $memlat/available_frequencies | cut -d " " -f 1 > $memlat/min_freq
+		echo 8 > $memlat/polling_interval
+		echo 400 > $memlat/mem_latency/ratio_ceil
+	done
 
 	# configure compute settings for silver latfloor
 	for latfloor in $device/*cpu0-cpu*latfloor/devfreq/*cpu0-cpu*latfloor
