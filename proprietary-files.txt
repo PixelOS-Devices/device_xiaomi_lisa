@@ -727,39 +727,39 @@ vendor/etc/init/qdcmss.rc
 vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_0d_0b_cmd_mode_dsc_dsi_panel.xml
 
-# Display postprocessing
-vendor/bin/hw/vendor.display.color@1.0-service
-vendor/bin/ppd
-vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/lib64/libdisp-aba.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.color@1.3.so
-vendor/lib64/vendor.display.color@1.4.so
-vendor/lib64/vendor.display.color@1.5.so
-vendor/lib64/vendor.display.postproc@1.0.so
+# Display postprocessing - LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
+vendor/bin/hw/vendor.display.color@1.0-service|347fda7fe824e405829e1772739e999937421a58
+vendor/bin/ppd|4fcb818e39c813570fdbfaa9726274986e190e04
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/lib64/libdisp-aba.so|5c8ad123fb335a74bd573587924f93ac812594fd
+vendor/lib64/vendor.display.color@1.0.so|317de26d1e7a1d2d07ffa01d2a5a7528e81dffa9
+vendor/lib64/vendor.display.color@1.1.so|513cb2a853ea2e3b481df0df5408705b6d86abd9
+vendor/lib64/vendor.display.color@1.2.so|86a650b87ed1baac5e23c23c3d37ce5b20c805ae
+vendor/lib64/vendor.display.color@1.3.so|125043e43085e8fc9d52c3d94659c20f60885862
+vendor/lib64/vendor.display.color@1.4.so|57de75a5da7e7c362ca31bd0390dce7088d006fa
+vendor/lib64/vendor.display.color@1.5.so|40e5a6e0315d89ac1a9af7589ec9f384211ec3f8
+vendor/lib64/vendor.display.postproc@1.0.so|47b01ccbabd3886c04c65ddffcbfd563a5e9b63a
 
-# Display configs
-vendor/etc/display/DPU660.xml
-vendor/etc/display/DPU670.xml
-vendor/etc/display/DPU720.xml
-vendor/etc/display/DPU7__.xml
-vendor/etc/display/advanced_sf_offsets.xml
+# Display configs - LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
+vendor/etc/display/DPU660.xml|b26dd73e361546d89bf3d7082a471703dc6ac2cb
+vendor/etc/display/DPU670.xml|e5131a60ceff29ca5eb561eec7eddadef1d0486f
+vendor/etc/display/DPU720.xml|4e54e8712d65773eb87867bf64a4cb98ea9bb8c3
+vendor/etc/display/DPU7__.xml|c056f3cb9fa123ca3de5b2a9775c184dddf25b9d
+vendor/etc/display/advanced_sf_offsets.xml|e145a0c0f975f6d924fbe7f18f531ae044ec3bef
 
-# Display - LA.UM.9.14.r1-18900-LAHAINA.QSSI12.0
+# Display - LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
 vendor/lib64/libdisplayqos.so|aa222f4c1a2d2fb60944c44f8a82621d6bc75184
-vendor/lib64/libdisplayskuutils.so|5afcd261783ca109c9d63e8d08c879b76fb4efd6
-vendor/lib64/libdpps.so|a5ef371c8df8af548db93adbd8757d2bf3c73da8
+vendor/lib64/libdisplayskuutils.so|76149ecef8fee8d4faa303c0cc2a73f51c363b4c
+vendor/lib64/libdpps.so|d53fb49c44d3cd63f428f8cfe4926650e3275f28
 vendor/lib64/libhdr_tm.so|7954c5cd5c0b23fe8d0609361c22d24c59f1448b
 vendor/lib64/libqdcm-mode-parser.so|207143ab4dda0886bde2a0333d7a1bcd7af6f8e1
 vendor/lib64/libqseed3.so|d62c37baf259250cadfcff8734e82054ed87bb96
-vendor/lib64/librcmask.so|bd022c259cf8fe64b8e7efef04ec614f499eec03
+vendor/lib64/librcmask.so|8feb479fe590b6aec282ce3342574d9113f80516
 vendor/lib64/libsdm-color.so|aeb07689c1bfc885ef9c846c0148e6f1e3f7f0ac
 vendor/lib64/libsdm-colormgr-algo.so|5416a3b9b0735099c9b86f451f41386711787ea4
 vendor/lib64/libsdm-diag.so|720089c4bc66897e1bfd84e7983b3c34f2c4eec8
 vendor/lib64/libsdm-disp-vndapis.so|dc3ff8c971bbcb0d1b9e5079324d1d1d05a1fd39
-vendor/lib64/libsdmextension.so|85d04d20a022d79134eeba08bb4ec139d59e3479
+vendor/lib64/libsdmextension.so|721ac8e32cca6d418906dcc520a72e5bccbf55ee
 vendor/lib64/libsnapdragoncolor-manager.so|e7f55a1ba843bb570afa6bbf16bb61dc01ec74ea
 vendor/lib64/libsnapdragoncolor-qdcm.so|673c41753603bacb197674df567723dfd928384e
 vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
