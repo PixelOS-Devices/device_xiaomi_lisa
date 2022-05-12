@@ -130,8 +130,6 @@ on boot
     chown system system /dev/xiaomi-touch
     chmod 0660 /dev/xiaomi-touch
 
-    write /dev/cpuset/audio-app/cpus 1-2
-
     # Freezer setup
     write /dev/freezer/frozen/freezer.killable 1
 
