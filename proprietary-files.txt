@@ -957,12 +957,17 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
 # Media (Dolby Vision)
--vendor/etc/vintf/manifest/c2_manifest_vendor.xml:odm/etc/vintf/manifest/c2_manifest_xiaomi.xml
 vendor/bin/hw/dolbycodec2
 vendor/etc/dolby_vision.cfg
 vendor/etc/init/dolbycodec2.rc
 vendor/etc/media_codecs_system_default_yupik.xml
 vendor/etc/media_codecs_with_dolby_yupik.xml
+vendor/etc/media_codecs.xml
+vendor/etc/media_codecs_performance.xml
+vendor/etc/media_profiles.xml
+vendor/etc/media_profiles_V1_0.xml
+vendor/etc/media_profiles_vendor.xml
+vendor/etc/media_profiles_lahaina.xml
 vendor/lib/c2.dolby.avc.dec.so
 vendor/lib/c2.dolby.avc.sec.dec.so
 vendor/lib/c2.dolby.client.so
