@@ -41,7 +41,7 @@
                        android:resource="@string/dirac_summary" />
         </activity>
 
-        <!--activity
+        <activity
             android:name=".thermal.ThermalActivity"
             android:label="@string/thermal_title"
             android:icon="@drawable/ic_thermal_settings"
@@ -58,7 +58,7 @@
             <meta-data
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_thermal_settings" />
-        </activity-->
+        </activity>
 
         <activity
             android:name=".speaker.ClearSpeakerActivity" 
@@ -71,10 +71,10 @@
                        android:value="com.android.settings.category.ia.sound" />
         </activity>
 
-        <!--service
+        <service
             android:name=".thermal.ThermalService"
             android:permission="ThermalService">
-        </service-->
+        </service>
 
         <service
             android:name=".dirac.DiracTileService"
