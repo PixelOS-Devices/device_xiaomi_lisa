@@ -53,8 +53,6 @@ public final class ThermalUtils {
 
     private static final String THERMAL_SCONFIG = "/sys/class/thermal/thermal_message/sconfig";
 
-    private boolean mTouchModeChanged;
-
     private Display mDisplay;
     private SharedPreferences mSharedPrefs;
 
@@ -150,47 +148,7 @@ public final class ThermalUtils {
                 state = THERMAL_STATE_GAMING;
             }
         }
+
         FileUtils.writeLine(THERMAL_SCONFIG, state);
-
-        if (state == THERMAL_STATE_BENCHMARK || state == THERMAL_STATE_GAMING) {
-            updateTouchModes(packageName);
-        } else if (mTouchModeChanged) {
-            resetTouchModes();
-        }
-    }
-
-    private void updateTouchModes(String packageName) {
-        String values = mSharedPrefs.getString(packageName, null);
-        resetTouchModes();
-
-        if (values == null || values.isEmpty()) {
-            return;
-        }
-
-        String[] value = values.split(",");
-        String gameMode = value[Constants.TOUCH_GAME_MODE];
-        String touchResponse = value[Constants.TOUCH_RESPONSE];
-        String touchSensitivity = value[Constants.TOUCH_SENSITIVITY];
-        String touchResistant = value[Constants.TOUCH_RESISTANT];
-
-        FileUtils.writeLine(Constants.FILE_TOUCH_TOLERANCE, touchSensitivity);
-        FileUtils.writeLine(Constants.FILE_TOUCH_UP_THRESHOLD, touchResponse);
-        FileUtils.writeLine(Constants.FILE_TOUCH_EDGE_FILTER, touchResistant);
-        SystemProperties.set(Constants.PROP_TOUCH_GAME_MODE, gameMode);
-
-        mTouchModeChanged = true;
-    }
-
-    protected void resetTouchModes() {
-        if (!mTouchModeChanged) {
-            return;
-        }
-
-        FileUtils.writeLine(Constants.FILE_TOUCH_TOLERANCE, Constants.DEFAULT_TOUCH_TOLERANCE);
-        FileUtils.writeLine(Constants.FILE_TOUCH_UP_THRESHOLD, Constants.DEFAULT_TOUCH_UP_THRESHOLD);
-        FileUtils.writeLine(Constants.FILE_TOUCH_EDGE_FILTER, Constants.DEFAULT_TOUCH_EDGE_FILTER);
-        SystemProperties.set(Constants.PROP_TOUCH_GAME_MODE, "0");
-
-        mTouchModeChanged = false;
     }
 }

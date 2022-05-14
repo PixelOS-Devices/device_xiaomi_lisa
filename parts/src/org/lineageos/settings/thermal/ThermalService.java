@@ -42,7 +42,6 @@ public class ThermalService extends Service {
         public void onReceive(Context context, Intent intent) {
             mPreviousApp = "";
             mThermalUtils.setDefaultThermalProfile();
-            mThermalUtils.resetTouchModes();
         }
     };
 

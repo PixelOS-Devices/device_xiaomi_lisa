@@ -61,11 +61,6 @@
         </activity>
 
         <activity
-            android:name=".thermal.TouchSettingsActivity"
-            android:theme="@style/Theme.SubSettingsBase"
-            android:exported="true" />
-
-        <activity
             android:name=".speaker.ClearSpeakerActivity" 
             android:label="@string/clear_speaker_title"
             android:theme="@style/Theme.SubSettingsBase">

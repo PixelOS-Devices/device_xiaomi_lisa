@@ -64,7 +64,7 @@
 
     <!-- Thermal Profiles -->
     <string name="thermal_title">Thermal profiles</string>
-    <string name="thermal_summary">Per-app thermal and touchscreen profiles with game mode</string>
+    <string name="thermal_summary">Per-app thermal profile configuration</string>
     <string name="thermal_default">Default</string>
     <string name="thermal_benchmark">Benchmark</string>
     <string name="thermal_camera">Camera</string>
@@ -75,14 +75,4 @@
     <string name="clear_speaker_title">Clear speaker</string>
     <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
     <string name="clear_speaker_description">Run this feature once or twice if you find that your speaker is lightly blocked by dust. Set media volume to maximum.\n\nIf the speaker is blocked heavily, run this feature 2-5 times while shaking your device with the speaker facing downwards.\n\nWARNING: Ensure that any headphones are unplugged.</string>
-
-    <!-- Touch Control Settings -->
-    <string name="touch_game_mode_title">Enable game mode</string>
-    <string name="touch_game_mode_summary">Activate manual touchscreen feature controls and increase CPU and GPU performance</string>
-    <string name="touch_response_title">Touch response</string>
-    <string name="touch_response_summary">Control touch response</string>
-    <string name="touch_sensitivity_title">Touch sensitivity</string>
-    <string name="touch_sensitivity_summary">Control touch sensitivity for repeated taps</string>
-    <string name="touch_resistant_title">Touch-resistant area</string>
-    <string name="touch_resistant_summary">Reduce touch sensitivity near the edges to avoid triggering touch controls</string>
 </resources>
