@@ -820,38 +820,50 @@ vendor/firmware/a660_zap.b02
 vendor/firmware/a660_zap.elf
 vendor/firmware/a660_zap.mdt
 
-# Graphics
+# Graphics - LA.VENDOR.1.0.r1-13100-WAIPIO.0
 -vendor/app/com.qualcomm.qti.gpudrivers.lahaina.api30/com.qualcomm.qti.gpudrivers.lahaina.api30.apk;PRESIGNED
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/hw/vulkan.adreno.so
-vendor/lib/libC2D2.so
-vendor/lib/libCB.so
-vendor/lib/libOpenCL.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/hw/vulkan.adreno.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
+vendor/gpu/kbc/sequence_manifest.bin|6a049950f56399d747e3a84415fc0b42592c3e22
+vendor/gpu/kbc/unified_kbcs_32.bin|28ee1f2a696ba6e34ac332c9a7acdf3653939229
+vendor/gpu/kbc/unified_kbcs_64.bin|9a8235b53b51ee6e7c81b7049830283a59ac6ead
+vendor/gpu/kbc/unified_ksqs.bin|24f0726833687b9c0ec0058504b11b55b265ed73
+vendor/lib/egl/eglSubDriverAndroid.so|a3d76c8abd204ba4d5509792c4662a63c967cb79
+vendor/lib/egl/libEGL_adreno.so|de3a412440afc7cec6ce85b7062345c28d79f292
+vendor/lib/egl/libGLESv1_CM_adreno.so|8ab84e1b996669d9a5dffbf1bd3e9d99c4d921ed
+vendor/lib/egl/libGLESv2_adreno.so|015f18c9287671ea822e957eb28156699ac48254
+vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so|4ab02ede93e8ac0cd968bc1f7d9d6581cab419ae
+vendor/lib/egl/libq3dtools_adreno.so|e1f7eab8eaa3c58d6b8e2ba9ed557205533ceb36
+vendor/lib/egl/libq3dtools_esx.so|f581cef359f874d4322a7704b9abed4c49afd6da
+vendor/lib/hw/vulkan.adreno.so|3c9aaf80e21610def254a2b0866ddf4da9222016
+vendor/lib/libCB.so|c65844523c1073ee71c68ac7b58d72814e22c821
+vendor/lib/libOpenCL.so|cf65ca87cc0f6b1a77b437db1a2539cb3399d1e8
+vendor/lib/libadreno_app_profiles.so|7eb4b770d89675b24983159c4a036bc73fc11df1
+vendor/lib/libadreno_utils.so|20c7b08aafe882208f7f0d360467885066c33a40
+vendor/lib/libgpudataproducer.so|b1dd6e9a521d8f8471c4be2ba62a18da79967035
+vendor/lib/libgsl.so|fccaeac3bdb043cc9b25700d937ea2dd1ffd8338
+vendor/lib/libkcl.so|a8c34a9fe1cb4a75b133ea3b184813ac8318e4ee
+vendor/lib/libkernelmanager.so|458579b8d11fa485cfbe453e608d06abab759c06
+vendor/lib/libllvm-glnext.so|c9d1502d9f5f7edfb1345ed3a235f571142783ac
+vendor/lib/libllvm-qcom.so|1275f5760bcfd855f2683dc13db8f3f194d0a583
+vendor/lib/libllvm-qgl.so|2653236f7d8d09cd9ac76a8322e8c8d00ba05836
+vendor/lib64/egl/eglSubDriverAndroid.so|9bcc9af81f6bd5cb0b45a56257375225b7793415
+vendor/lib64/egl/libEGL_adreno.so|c034321824c8c6a1bbf47c894d0b28c3ed5e7cba
+vendor/lib64/egl/libGLESv1_CM_adreno.so|3b0ef0ba99b9d1fa91c95942cb2042b60e4d63d3
+vendor/lib64/egl/libGLESv2_adreno.so|e1c1ad25c806efc616d1ba53ada0c83dcc639301
+vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so|1bffd6a05f2b4be5ed281c5feb834d6f4bc8a363
+vendor/lib64/egl/libq3dtools_adreno.so|169f0359a8654d527087da6ca947535211883f63
+vendor/lib64/egl/libq3dtools_esx.so|e57880e4c885c5b6fe0f1a508d1fdd3d9e3d9294
+vendor/lib64/hw/vulkan.adreno.so|bcc2dba212dc14dedef1ce76d99422fba93e032d
+vendor/lib64/libCB.so|f0f976a9ccab774ef84ca046657c68e00b6aae9b
+vendor/lib64/libOpenCL.so|43309f30ecef13276076e9368d691d062d84f6dc
+vendor/lib64/libadreno_app_profiles.so|fd2c35f5795a89c3db50595a7b605d3a2ccc0df3
+vendor/lib64/libadreno_utils.so|080fc0e48f733b59010a2361fe8b86f3f418e9db
+vendor/lib64/libgpudataproducer.so|7789c70ed3d9e6d315da73504dc47c2c144e6e0c
+vendor/lib64/libgsl.so|a5e182e0327b359a9a3c228d1e91040a3c6cb8e0
+vendor/lib64/libkcl.so|aa14552ef35789fa62e3f6662fd1991c5a3f3b04
+vendor/lib64/libkernelmanager.so|dec8ee34b9003a355b43ed0fafaf3ee73b55313d
+vendor/lib64/libllvm-glnext.so|d85cbd0ecdb379c30a773c70ed244c2ab3eee46c
+vendor/lib64/libllvm-qcom.so|57f06f09c755206c57ee8b4665c4c1183c1b6759
+vendor/lib64/libllvm-qgl.so|09922e55c21211a93c23b2b21ced1e39920062fd
 
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
@@ -1018,6 +1030,8 @@ vendor/etc/media_yupik_v1/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/video_system_specs.json
+vendor/lib/libC2D2.so
+vendor/lib/libc2d30_bltlib.so
 vendor/lib/libmmosal.so
 vendor/lib/libqc2vppfilter.so
 vendor/lib/libqcodec2_base.so
@@ -1027,6 +1041,8 @@ vendor/lib/libqcodec2_hooks.so
 vendor/lib/libqcodec2_platform.so
 vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
+vendor/lib64/libC2D2.so
+vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libmmosal.so
 
 # Mlipay
