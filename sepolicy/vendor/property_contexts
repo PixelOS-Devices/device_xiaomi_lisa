@@ -18,3 +18,6 @@ persist.vendor.security.spuari.              u:object_r:vendor_security_spuari_p
 # Mlipay
 persist.vendor.sys.pay.                 u:object_r:vendor_mlipay_prop:s0
 persist.vendor.sys.provision.status     u:object_r:vendor_mlipay_prop:s0
+
+# Thermal
+vendor.sys.thermal.                u:object_r:vendor_thermal_normal_prop:s0
