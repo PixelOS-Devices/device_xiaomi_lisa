@@ -940,8 +940,8 @@ vendor/firmware/yupik_ipa_fws.b04
 vendor/firmware/yupik_ipa_fws.elf
 vendor/firmware/yupik_ipa_fws.mdt
 
-# IRQ balance
-vendor/bin/msm_irqbalance
+# IRQ balance - LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
+vendor/bin/msm_irqbalance|f16cd993154581baaf60d4a1f2d9f8b0a5ee1f82
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
@@ -1110,37 +1110,37 @@ vendor/lib64/libOmxMpeghEncSw.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxWmaDec.so
 
-# Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/commonsysnodesconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
+# Perf - LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|081d5dbbd246067067ecd56f31fcd1ee440e9d46
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
+vendor/etc/perf/commonresourceconfigs.xml|c03bd36054bb5d327ad12dc711b58b3f658d261c
+vendor/etc/perf/commonsysnodesconfigs.xml|63d293adfd5aa82551aa8fc0d30b38bffdcc497e
+vendor/etc/perf/perfboostsconfig.xml|8e4e7a0eca8040e600b2f65a38d3b6ca017a26ff
+vendor/etc/perf/perfconfigstore.xml|665105d2e39cf00c9508c8e7af89583bcbdcedb5
+vendor/etc/perf/targetconfig.xml|33128deb6c62a8cecf491c6c0c13d18e811cfe81
+vendor/etc/perf/targetresourceconfigs.xml|6447c05b552dbea7492b6cf28082a8d33996ec0a
 vendor/etc/perf/thermalboost.conf
 vendor/etc/task_profiles.json
-vendor/lib64/liblearningmodule.so
-vendor/lib64/libmeters.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libperfioctl.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
-vendor/lib64/libqti-utils.so
-vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
-vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libperfioctl.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib/libqti-utils.so
-vendor/lib/vendor.qti.memory.pasrmanager@1.0.so
-vendor/lib/vendor.qti.memory.pasrmanager@1.1.so
+vendor/lib64/liblearningmodule.so|72cbcdbfa9a11424625aa468eea73855038ba800
+vendor/lib64/libmeters.so|e2881b626a46e7634e813ebaceda09889ad4b616
+vendor/lib64/libperfconfig.so|c69a504e3e9dd1c99770ee72cce77a9213ce6473
+vendor/lib64/libperfgluelayer.so|366f9b45ecc79d05e7b23dd1527ac78a531df739
+vendor/lib64/libperfioctl.so|95a5e7b4b7cccdff8a9cf1c14667e54ad4d777f5
+vendor/lib64/libqti-perfd-client.so|85617f9e99bb66ed467072d8483c7745ede9c525
+vendor/lib64/libqti-perfd.so|312cde1ff7c3f6141ecf85b754625933e806ad28
+vendor/lib64/libqti-util.so|edfedf2e31f21eaa43914bf3cd9c81c5437a99a3
+vendor/lib64/libqti-utils.so|1c9a0cb92802ba2314dafbe0152a7568323fff06
+vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so|fc3c761b2654b83a4216eadf8dc8698540b2de1f
+vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so|db794e0ba79fd310a8427cbcae03be05008c429f
+vendor/lib/libperfconfig.so|537c5677f965b6c652729c2a1287700126bb811f
+vendor/lib/libperfgluelayer.so|ed207c49a4be05f81f9e51d38d62de3b6674a999
+vendor/lib/libperfioctl.so|47c985388005e08a2af46e5dcba87e90608a8ec1
+vendor/lib/libqti-perfd-client.so|82c7678d378941ee7c4a92409a401aa1a3cfd59b
+vendor/lib/libqti-perfd.so|fac62e2d791b7c63dcc4965f9b513924167da70a
+vendor/lib/libqti-util.so|78bbb596a789f9de82d0fd8cd9ad400952a8581e
+vendor/lib/libqti-utils.so|3016ae3374b4de3240190d9f885c42cc3ce4d11d
+vendor/lib/vendor.qti.memory.pasrmanager@1.0.so|f4eeb7f6501b9eb81de8a8859a8e2debf9ac1744
+vendor/lib/vendor.qti.memory.pasrmanager@1.1.so|9349a527a8d50cc18d2ca03b92f82640641ec3bb
 
 # Peripheral manager
 vendor/bin/pm-proxy
