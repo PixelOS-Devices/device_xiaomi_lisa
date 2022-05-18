@@ -1,0 +1,3 @@
+allow mediaswcodec servicemanager:binder call;
+
+allow mediaswcodec gpu_device:chr_file rw_file_perms;
