@@ -770,7 +770,7 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.lahaina.so
+vendor/lib64/hw/fingerprint.fpc.so
 
 # GNSS
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
