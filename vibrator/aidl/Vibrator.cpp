@@ -307,7 +307,7 @@ int InputFFDevice::setAmplitude(uint8_t amplitude) {
 int InputFFDevice::playEffect(int effectId, EffectStrength es, long *playLengthMs) {
     switch (es) {
     case EffectStrength::LIGHT:
-        mCurrMagnitude = LIGHT_MAGNITUDE;
+        mCurrMagnitude = MEDIUM_MAGNITUDE;
         break;
     case EffectStrength::MEDIUM:
         mCurrMagnitude = MEDIUM_MAGNITUDE;
