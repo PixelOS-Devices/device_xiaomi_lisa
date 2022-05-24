@@ -48,8 +48,6 @@ case "$target" in
                 sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc/sku_version` 2> /dev/null
                 if [ $sku_ver -eq 1 ]; then
                     setprop vendor.media.target_variant "_yupik_v1"
-                else
-                    setprop vendor.media.target_variant "_yupik_v0"
                 fi
                 setprop vendor.netflix.bsp_rev "Q7325-SPY-33758-1"
                 ;;
