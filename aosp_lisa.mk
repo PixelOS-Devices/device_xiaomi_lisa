@@ -13,6 +13,7 @@ $(call inherit-product, device/xiaomi/lisa/device.mk)
 
 # Inherit some common PixelOS stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_QUICK_TAP := true
 
