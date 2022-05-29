@@ -875,6 +875,7 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 system/etc/sysconfig/qti_whitelist.xml
 -system_ext/priv-app/ims/ims.apk
 -system_ext/app/ImsRcsService/ImsRcsService.apk
+system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
