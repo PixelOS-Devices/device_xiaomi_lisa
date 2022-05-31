@@ -109,7 +109,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0-service
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.vendor.bt.a2dp.aac_whitelist=false
+    persist.vendor.bt.a2dp.aac_whitelist=false \
+    persist.vendor.btstack.enable.lpa=true
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
