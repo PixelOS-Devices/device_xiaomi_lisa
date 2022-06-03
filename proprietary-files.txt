@@ -1140,6 +1140,7 @@ vendor/etc/perf/perfconfigstore.xml|665105d2e39cf00c9508c8e7af89583bcbdcedb5
 vendor/etc/perf/targetconfig.xml|33128deb6c62a8cecf491c6c0c13d18e811cfe81
 vendor/etc/perf/targetresourceconfigs.xml|6447c05b552dbea7492b6cf28082a8d33996ec0a
 vendor/etc/perf/thermalboost.conf
+vendor/etc/powerhint.xml
 vendor/etc/task_profiles.json
 vendor/lib64/liblearningmodule.so|72cbcdbfa9a11424625aa468eea73855038ba800
 vendor/lib64/libmeters.so|e2881b626a46e7634e813ebaceda09889ad4b616
