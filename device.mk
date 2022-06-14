@@ -291,6 +291,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.qcom.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sh \
     $(LOCAL_PATH)/rootdir/bin/vendor_modprobe.sh:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_modprobe.sh
 
+# IFAA manager
+PRODUCT_PACKAGES += \
+     IFAAService
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
