@@ -535,9 +535,9 @@ vendor/firmware/vpu20_1v.mdt
 vendor/firmware/vpu20_1v_unsigned.mbn
 
 # NFC configs
+vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
-vendor/etc/libnfc-nxp_RF.conf
 
 # Sensors
 vendor/bin/init.qcom.sensors.sh
