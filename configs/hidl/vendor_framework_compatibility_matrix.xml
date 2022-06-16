@@ -125,7 +125,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </hal>
    <hal format="hidl" optional="true">
        <name>android.hardware.radio</name>
-       <version>1.0-4</version>
+       <version>1.0-6</version>
        <interface>
           <name>IRadio</name>
           <instance>slot1</instance>
@@ -614,7 +614,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </hal>
    <hal format="hidl" optional="true">
        <name>android.hardware.radio.config</name>
-       <version>1.0-1</version>
+       <version>1.0-3</version>
        <interface>
            <name>IRadioConfig</name>
            <instance>default</instance>
