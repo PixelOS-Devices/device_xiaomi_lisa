@@ -1,3 +1,7 @@
+# Bluetooth
+persist.vendor.bt.a2dp.aac_whitelist=false
+persist.vendor.btstack.enable.lpa=true
+
 # DPM
 persist.vendor.dpm.feature=11
 
