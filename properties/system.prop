@@ -2,6 +2,9 @@
 ro.bluetooth.library_name=libbluetooth_qti.so
 vendor.bluetooth.soc=hastings
 
+# Camera
+persist.vendor.camera.expose.aux=1
+
 # Charger
 ro.charger.enable_suspend=true
 

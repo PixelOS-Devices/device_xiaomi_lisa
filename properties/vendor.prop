@@ -129,6 +129,10 @@ persist.vendor.qcom.bluetooth.scram.enabled=false
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
 
+# Camera
+camera.disable_zsl_mode=1
+ro.hardware.camera=xiaomi
+
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
@@ -212,6 +216,7 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.config.vc_call_vol_steps=11
 
 # NFC
+ro.boot.product.hardware.sku=nfc
 ro.vendor.nfc.repair=1
 ro.vendor.se.type=eSE,HCE,UICC
 

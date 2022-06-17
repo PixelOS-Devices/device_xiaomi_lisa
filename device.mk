@@ -108,10 +108,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0-impl \
     android.hardware.bluetooth.a2dp@1.0-service
 
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.vendor.bt.a2dp.aac_whitelist=false \
-    persist.vendor.btstack.enable.lpa=true
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
@@ -140,13 +136,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libcamera2ndk_vendor \
     libgui_vendor
-
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.vendor.camera.expose.aux=1
-
-PRODUCT_VENDOR_PROPERTIES += \
-    camera.disable_zsl_mode=1 \
-    ro.hardware.camera=xiaomi
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera_cnf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_cnf.txt
@@ -407,9 +396,6 @@ PRODUCT_PACKAGES += \
     jcos_nq_client \
     ls_nq_client \
     se_nq_extn_client
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.boot.product.hardware.sku=nfc
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
