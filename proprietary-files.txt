@@ -694,12 +694,9 @@ vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
 # DRM
-vendor/bin/qseecomd
 vendor/etc/gpfspath_oem_config.xml
-vendor/etc/init/qseecomd.rc
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
 vendor/lib64/libcpion.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
@@ -1306,6 +1303,15 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
 vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
 vendor/lib64/android.hardware.secure_element@1.0-impl.so
+
+# Secure Execution Environment Communicator - from LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|f94e42bc48d59cfdd2b64377211da666197756b1
+vendor/bin/qseecomd|c2e739ccf7a0d44d1305f3c5c26e26ccd7758cc9
+vendor/etc/init/qseecomd.rc|0ebfb7c5d1d2459be4fdac951a182dc486f3bda7
+vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|96762c1a4bf1ba4d5b6737faec399e8561c8bf22
+vendor/lib64/libQSEEComAPI.so|10f7f3d7e45b9fdbe92ff95ae0440ecf3e6ce376
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|be03795000c1afc4c6aab37f73f6e3be27cd4c67
 
 # Sensors Configs
 vendor/etc/sensors/config/ak991x_dri_0.json
