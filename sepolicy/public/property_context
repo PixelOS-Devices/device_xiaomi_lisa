@@ -1,0 +1,3 @@
+# Mlipay
+persist.vendor.sys.pay.                 u:object_r:mlipay_prop:s0
+persist.vendor.sys.provision.status     u:object_r:mlipay_prop:s0
