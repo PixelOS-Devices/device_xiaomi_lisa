@@ -21,8 +21,10 @@
      entries do not follow the convention, but all new entries should. -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Boolean indicating whether the wifi chipset has 5GHz frequency band support -->
+    <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
 
-  <!-- Wifi driver supports OCV for softap -->
+    <!-- Wifi driver supports OCV for softap -->
     <bool translatable="false" name="config_vendor_softap_ocv_supported">true</bool>
 
     <!-- Wifi driver supports beacon protection for softap -->
