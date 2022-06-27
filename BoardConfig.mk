@@ -114,10 +114,15 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     LLVM=1 \
     LLVM_IAS=1 \
     TARGET_PRODUCT=$(PRODUCT_DEVICE)
+KERNEL_SUPPORTS_LLVM_TOOLS := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lisa
 TARGET_KERNEL_CONFIG := vendor/lisa-qgki_defconfig
 TARGET_KERNEL_CLANG_VERSION := neutron
+TARGET_CLANG_PREBUILTS_VERSION := neutron
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-neutron
+TARGET_CLANG_WITH_GNU_BINUTILS := true
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX_ARM32 := arm-linux-gnueabi-
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
