@@ -1,5 +1,2 @@
 # Xiaomi Parts
 allow system_app sysfs_thermal:file rw_file_perms;
-
-# Zygote
-allow system_app zygote:unix_stream_socket { getopt };
