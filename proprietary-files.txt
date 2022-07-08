@@ -502,8 +502,6 @@ vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/com.qti.settings.kodiak.so
 
 # Camera
-system/lib/libhidltransport.so|7ccdc89e9effa7f55e846bf02f7356c731857b51
-system/lib64/libhidltransport.so|d505e4a77b78e55de6635e3569c644ff0c1e61cb
 vendor/lib64/HDR10plus.so
 vendor/lib/libcamxexternalformatutils.so
 vendor/lib64/com.qti.chiusecaseselector.so
