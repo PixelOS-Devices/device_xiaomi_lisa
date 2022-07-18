@@ -800,4 +800,16 @@
 
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">5</integer>
+   
+    <!-- Defines the sysfs attribute path used by the device
+         to enable/disable DC dimming. -->
+    <string name="config_deviceDcDimmingSysfsNode">/sys/devices/virtual/mi_display/disp_feature/disp-DSI-0/disp_param</string>
+
+    <!-- Defines the value used by the device sysfs node
+         to enable DC dimming -->
+    <string name="config_deviceDcDimmingEnableValue">08 01</string>
+
+    <!-- Defines the value used by the device sysfs node
+         to disable DC dimming -->
+    <string name="config_deviceDcDimmingDisableValue">08 00</string>
 </resources>
