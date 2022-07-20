@@ -1,3 +1,6 @@
+# Bluetooth
+bluetooth.hardware.power.operating_voltage_mv=3700
+
 # DPM
 persist.vendor.dpm.feature=11
 
