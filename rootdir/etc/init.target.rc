@@ -267,6 +267,10 @@ on boot
     chown system system /sys/class/mi_display/disp-DSI-1/dynamic_fps
     chmod 0444 /sys/class/mi_display/disp-DSI-1/dynamic_fps
 
+    # Set dimlayer exposure permission
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_exposure
+    chmod 0664 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_exposure
+
     #touch funtions permissions setting
     chown system system /sys/class/touch/touch_dev/palm_sensor
     chmod 0664 /sys/class/touch/touch_dev/palm_sensor
@@ -380,6 +384,12 @@ on property:persist.sys.mcc.mnc=*
     setprop persist.vendor.mcc.mnc ${persist.sys.mcc.mnc}
 
 service init-sensors_fix-sh /vendor/bin/init.sensors_fix.sh
+    class main
+    user system
+    group system
+    oneshot
+
+service init-panel_name-sh /vendor/bin/init.panel_name.sh
     class main
     user system
     group system
