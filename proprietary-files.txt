@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from missi-user-12-SKQ1.211006.001-V13.0.4.0.SKOMIXM-release-keys
+# All unpinned blobs below are extracted from missi-user-12-SKQ1.211006.001-V13.0.5.0.SKOMIXM-release-keys
 
 # ACDB libraries
 vendor/lib/libacdb-fts.so
