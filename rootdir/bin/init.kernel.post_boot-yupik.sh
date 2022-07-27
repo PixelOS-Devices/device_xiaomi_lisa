@@ -182,9 +182,6 @@ echo 0 > /proc/sys/kernel/sched_coloc_busy_hysteresis_enable_cpus
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/kernel/sched_boost
 
-# Disable cdsprpcd daemon
-setprop vendor.fastrpc.disable.cdsprpcd.daemon 1
-
 # configure governor settings for silver cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
