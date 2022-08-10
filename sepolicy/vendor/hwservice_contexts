@@ -12,3 +12,6 @@ vendor.nxp.nxpnfc::INxpNfc                                                    u:
 
 # Xiaomi CIT sensor service
 vendor.xiaomi.hardware.citsensorservice::ICitSensorService   u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0
+
+# Xiaomi DIsplayfeature
+vendor.xiaomi.hardware.displayfeature::IDisplayFeature       u:object_r:vendor_hal_displayfeature_xiaomi_hwservice:s0

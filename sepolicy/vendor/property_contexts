@@ -17,3 +17,11 @@ persist.vendor.security.spuari.              u:object_r:vendor_security_spuari_p
 
 # Thermal
 vendor.sys.thermal.                u:object_r:vendor_thermal_normal_prop:s0
+
+# Displayfeature
+ro.vendor.display.dither                              u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.display.mi_calib.enable                     u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.histogram.enable                            u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.sre.enable                                  u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.xiaomi.bl.poll                              u:object_r:vendor_displayfeature_prop:s0
+init.svc.vendor.displayfeature-hal-1-0                u:object_r:vendor_displayfeature_prop:s0
