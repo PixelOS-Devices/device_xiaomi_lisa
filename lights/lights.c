@@ -38,6 +38,14 @@
 #define DEFAULT_LOW_PERSISTENCE_MODE_BRIGHTNESS 0x80
 #endif
 
+#define PANEL_MAX_BRIGHTNESS 4095
+#define PANEL_MIN_BRIGHTNESS 8
+#define PANEL_BRIGHTNESS_RANGE (PANEL_MAX_BRIGHTNESS - PANEL_MIN_BRIGHTNESS)
+
+#define USERSPACE_MAX_BRIGHTNESS 255
+#define USERSPACE_MIN_BRIGHTNESS 1
+#define USERSPACE_BRIGHTNESS_RANGE (USERSPACE_MAX_BRIGHTNESS - USERSPACE_MIN_BRIGHTNESS)
+
 /******************************************************************************/
 
 static pthread_once_t g_init = PTHREAD_ONCE_INIT;
@@ -60,9 +68,6 @@ char const*const BUTTON_FILE
 char const*const PERSISTENCE_FILE
         = "/sys/class/graphics/fb0/msm_fb_persist_mode";
 
-static int PANEL_MAX_BRIGHTNESS = 4095;
-static int USERSPACE_MAX_BRIGHTNESS = 255;
-
 enum rgb_led {
     LED_WHITE = 0,
 };
@@ -70,6 +75,7 @@ enum rgb_led {
 char *led_names[] = {
     "white",
 };
+
 /**
  * device methods
  */
@@ -135,7 +141,8 @@ scale_brightness(int brightness)
     if (brightness == 0)
         return 0;
 
-    return (brightness - 1) * (PANEL_MAX_BRIGHTNESS - 1) / (USERSPACE_MAX_BRIGHTNESS - 1) + 1;
+    return (brightness - USERSPACE_MIN_BRIGHTNESS) * PANEL_BRIGHTNESS_RANGE
+            / USERSPACE_BRIGHTNESS_RANGE + PANEL_MIN_BRIGHTNESS;
 }
 
 static int
@@ -146,11 +153,15 @@ set_light_backlight(struct light_device_t* dev,
     int brightness = scale_brightness(rgb_to_brightness(state));
     unsigned int lpEnabled =
         state->brightnessMode == BRIGHTNESS_MODE_LOW_PERSISTENCE;
-    if(!dev) {
+    if (!dev) {
         return -1;
     }
 
+    ALOGV("%s: brightness=%d scaled_brightness=%d",
+            __FUNCTION__, rgb_to_brightness(state), brightness);
+
     pthread_mutex_lock(&g_lock);
+
     // Toggle low persistence mode state
     bool persistence_mode = ((g_last_backlight_mode != state->brightnessMode && lpEnabled) ||
                             (!lpEnabled &&
