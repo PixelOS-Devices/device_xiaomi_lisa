@@ -1016,6 +1016,7 @@ vendor/lib/c2.dolby.hevc.sec.dec.so
 vendor/lib/c2.dolby.store.so
 vendor/lib/libdolbyottcameracontrol.so
 vendor/lib/libdovi.so
+vendor/lib/libavservices_minijail_vendor.so
 
 # Media (VPU firmware)
 vendor/firmware/vpu20_1v.b00
