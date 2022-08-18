@@ -1,5 +1,4 @@
 # Bluetooth
-ro.bluetooth.library_name=libbluetooth_qti.so
 vendor.bluetooth.soc=hastings
 
 # Camera
