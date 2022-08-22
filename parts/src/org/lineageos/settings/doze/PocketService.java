@@ -24,7 +24,7 @@ import android.util.Log;
 
 public class PocketService extends Service {
     private static final String TAG = "PocketService";
-    private static final boolean DEBUG = true;
+    private static final boolean DEBUG = false;
 
     /* xiaomi.sensor.large_area_detect */
     private static final int TYPE_LARGE_AREA_TOUCH_SENSOR = 33171031;
