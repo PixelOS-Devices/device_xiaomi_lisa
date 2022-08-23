@@ -84,6 +84,9 @@ on init
     chmod 0660 /dev/sr100
     chown uwb uwb /dev/sr100
 
+    # Boot time fs tuning
+    write /dev/sys/fs/by-name/userdata/data_io_flag 56
+    write /dev/sys/fs/by-name/userdata/node_io_flag 56
 
 on early-fs
     start vold
@@ -291,6 +294,11 @@ on boot
     chown root system /sys/devices/platform/soc/1d84000.ufshc/ufscld/trigger
     chown root system /sys/devices/platform/soc/1d84000.ufshc/ufscld/trigger_interval
     chmod 664 /sys/devices/platform/soc/1d84000.ufshc/ufscld/trigger
+
+on property:sys.boot_completed=1
+    # Runtime fs tuning
+    write /dev/sys/fs/by-name/userdata/data_io_flag 8
+    write /dev/sys/fs/by-name/userdata/node_io_flag 8
 
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
