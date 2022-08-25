@@ -32,13 +32,13 @@ ________________________________________________________________________________
     <PerfConfigs>
 
                 <!--Vendor Properties -->
-                <Prop Name="vendor.iop.enable_uxe" Value="1" />
+                <Prop Name="vendor.iop.enable_uxe" Value="0" />
                 <Prop Name="vendor.debug.enable.lm" Value="true" />
-                <Prop Name="vendor.perf.iop_v3.enable" Value="true" Target="lahaina" />
+                <Prop Name="vendor.perf.iop_v3.enable" Value="false" />
                 <Prop Name="vendor.perf.iop_v3.enable.debug" Value="false" />
                 <Prop Name="vendor.enable.prefetch" Value="false" />
                 <Prop Name="vendor.iop.enable_prefetch_ofr" Value="false" />
-                <Prop Name="vendor.iop.enable_speed" Value="true" />
+                <Prop Name="vendor.iop.enable_speed" Value="false" />
                 <Prop Name="vendor.perf.fps_switch_hyst_time_secs" Value="10" />
                 <Prop Name="vendor.debug.enable.memperfd" Value="true" Target="shima" />
                 <Prop Name="vendor.debug.enable.memperfd" Value="true" Target="yupik" />
