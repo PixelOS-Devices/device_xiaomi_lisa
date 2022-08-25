@@ -11,7 +11,6 @@ BOARD_VENDOR := xiaomi
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_DUP_RULES := true
-SELINUX_IGNORE_NEVERALLOWS := true
 
 # Inherit from proprietary files for miuicamera
 -include vendor/xiaomi/lisa-miuicamera/products/board.mk
@@ -133,7 +132,6 @@ BOARD_KERNEL_CMDLINE += swiotlb=noforce
 BOARD_KERNEL_CMDLINE += pcie_ports=compat
 BOARD_KERNEL_CMDLINE += iptable_raw.raw_before_defrag=1
 BOARD_KERNEL_CMDLINE += ip6table_raw.raw_before_defrag=1
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Kernel modules
 BOOT_KERNEL_MODULES := \
