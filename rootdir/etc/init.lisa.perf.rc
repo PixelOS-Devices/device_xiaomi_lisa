@@ -48,6 +48,9 @@ on property:vendor.post_boot.parsed=1
 
     # Configure uclamp
     write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/background/cpu.uclamp.max 50
+    write /dev/cpuctl/system-background/cpu.uclamp.max 50
+    write /dev/cpuctl/dex2oat/cpu.uclamp.max 60
 
 on property:ro.board.platform=lahaina
     # Setup foreground cpuset for display composer.
