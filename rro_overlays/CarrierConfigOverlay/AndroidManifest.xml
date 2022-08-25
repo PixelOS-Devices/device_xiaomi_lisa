@@ -15,7 +15,7 @@
 -->
 <!-- lisa specific carrier overlays -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.carrierconfig.lisa"
+    package="com.android.carrierconfig.overlay.lisa"
     android:versionCode="1"
     android:versionName="1.0">
     <application android:hasCode="false" />
