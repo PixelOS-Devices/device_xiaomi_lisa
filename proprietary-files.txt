@@ -994,7 +994,6 @@ vendor/bin/hw/dolbycodec2
 vendor/etc/dolby_vision.cfg
 vendor/etc/init/dolbycodec2.rc
 vendor/etc/media_codecs_system_default_yupik.xml
-vendor/etc/media_codecs_with_dolby_yupik.xml
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_profiles.xml
