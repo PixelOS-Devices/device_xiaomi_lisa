@@ -10,6 +10,9 @@ ro.charger.enable_suspend=true
 # CNE
 persist.vendor.cne.feature=1
 
+# Display
+ro.sf.force_hwc_brightness=1
+
 # Dolby
 persist.pixelpropsutils.spoof_netflix=true
 
