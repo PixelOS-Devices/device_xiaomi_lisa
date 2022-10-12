@@ -21,8 +21,9 @@
      for different hardware and product builds. -->
 <resources>
 
-    <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">9dp</dimen>
-    <dimen name="status_bar_padding_start">3dp</dimen>
-    <dimen name="status_bar_padding_end">4dp</dimen>
+    <!-- The padding around the statusbar -->
+    <dimen name="status_bar_padding_top">8dp</dimen>
+    <dimen name="status_bar_padding_start">4dp</dimen>
+    <dimen name="status_bar_padding_end">3dp</dimen>
+
 </resources>
