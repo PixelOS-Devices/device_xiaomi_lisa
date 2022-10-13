@@ -41,7 +41,8 @@ public class DiracSettingsFragment extends PreferenceFragment implements
     private static final String PREF_ENABLE = "dirac_enable";
     private static final String PREF_HEADSET = "dirac_headset_pref";
     private static final String PREF_PRESET = "dirac_preset_pref";
-    private static final String PREF_SCENE = "scenario_selection";
+
+    public static final String PREF_SCENE = "scenario_selection";
 
     private MainSwitchPreference mSwitchBar;
 

@@ -26,6 +26,8 @@ import android.media.session.MediaController;
 import android.media.session.MediaSessionManager;
 import android.media.session.PlaybackState;
 import java.util.List;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 
 public final class DiracUtils {
 
@@ -88,6 +90,15 @@ public final class DiracUtils {
     protected static void setEnabled(boolean enable) {
         mDiracSound.setEnabled(enable);
         mDiracSound.setMusic(enable ? 1 : 0);
+    }
+
+    public static void onBootCompleted(Context context) {
+         DiracUtils.initialize(context);
+
+         // Restore selected scene
+         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+         String scene = sharedPrefs.getString(DiracSettingsFragment.PREF_SCENE, "4" /* smart */);
+         setScenario(Integer.parseInt(scene));
     }
 
     protected static boolean isDiracEnabled() {

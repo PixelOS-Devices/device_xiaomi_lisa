@@ -37,7 +37,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         }
 
         // Dirac
-        DiracUtils.initialize(context);
+        DiracUtils.onBootCompleted(context);
 
         // Thermal Profiles
         ThermalUtils.startService(context);
