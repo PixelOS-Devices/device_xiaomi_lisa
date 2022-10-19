@@ -339,8 +339,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
-    $(LOCAL_PATH)/configs/media/media_codecs_with_dolby_yupik.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_with_dolby_yupik.xml
+    $(LOCAL_PATH)/configs/media/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \

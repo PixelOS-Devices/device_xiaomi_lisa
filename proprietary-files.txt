@@ -996,6 +996,7 @@ vendor/etc/dolby_vision.cfg
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_codecs_system_default_yupik.xml
+vendor/etc/media_codecs_with_dolby_yupik.xml
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
 vendor/etc/media_profiles_lahaina.xml
@@ -1047,11 +1048,12 @@ vendor/etc/media_shima_v1/video_system_specs.json
 vendor/etc/media_yupik_v1/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
--vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/etc/media_codecs_performance_yupik_v1.xml
 vendor/etc/media_codecs_yupik_v1.xml
 vendor/etc/media_profiles_yupik_v1.xml
 vendor/etc/video_system_specs.json
+vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl@1.0.stock.so
+vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk.stock.so
 vendor/lib/libC2D2.so
 vendor/lib/libc2d30_bltlib.so
 vendor/lib/libmmosal.so
