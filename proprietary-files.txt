@@ -1146,7 +1146,6 @@ vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/commonsysnodesconfigs.xml
 vendor/etc/perf/thermalboost.conf
-vendor/etc/powerhint.xml
 vendor/etc/task_profiles.json
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters.so
