@@ -9,7 +9,8 @@ $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 
 # Overlays-RRO
 PRODUCT_PACKAGES += \
