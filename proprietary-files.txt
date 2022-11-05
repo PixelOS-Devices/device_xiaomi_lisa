@@ -84,6 +84,7 @@ vendor/lib/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libloadalgo_stub.so
+vendor/lib64/libtinycompress.so
 
 # Audio FX modules
 system_ext/etc/permissions/audiosphere.xml
