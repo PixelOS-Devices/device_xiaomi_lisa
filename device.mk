@@ -101,7 +101,9 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     libbthost_if \
     libbthost_if.vendor \
-    libldacBT_bco.vendor
+    libldacBT_abr \
+    libldacBT_bco.vendor \
+    libldacBT_enc
 
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
@@ -110,6 +112,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/aptX/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
+    $(LOCAL_PATH)/configs/aptX/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
