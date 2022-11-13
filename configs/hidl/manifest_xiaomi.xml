@@ -8,12 +8,22 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- Xiaomi additions -->
     <hal format="hidl">
         <name>vendor.xiaomi.hardware.campostproc</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>IMiPostProcService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.displayfeature</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IDisplayFeature</name>
             <instance>default</instance>
         </interface>
     </hal>
