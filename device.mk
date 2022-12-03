@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
     libbthost_if \
     libbthost_if.vendor \
     libldacBT_abr \
+    libldacBT_bco \
     libldacBT_bco.vendor \
     libldacBT_enc
 
