@@ -681,8 +681,8 @@
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDim">8</integer>
-    <item name="config_screenBrightnessDimFloat" format="float" type="dimen">0.00195360195</item>
+    <integer name="config_screenBrightnessDim">10</integer>
+    <item name="config_screenBrightnessDimFloat" format="float" type="dimen">0.00244200244</item>
 
     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
     <bool name="config_dozePulsePickup">true</bool>
