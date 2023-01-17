@@ -108,15 +108,17 @@ on fs
     mount vfat /dev/block/bootdevice/by-name/logfs /dev/logfs noatime umask=006,uid=1000,gid=1000
     mount ext4 /dev/block/bootdevice/by-name/rescue /mnt/rescue noatime
     restorecon_recursive /mnt/rescue
+    chown system system /sys/class/smartpa/re25_calib
     chown system system /dev/tfa_reg
     chown system system /dev/tfa_rw
     chown system system /dev/tfa_rpc
     chown system system /dev/tfa_control
+    chmod 0666 /sys/class/smartpa/re25_calib
     chmod 0660 /dev/tfa_reg
     chmod 0660 /dev/tfa_rw
     chmod 0660 /dev/tfa_rpc
     chmod 0660 /dev/tfa_control
-
+    chmod 0666 /dev/xlog
 
 on fs && property:ro.boot.product.vendor.sku=lahaina
     mkdir /mnt/vendor/spunvm 0660 system system
@@ -136,8 +138,6 @@ on late-fs
 
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
-    setprop persist.sys.offlinelog.logcat true
-    setprop persist.sys.offlinelog.logcatkernel true
     chmod 0644 /dev/elliptic0
     chmod 0644 /dev/elliptic1
     chmod 0660 /dev/ir_spi
@@ -191,16 +191,26 @@ on post-fs-data
     restorecon /sys/module/migt/parameters/force_stask_to_big
     chmod 0666 /sys/module/migt/parameters/force_reset_runtime
     restorecon /sys/module/migt/parameters/force_reset_runtime
+    chmod 0666 /sys/module/migt/parameters/mi_viptask
+    restorecon /sys/module/migt/parameters/mi_viptask
     mkdir /data/vendor/misc/display 0771 system system
 
 on early-boot
     start vendor.sensors
+    verity_update_state
     # Enable WLAN cold boot calibration
     write /sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/fs_ready 1
     chmod 0202 /sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/data_stall
 
 on boot
     chown system system /sys/class/thermal/thermal_message/sconfig
+    chown system system /sys/class/thermal/thermal_message/balance_mode
+    chown system system /sys/class/thermal/thermal_message/charger_temp
+    chown cameraserver cameraserver /sys/class/thermal/thermal_message/flash_state
+    write /dev/cpuset/audio-app/cpus 1-2
+    # init the  cpuset value for the camera background,don't change the oder
+    write /dev/cpuset/camera-background/background/cpus 0-2
+    write /dev/cpuset/camera-background/cpus 0-3
 
     # Set xiaomi touch permissions
     chown system system /dev/xiaomi-touch
@@ -267,6 +277,15 @@ on boot
     chmod 0664 /sys/class/mi_display/disp-DSI-1/disp_count
     chown system system /sys/class/mi_display/disp-DSI-0/brightness_clone
     chmod 0664 /sys/class/mi_display/disp-DSI-0/brightness_clone
+    chown system system /sys/class/mi_display/disp-DSI-0/max_brightness_clone
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/max_brightness_clone
+
+    # Display feature sysfs node for penel1
+    chown system system /sys/class/mi_display/disp-DSI-1/brightness_clone
+    chmod 0664 /sys/class/mi_display/disp-DSI-1/brightness_clone
+    chown system system /sys/class/mi_display/disp-DSI-1/max_brightness_clone
+    chmod 0664 /sys/class/mi_display/disp-DSI-1/max_brightness_clone
+
     chown system system /sys/class/mi_display/disp-DSI-1/dynamic_fps
     chmod 0444 /sys/class/mi_display/disp-DSI-1/dynamic_fps
 
@@ -323,17 +342,51 @@ on charger
     setprop sys.usb.configfs 1
     write /sys/module/lpm_levels/parameters/sleep_disabled N
 
+on property:vendor.audio.cit.spkcal.copy=true
+    copy /data/vendor/cit/cs35l41_cal.bin /mnt/vendor/persist/audio/cs35l41_cal.bin
+    copy /data/vendor/cit/cs35l41_cal_right.bin /mnt/vendor/persist/audio/cs35l41_cal_right.bin
+    copy /data/vendor/cit/cs35l41_cal.txt /mnt/vendor/persist/audio/cs35l41_cal.txt
+    copy /data/vendor/cit/cs35l41_cal_right.txt /mnt/vendor/persist/audio/cs35l41_cal_right.txt
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal.bin
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_right.bin
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal.txt
+    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_right.txt
+    copy /data/vendor/cit/tfa9894_chk.txt /mnt/vendor/persist/audio/tfa9894_chk.txt
+    chmod 666 /mnt/vendor/persist/audio/tfa9894_chk.txt
+    copy /data/vendor/cit/cs35l45_cal_mt.bin /mnt/vendor/persist/audio/cs35l45_cal_mt.bin
+    copy /data/vendor/cit/cs35l45_cal_md.bin /mnt/vendor/persist/audio/cs35l45_cal_md.bin
+    copy /data/vendor/cit/cs35l45_cal_ft.bin /mnt/vendor/persist/audio/cs35l45_cal_ft.bin
+    copy /data/vendor/cit/cs35l45_cal_fd.bin /mnt/vendor/persist/audio/cs35l45_cal_fd.bin
+    copy /data/vendor/cit/cs35l45_cal_mt.txt /mnt/vendor/persist/audio/cs35l45_cal_mt.txt
+    copy /data/vendor/cit/cs35l45_cal_md.txt /mnt/vendor/persist/audio/cs35l45_cal_md.txt
+    copy /data/vendor/cit/cs35l45_cal_ft.txt /mnt/vendor/persist/audio/cs35l45_cal_ft.txt
+    copy /data/vendor/cit/cs35l45_cal_fd.txt /mnt/vendor/persist/audio/cs35l45_cal_fd.txt
+    chmod 666 /mnt/vendor/persist/audio/cs35l45_cal_mt.bin
+    chmod 666 /mnt/vendor/persist/audio/cs35l45_cal_md.bin
+    chmod 666 /mnt/vendor/persist/audio/cs35l45_cal_ft.bin
+    chmod 666 /mnt/vendor/persist/audio/cs35l45_cal_fd.bin
+    chmod 666 /mnt/vendor/persist/audio/cs35l45_cal_mt.txt
+    chmod 666 /mnt/vendor/persist/audio/cs35l45_cal_md.txt
+    chmod 666 /mnt/vendor/persist/audio/cs35l45_cal_ft.txt
+    chmod 666 /mnt/vendor/persist/audio/cs35l45_cal_fd.txt
+    copy /data/vendor/cit/aw_cali.bin /mnt/vendor/persist/audio/aw_cali.bin
+    copy /data/vendor/cit/aw88263_chk.txt /mnt/vendor/persist/audio/aw88263_chk.txt
+    chmod 666 /mnt/vendor/persist/audio/aw_cali.bin
+    chmod 666 /mnt/vendor/persist/audio/aw88263_chk.txt
+
 service vendor.lowi /vendor/bin/lowirpcd
    class core
    user system
    group system wakelock
    capabilities BLOCK_SUSPEND
 
+#pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
     user system
     group system
 
+#Peripheral manager
 service vendor.per_mgr /vendor/bin/pm-service
     class core
     user system
@@ -345,7 +398,7 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     user system
     group system
     disabled
-    
+
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
 
@@ -356,6 +409,11 @@ service vendor.nv_mac /vendor/bin/nv_mac
     class late_start
     user system
     group system inet net_admin wifi net_raw
+    oneshot
+
+service l5_hal_test /vendor/bin/l5_hal_test GETCFG
+    class late_start
+    disabled
     oneshot
 
 service displayfeature /vendor/bin/displayfeature
@@ -382,10 +440,56 @@ service displaycount /vendor/bin/displaycount
 on property:sys.boot_completed=1
     start displaycount
 
+#####copy megvii files#####
+on property:sys.boot_completed=1
+    mkdir /data/vendor/camera/model 0777 cameraserver audio
+    mkdir /data/vendor/camera/model/rt_model 0777 cameraserver audio
+    copy /vendor/etc/camera/model/rt_model/preview_model /data/vendor/camera/model/rt_model/preview_model
+    chown cameraserver audio  /data/vendor/camera/model/rt_model/preview_model
+    chmod 0777 /data/vendor/camera/model/rt_model/preview_model
+    copy /vendor/etc/camera/model/rt_model/preview_cache /data/vendor/camera/model/rt_model/preview_cache
+    chown cameraserver audio  /data/vendor/camera/model/rt_model/preview_cache
+    chmod 0777 /data/vendor/camera/model/rt_model/preview_cache
+    copy /vendor/etc/camera/model/rt_model/preview_policy /data/vendor/camera/model/rt_model/preview_policy
+    chown cameraserver audio  /data/vendor/camera/model/rt_model/preview_policy
+    chmod 0777 /data/vendor/camera/model/rt_model/preview_policy
+    mkdir /data/vendor/camera/model/dof_model 0777 cameraserver audio
+    copy /vendor/etc/camera/model/dof_model/capture_cache /data/vendor/camera/model/dof_model/capture_cache
+    chown cameraserver audio  /data/vendor/camera/model/dof_model/capture_cache
+    chmod 0777 /data/vendor/camera/model/dof_model/capture_cache
+    copy /vendor/etc/camera/model/dof_model/capture_model /data/vendor/camera/model/dof_model/capture_model
+    chown cameraserver audio  /data/vendor/camera/model/dof_model/capture_model
+    chmod 0777 /data/vendor/camera/model/dof_model/capture_model
+    copy /vendor/etc/camera/model/dof_model/capture_policy /data/vendor/camera/model/dof_model/capture_policy
+    chown cameraserver audio  /data/vendor/camera/model/dof_model/capture_policy
+    chmod 0777 /data/vendor/camera/model/dof_model/capture_policy
+    #####copy fusion models#####
+    mkdir /data/vendor/camera/fusion_models 0777 cameraserver audio
+    copy /vendor/etc/camera/fusion_models/fusion_cache /data/vendor/camera/fusion_models/fusion_cache
+    chown cameraserver audio  /data/vendor/camera/fusion_models/fusion_cache
+    chmod 0777 /data/vendor/camera/fusion_models/fusion_cache
+    copy /vendor/etc/camera/fusion_models/fusion_model /data/vendor/camera/fusion_models/fusion_model
+    chown cameraserver audio  /data/vendor/camera/fusion_models/fusion_model
+    chmod 0777 /data/vendor/camera/fusion_models/fusion_model
+    copy /vendor/etc/camera/fusion_models/fusion_policy /data/vendor/camera/fusion_models/fusion_policy
+    chown cameraserver audio  /data/vendor/camera/fusion_models/fusion_policy
+    chmod 0777 /data/vendor/camera/fusion_models/fusion_policy
+    start l5_hal_test
+
 on property:sys.lmkd.memory.compact=1
     setprop sys.lmkd.memory.compact 0
     write /proc/sys/vm/reclaim_pages ${sys.lmkd.memory.reclaim_pages}
     write /proc/sys/vm/compact_memory 1
+
+on property:sys.lmkd.memory.start_reclaim_in_video_record=1
+    setprop sys.lmkd.memory.start_reclaim_in_video_record 0
+    write /sys/kernel/cam_reclaim/config "0 1 1 200000 200000 0 0 12000000000"
+    write /sys/kernel/cam_reclaim/event 1
+
+on property:sys.lmkd.memory.start_reclaim_in_cam_boost=1
+    setprop sys.lmkd.memory.start_reclaim_in_cam_boost 0
+    write /sys/kernel/cam_reclaim/config "0 1 3 400000 400000 0 0 12000000000"
+    write /sys/kernel/cam_reclaim/event 1
 
 # gps Sync attribute value between system and vendor
 on property:persist.sys.mcc.mnc=*
