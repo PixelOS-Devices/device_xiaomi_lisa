@@ -5,11 +5,12 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <!-- Radius of the software rounded corners at the top of the display in its natural
-        orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_top">102px</dimen>
+    <!-- the padding of the rounded corner -->
+    <dimen name="rounded_corner_content_padding">16dp</dimen>
 
-    <!-- Radius of the software rounded corners at the bottom of the display in its natural
-        orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_bottom">102px</dimen>
+    <!-- Radius of the software rounded corners of the display in it's natural orientation-->
+    <dimen name="rounded_corner_radius">126px</dimen>
+
+    <!-- Adjustment for software rounded corners since corners aren't perfectly round. -->
+    <dimen name="rounded_corner_radius_adjustment">30px</dimen>
 </resources>
