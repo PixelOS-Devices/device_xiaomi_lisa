@@ -34,9 +34,8 @@ on property:vendor.post_boot.parsed=1
     setprop dalvik.vm.dex2oat-threads 6
 
     # Configure CPU input boost
-    write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:1324800 4:1228800"
-    write /sys/devices/system/cpu/cpu_boost/input_boost_ms 120
-    write /sys/devices/system/cpu/cpu_boost/sched_boost_on_input 1
+    write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:1324800"
+    write /sys/devices/system/cpu/cpu_boost/input_boost_ms 150
 
     # Configure schedutil ratelimits
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
@@ -51,9 +50,6 @@ on property:vendor.post_boot.parsed=1
     write /proc/sys/kernel/sched_downmigrate "60 75"
     write /proc/sys/kernel/sched_group_upmigrate 95
     write /proc/sys/kernel/sched_group_downmigrate 75
-    write /sys/devices/system/cpu/cpu0/core_ctl/enable 0
-    write /sys/devices/system/cpu/cpu4/core_ctl/enable 0
-    write /sys/devices/system/cpu/cpu7/core_ctl/enable 0
 
     # Configure uclamp
     write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
