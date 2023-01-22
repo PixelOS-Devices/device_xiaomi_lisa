@@ -100,8 +100,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    libbthost_if \
-    libbthost_if.vendor \
     libldacBT_abr \
     libldacBT_bco \
     libldacBT_bco.vendor \
