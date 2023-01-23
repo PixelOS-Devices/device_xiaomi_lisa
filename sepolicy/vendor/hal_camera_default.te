@@ -10,4 +10,4 @@ r_dir_file(hal_camera_default, camera_persist_file)
 allow hal_camera_default public_adsprpcd_file:file r_file_perms;
 allow hal_camera_default vendor_xdsp_device:chr_file r_file_perms;
 
-hal_attribute_hwservice(hal_camera, hal_xiaomi_camera_hwservice)
+add_hwservice(hal_camera_default, hal_xiaomi_camera_hwservice)

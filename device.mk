@@ -133,6 +133,8 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
 # Camera
+$(call inherit-product-if-exists, device/xiaomi/lisa-miuicamera/config.mk)
+
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
