@@ -709,7 +709,7 @@ vendor/etc/display/DPU7__.xml
 vendor/etc/display/advanced_sf_offsets.xml
 
 # Display
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
+vendor/bin/hw/vendor.qti.hardware.display.composer-service|655461b1f0de3f7f22541d227e66d3e73bcfdba2
 vendor/bin/init.qti.display_boot.sh
 vendor/lib64/libclient2slpi.notifier.so
 vendor/lib64/libdisp-aba.so
