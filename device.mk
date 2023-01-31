@@ -135,6 +135,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libcamera2ndk_vendor \
+    libion.vendor \
     libgui_vendor
 
 PRODUCT_COPY_FILES += \

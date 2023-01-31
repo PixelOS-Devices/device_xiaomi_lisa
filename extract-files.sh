@@ -92,6 +92,9 @@ function blob_fixup() {
         system_ext/lib/libwfdnative.so | system_ext/lib64/libwfdnative.so )
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
+        vendor/lib64/libwa_sat.so)
+            sed -i 's/\/system\/lib64\([^\/]\)/\/vendor\/lib64\1/g' "${2}"
+            ;;
     esac
 }
 
