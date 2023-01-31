@@ -533,6 +533,7 @@ vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 vendor/lib64/libfocus.so
 vendor/lib64/libhexagon_controller.so
+vendor/lib64/libhta.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libipebpsstriping170.so
 vendor/lib64/libjpege.so
