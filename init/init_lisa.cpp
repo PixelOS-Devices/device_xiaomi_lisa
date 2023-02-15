@@ -91,24 +91,24 @@ void vendor_load_properties() {
         model = "2109119DG";
         brand = "Xiaomi";
         device = "lisa";
-        fingerprint = "Xiaomi/lisa_global/lisa:12/RKQ1.211001.001/V13.0.4.0.SKOMIXM:user/release-keys";
-        description = "lisa-user 12 RKQ1.211001.001 V13.0.4.0.SKOMIXM release-keys";
+        fingerprint = "Xiaomi/lisa_global/lisa:13/RKQ1.211001.001/V14.0.2.0.TKOMIXM:user/release-keys";
+        description = "lisa-user 13 RKQ1.211001.001 V14.0.2.0.TKOMIXM release-keys";
         marketname = "Xiaomi 11 Lite 5G NE";
         mod_device = "lisa_global";
     } else if (region == "IN") {
             model = "2109119DI";
             brand = "Xiaomi";
             device = "lisa";
-            fingerprint = "Xiaomi/lisa_in/lisa:12/RKQ1.211001.001/V13.0.4.0.SKOMIXM:user/release-keys";
-            description = "lisa-user 12 RKQ1.211001.001 V13.0.4.0.SKOMIXM release-keys";
+            fingerprint = "Xiaomi/lisa_in/lisa:13/RKQ1.211001.001/V14.0.3.0.TKOINXM:user/release-keys";
+            description = "lisa-user 13 RKQ1.211001.001 V14.0.3.0.TKOINXM release-keys";
             marketname = "Xiaomi 11 Lite NE";
             mod_device = "lisa_in_global";
    } else {
         model = "2107119DC";
         brand = "Xiaomi";
         device = "lisa";
-        fingerprint = "Xiaomi/lisa/lisa:12/RKQ1.211001.001/V13.0.4.0.SKOMIXM:user/release-keys";
-        description = "lisa-user 12 RKQ1.211001.001 V13.0.4.0.SKOMIXM release-keys";
+        fingerprint = "Xiaomi/lisa/lisa:13/RKQ1.211001.001/V14.0.5.0.TKOCNXM:user/release-keys";
+        description = "lisa-user 13 RKQ1.211001.001 V14.0.5.0.TKOCNXM release-keys";
         marketname = "Mi 11 LE";
         mod_device = "lisa_pre";
     }
