@@ -540,6 +540,8 @@ void* HalProxy::getHandleForSubHalSharedObject(const std::string& filename) {
         void* handle = dlopen((dir + filename).c_str(), RTLD_NOW);
         if (handle != nullptr) {
             return handle;
+        } else {
+            ALOGE("%s: %s %s", __func__, (dir + filename).c_str(), dlerror());
         }
     }
     return nullptr;
