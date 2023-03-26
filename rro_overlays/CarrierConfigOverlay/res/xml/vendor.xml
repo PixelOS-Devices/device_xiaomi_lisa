@@ -6708,6 +6708,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int-array name="carrier_nr_availabilities_int_array" num="1"> 
             <item value="2" /> 
         </int-array>
+        <!-- PA: Enable VoNR on Jio -->
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <!--印度 IN Vodafone-->
     <carrier_config mcc="405" mnc="66,67,750,751,752,753,754,755,756">
