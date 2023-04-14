@@ -1,4 +1,4 @@
-# Device proprietary files - from lisa MIUI V14.0.2.0.TKOMIXM package, unless pinned
+# Device proprietary files - from lisa MIUI V14.0.3.0.TKOMIXM package, unless pinned
 
 # ACDB libraries
 vendor/lib/libacdb-fts.so
