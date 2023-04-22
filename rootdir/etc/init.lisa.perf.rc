@@ -73,6 +73,9 @@ on property:vendor.post_boot.parsed=1
     # Enable suspend to RAM
     write /sys/power/mem_sleep "deep"
 
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
 on property:ro.board.platform=lahaina
     # Setup foreground cpuset for display composer.
     write /dev/cpuset/foreground/cpus 0-6
