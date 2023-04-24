@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2020 The LineageOS Project
-# Copyright (C) 2022 PixelOS
+# Copyright (C) 2022-2023 PixelOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -98,29 +98,29 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_RAMDISK_USE_LZ4 := true
 
 BOARD_BOOT_HEADER_VERSION := 3
-BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
-BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
-BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
-BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
-BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
-BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION) \
+			--base $(BOARD_KERNEL_BASE) \
+			--pagesize $(BOARD_KERNEL_PAGESIZE) \
+			--ramdisk_offset $(BOARD_RAMDISK_OFFSET) \
+			--tags_offset $(BOARD_KERNEL_TAGS_OFFSET) \
+			--kernel_offset $(BOARD_KERNEL_OFFSET) \
+			--dtb_offset $(BOARD_DTB_OFFSET)
 
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lisa
 TARGET_KERNEL_CONFIG := lisa_defconfig
 
-BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
-BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
-BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
-BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem,nosocket
-BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8
-BOARD_KERNEL_CMDLINE += loop.max_part=7
-BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
-BOARD_KERNEL_CMDLINE += service_locator.enable=1
-BOARD_KERNEL_CMDLINE += swiotlb=noforce
-BOARD_KERNEL_CMDLINE += pcie_ports=compat
-BOARD_KERNEL_CMDLINE += iptable_raw.raw_before_defrag=1
-BOARD_KERNEL_CMDLINE += ip6table_raw.raw_before_defrag=1
+BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0 \
+			androidboot.hardware=qcom \
+			androidboot.usbcontroller=a600000.dwc3 \
+			cgroup.memory=nokmem,nosocket \
+			console=ttyMSM0,115200n8 \
+			loop.max_part=7 \
+			msm_rtb.filter=0x237 \
+			service_locator.enable=1 \
+			swiotlb=noforce \
+			pcie_ports=compat \
+			iptable_raw.raw_before_defrag=1 \
+			ip6table_raw.raw_before_defrag=1
 
 # Kernel modules
 BOOT_KERNEL_MODULES := \
@@ -223,7 +223,7 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 
-# WiFi
+# Wi-Fi
 BOARD_WLAN_DEVICE := qcwcn
 BOARD_HOSTAPD_DRIVER := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)

@@ -841,15 +841,15 @@
    
     <!-- Defines the sysfs attribute path used by the device
          to enable/disable DC dimming. -->
-    <string name="config_deviceDcDimmingSysfsNode">/sys/devices/virtual/mi_display/disp_feature/disp-DSI-0/disp_param</string>
+    <string name="config_deviceDcDimmingSysfsNode">/sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_exposure</string>
 
     <!-- Defines the value used by the device sysfs node
          to enable DC dimming -->
-    <string name="config_deviceDcDimmingEnableValue">08 01</string>
+    <string name="config_deviceDcDimmingEnableValue">1</string>
 
     <!-- Defines the value used by the device sysfs node
          to disable DC dimming -->
-    <string name="config_deviceDcDimmingDisableValue">08 00</string>
+    <string name="config_deviceDcDimmingDisableValue">0</string>
 
     <!-- Default values for LiveDisplay -->
     <bool name="config_enableLiveDisplay">false</bool>

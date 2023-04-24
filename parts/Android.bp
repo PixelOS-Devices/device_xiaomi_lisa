@@ -5,9 +5,6 @@
 //
 android_app {
     name: "XiaomiParts",
-    defaults: [
-        "SettingsLibDefaults",
-    ],
 
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
@@ -18,7 +15,6 @@ android_app {
 
     static_libs: [
         "org.lineageos.settings.resources",
-        "SettingsLib",
     ],
 
     optimize: {

@@ -1,5 +1,9 @@
 /*
-   Copyright (C) 2020 The LineageOS Project.
+   Copyright (c) 2015, The Linux Foundation. All rights reserved.
+   Copyright (C) 2016 The CyanogenMod Project.
+   Copyright (C) 2019-2020 The LineageOS Project.
+   Copyright (C) 2021 The Android Open Source Project.
+   Copyright (C) 2022-2023 Paranoid Android.
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -13,7 +17,6 @@
     * Neither the name of The Linux Foundation nor the names of its
       contributors may be used to endorse or promote products derived
       from this software without specific prior written permission.
-
    THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
@@ -27,97 +30,65 @@
    IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <vector>
+#include <cstdlib>
+#include <string.h>
 
-#include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
+#include <android-base/properties.h>
+
+#include "property_service.h"
+#include "vendor_init.h"
 
 using android::base::GetProperty;
+using std::string;
 
-std::vector<std::string> ro_props_default_source_order = {
-    "",
-    "bootimage.",
-    "odm.",
-    "product.",
-    "system.",
-    "system_ext.",
-    "vendor.",
+// list of partitions to override props
+static const string source_partitions[] = {
+    "", "bootimage.", "odm.", "product.",
+    "system.", "system_ext.", "vendor."
 };
 
-void property_override(char const prop[], char const value[], bool add = true)
-{
-    prop_info *pi;
+void property_override(char const prop[], char const value[]) {
+    auto pi = (prop_info*) __system_property_find(prop);
 
-    pi = (prop_info *) __system_property_find(prop);
-    if (pi)
+    if (pi != nullptr)
         __system_property_update(pi, value, strlen(value));
-    else if (add)
+    else
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void set_ro_build_prop(const std::string &prop, const std::string &value) {
-    for (const auto &source : ro_props_default_source_order) {
-        auto prop_name = "ro." + source + "build." + prop;
-        if (source == "")
-            property_override(prop_name.c_str(), value.c_str());
-        else
-            property_override(prop_name.c_str(), value.c_str(), false);
-    }
-};
+void set_ro_build_prop(const string &prop, const string &value) {
+    string prop_name;
 
-void set_ro_product_prop(const std::string &prop, const std::string &value) {
-    for (const auto &source : ro_props_default_source_order) {
-        auto prop_name = "ro.product." + source + prop;
-        property_override(prop_name.c_str(), value.c_str(), false);
+    for (const string &source : source_partitions) {
+        prop_name = "ro.product." + source + prop;
+        property_override(prop_name.c_str(), value.c_str());
     }
-};
+}
+
+void set_device_props(const string model, const string name, const string marketname,
+        const string mod_device) {
+    set_ro_build_prop("model", model);
+    set_ro_build_prop("name", name);
+    set_ro_build_prop("marketname", marketname);
+
+    property_override("ro.product.mod_device", mod_device.c_str());
+    property_override("bluetooth.device.default_name", marketname.c_str());
+}
 
 void vendor_load_properties() {
-    std::string region;
-    std::string sku;
-    region = GetProperty("ro.boot.hwc", "");
-    sku = GetProperty("ro.boot.hardware.sku", "");
+    // Detect variant and override properties
+    string region = GetProperty("ro.boot.hwc", "");
 
-    std::string model;
-    std::string brand;
-    std::string device;
-    std::string fingerprint;
-    std::string description;
-    std::string marketname;
-    std::string mod_device;
-
-    if (region == "GL") {
-        model = "2109119DG";
-        brand = "Xiaomi";
-        device = "lisa";
-        fingerprint = "Xiaomi/lisa_global/lisa:13/RKQ1.211001.001/V14.0.3.0.TKOMIXM:user/release-keys";
-        description = "lisa-user 13 RKQ1.211001.001 V14.0.3.0.TKOMIXM release-keys";
-        marketname = "Xiaomi 11 Lite 5G NE";
-        mod_device = "lisa_global";
-    } else if (region == "IN") {
-            model = "2109119DI";
-            brand = "Xiaomi";
-            device = "lisa";
-            fingerprint = "Xiaomi/lisa_in/lisa:13/RKQ1.211001.001/V14.0.4.0.TKOINXM:user/release-keys";
-            description = "lisa-user 13 RKQ1.211001.001 V14.0.4.0.TKOINXM release-keys";
-            marketname = "Xiaomi 11 Lite NE";
-            mod_device = "lisa_in_global";
-   } else {
-        model = "2107119DC";
-        brand = "Xiaomi";
-        device = "lisa";
-        fingerprint = "Xiaomi/lisa/lisa:13/RKQ1.211001.001/V14.0.6.0.TKOCNXM:user/release-keys";
-        description = "lisa-user 13 RKQ1.211001.001 V14.0.6.0.TKOCNXM release-keys";
-        marketname = "Mi 11 LE";
-        mod_device = "lisa_pre";
+    if (region == "CN") { // China
+        set_device_props("2107119DC", "lisa", "Mi 11 LE", "lisa");
+    } else if (region == "IN") { // India
+        set_device_props("2109119DI", "lisa_in", "Xiaomi 11 Lite NE", "lisa_in_global");
+    } else { // Global
+        set_device_props("2109119DG", "lisa_global", "Xiaomi 11 Lite 5G NE", "lisa_global");
     }
 
-    set_ro_build_prop("fingerprint", fingerprint);
-    set_ro_product_prop("brand", brand);
-    set_ro_product_prop("device", device);
-    set_ro_product_prop("model", model);
-
-    property_override("ro.build.description", description.c_str());
-    property_override("ro.product.mod_device", mod_device.c_str());
+    // Set hardware revision
+    property_override("ro.boot.hardware.revision", GetProperty("ro.boot.hwversion", "").c_str());
 }

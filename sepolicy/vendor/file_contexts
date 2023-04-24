@@ -71,8 +71,5 @@
 /data/vendor/mac_addr(/.*)?                    u:object_r:vendor_wifi_vendor_data_file:s0
 /data/vendor/wlan_logs(/.*)?                   u:object_r:vendor_wifi_vendor_data_file:s0
 
-# Display panel name
-/vendor/bin/init\.panel_name\.sh		u:object_r:vendor_qti_init_shell_exec:s0
-
 # Xiaomi CIT sensor service
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.citsensorservice@1\.1-service                  u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
