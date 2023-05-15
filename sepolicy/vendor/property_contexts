@@ -28,3 +28,7 @@ ro.vendor.histogram.enable                            u:object_r:vendor_displayf
 ro.vendor.sre.enable                                  u:object_r:vendor_displayfeature_prop:s0
 ro.vendor.xiaomi.bl.poll                              u:object_r:vendor_displayfeature_prop:s0
 init.svc.vendor.displayfeature-hal-1-0                u:object_r:vendor_displayfeature_prop:s0
+
+# Mlipay
+persist.vendor.sys.pay.                 u:object_r:vendor_mlipay_prop:s0
+persist.vendor.sys.provision.status     u:object_r:vendor_mlipay_prop:s0
