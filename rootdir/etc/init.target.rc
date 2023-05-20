@@ -110,9 +110,6 @@ on post-fs
     # Set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
 
-   # Bind mount brightness node
-    mount none /sys/class/backlight/panel0-backlight/brightness /sys/class/mi_display/disp-DSI-0/brightness_clone bind
-
     # Apply sensors fix
     start init-sensors_fix-sh
 
