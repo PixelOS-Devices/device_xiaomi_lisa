@@ -1,2 +1,3 @@
 # Global
 ro.product.marketname    u:object_r:build_prop:s0
+ro.product.mod_device    u:object_r:build_prop:s0
