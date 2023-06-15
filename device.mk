@@ -362,6 +362,7 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc_snxxx@1.2-service \
     com.android.nfc_extras \
     libchrome.vendor \
+    LisaNfcOverlay \
     NfcNci \
     SecureElement \
     Tag \
