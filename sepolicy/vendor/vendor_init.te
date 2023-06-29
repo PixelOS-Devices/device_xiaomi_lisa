@@ -1,2 +1,4 @@
 set_prop(vendor_init, vendor_displayfeature_prop)
 set_prop(vendor_init, vendor_power_prop)
+
+allow vendor_init cgroup:file getattr;
