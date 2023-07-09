@@ -29,5 +29,8 @@ BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 
+# Inherit MiuiCamera Makefile
+-include vendor/xiaomi/miuicamera-$(PRODUCT_DEVICE)/BoardConfig.mk
+
 # Include proprietary files
 include vendor/xiaomi/lisa/BoardConfigVendor.mk
