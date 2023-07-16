@@ -82,7 +82,7 @@ void vendor_load_properties() {
     string region = GetProperty("ro.boot.hwc", "");
 
     if (region == "CN") { // China
-        set_device_props("2107119DC", "lisa", "Mi 11 LE", "lisa");
+        set_device_props("2107119DC", "lisa", "Mi 11 LE", "lisa_global");
     } else if (region == "IN") { // India
         set_device_props("2109119DI", "lisa_in", "Xiaomi 11 Lite NE", "lisa_in_global");
     } else { // Global
