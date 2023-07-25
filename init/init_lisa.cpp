@@ -75,6 +75,7 @@ void set_device_props(const string model, const string name, const string market
 
     property_override("ro.product.mod_device", mod_device.c_str());
     property_override("bluetooth.device.default_name", marketname.c_str());
+    property_override("vendor.usb.product_string", marketname.c_str());
 }
 
 void vendor_load_properties() {
