@@ -34,9 +34,6 @@ on property:vendor.post_boot.parsed=1
     write /proc/sys/kernel/sched_downmigrate "60 75"
     write /proc/sys/kernel/sched_group_upmigrate 95
     write /proc/sys/kernel/sched_group_downmigrate 75
-    write /proc/sys/kernel/sched_prefer_spread 2
-    write /proc/sys/kernel/walt_low_latency_task_threshold 100
-    write /proc/sys/kernel/walt_rtg_cfs_boost_prio 119
 
     # Configure uclamp
     write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
