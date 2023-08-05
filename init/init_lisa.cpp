@@ -67,13 +67,11 @@ void set_ro_build_prop(const string &prop, const string &value) {
     }
 }
 
-void set_device_props(const string model, const string name, const string marketname,
-        const string mod_device) {
+void set_device_props(const string model, const string name, const string marketname) {
     set_ro_build_prop("model", model);
     set_ro_build_prop("name", name);
     set_ro_build_prop("marketname", marketname);
 
-    property_override("ro.product.mod_device", mod_device.c_str());
     property_override("bluetooth.device.default_name", marketname.c_str());
     property_override("vendor.usb.product_string", marketname.c_str());
 }
@@ -83,11 +81,11 @@ void vendor_load_properties() {
     string region = GetProperty("ro.boot.hwc", "");
 
     if (region == "CN") { // China
-        set_device_props("2107119DC", "lisa", "Mi 11 LE", "lisa_global");
+        set_device_props("2107119DC", "lisa", "Mi 11 LE");
     } else if (region == "IN") { // India
-        set_device_props("2109119DI", "lisa_in", "Xiaomi 11 Lite NE", "lisa_in_global");
+        set_device_props("2109119DI", "lisa_in", "Xiaomi 11 Lite NE");
     } else { // Global
-        set_device_props("2109119DG", "lisa_global", "Xiaomi 11 Lite 5G NE", "lisa_global");
+        set_device_props("2109119DG", "lisa_global", "Xiaomi 11 Lite 5G NE");
     }
 
     // Set hardware revision
