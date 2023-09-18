@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2018, 2021-22 The LineageOS Project
+ * Copyright (C) 2024 PixelOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +20,6 @@ package org.lineageos.settings.dirac;
 import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
 
 public class DiracActivity extends CollapsingToolbarBaseActivity {
 
@@ -29,7 +29,8 @@ public class DiracActivity extends CollapsingToolbarBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getFragmentManager().beginTransaction().replace(R.id.content_frame,
+        getFragmentManager().beginTransaction()
+		.replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame,
                 new DiracSettingsFragment(), TAG_DIRAC).commit();
     }
 }
