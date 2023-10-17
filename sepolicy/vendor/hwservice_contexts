@@ -4,6 +4,10 @@ vendor.xiaomi.hardware.mlipay::IMlipayService                                 u:
 # Camera
 vendor.xiaomi.hardware.campostproc::IMiPostProcService                               u:object_r:hal_xiaomi_camera_hwservice:s0
 
+# Fingerprint
+com.fingerprints.extension::IFingerprintNavigation           u:object_r:vendor_hal_fingerprint_hwservice_xiaomi:s0
+com.fingerprints.extension::IFingerprintSensorTest           u:object_r:vendor_hal_fingerprint_hwservice_xiaomi:s0
+
 # Radio
 vendor.qti.hardware.radio.ims::IImsRadio                                      u:object_r:hal_telephony_hwservice:s0
 
