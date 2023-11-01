@@ -851,27 +851,29 @@ vendor/firmware/a660_zap.mdt
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
-# IMS - from LA.QSSI.13.0.r1-10000.02-qssi.0
--system_ext/app/ImsRcsService/ImsRcsService.apk|a52299c150e042c0b8b7a1ea8b26096e9c66ac98
--system_ext/app/QtiTelephony/QtiTelephony.apk|4e1470c1485142d626b78656aa96d6df1b597b12
+# IMS (system_ext) - from LA.QSSI.13.0.r1-08600-qssi.0
+system_ext/app/ImsRcsService/ImsRcsService.apk|1808781bcabdec3db97fd19cfe0365a1040178c1
+system_ext/app/QtiTelephony/QtiTelephony.apk|9edf61e38a45e5d500561e50fba4f296b9950e8f
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|a7e114ea1e6909685ce49717a2b5b66d8275d419
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|7ce9e6ccb5026b0aa87b0eb94a20448e2d4c481c
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml|fc930929bee7d1f8ecc5b1c76193acdc2f923fe7
--system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar|b6d4530d5bdb9af0e9fb6a59d91b6634011a5f9c
--system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar|a2243ce7157ff77507e90c7c043c26e56cdd2ec3
--system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar|c8f27675d6f1c83a89b1334fd86697d99471727a
--system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar|3b76082044d29a4ffbea1b7bd5ef8f2a8f71369e
-system_ext/lib64/lib-imsvideocodec.so|eb70a60fc143ab65718fa3333c845490120c9a23
-system_ext/lib64/lib-imsvt.so|dcf23823c74ae9844b6a5317f798b993c45b2e41
+system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar|ec58d15adf1930c4dcfb59e209a4bcf8d230a756
+system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar|ae7015efe55d17b1caf0da0c2247dac6cfaaa272
+system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar|137f296405fd5f8c036c511f1d186e7178c5d57f
+system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar|70dbc40c581103970402959342ea250b6a1fb84b
+system_ext/lib64/lib-imsvideocodec.so|b66ccec78025517c86ad9fb3cf03d083e62fe6f9
+system_ext/lib64/lib-imsvt.so|72996b22f4cff56d676b258be8fff8ad93ecdf22
 system_ext/lib64/lib-imsvtextutils.so|1dfb5640cd23a92e7ca55a84118b2966653aebc7
 system_ext/lib64/lib-imsvtutils.so|67ce2fc38fbf819e397b19e1ff46c70183e890d2
-system_ext/lib64/libdiag_system.so|77562f2b9a3bcbf7ce8106446c1cf2443c28accc
+system_ext/lib64/libdiag_system.so|d7894c7954c21cbef216a977c91e5e71f86387aa
 system_ext/lib64/libimscamera_jni.so|a21333fa8f338acaa4996f74a0e29145f77d5299
-system_ext/lib64/libimsmedia_jni.so|e9e9a28e266f8e19f2a01c0bfaaf19b39ac1fdfb
-system_ext/lib64/vendor.qti.diaghal@1.0.so|ffab1580dbc117104f21208c3940e4f14c2d1b37
+system_ext/lib64/libimsmedia_jni.so|d1b4c03352a9b34f4d26a4fe3a8595f295c7cef8
+system_ext/lib64/vendor.qti.diaghal@1.0.so|92555fd8ae83569d61a26ea3ab33e3f2d89a5729
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|ace5e02b6cd79b43a07d84e2d18d6818821a3c48
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|e64aa8a21a8db69d2e2ea14929bb20ced99c119d
--system_ext/priv-app/ims/ims.apk|446d0285830d87f96d9a9054873a7e17dc8ef7ff
+system_ext/priv-app/ims/ims.apk|5690534155879d101cbe323456b01f29cb97b8b4
+
+# IMS
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdaemon
 vendor/etc/init/ims_rtp_daemon.rc
