@@ -14,6 +14,9 @@ genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-  
 # USB
 genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,ucsi/typec u:object_r:vendor_sysfs_usb_c:s0
 
+# Sensors
+genfscon sysfs /devices/virtual/touch/touch_dev/palm_sensor                         u:object_r:vendor_sysfs_sensors:s0
+
 # Wakeup nodes
 genfscon sysfs /devices/platform/goodix_ts.0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-0028/wakeup u:object_r:sysfs_wakeup:s0
