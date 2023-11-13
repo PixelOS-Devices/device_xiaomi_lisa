@@ -4,9 +4,6 @@ vendor.bluetooth.soc=hastings
 # Camera
 ro.product.mod_device=lisa_global
 
-# Charger
-ro.charger.enable_suspend=true
-
 # CNE
 persist.vendor.cne.feature=1
 

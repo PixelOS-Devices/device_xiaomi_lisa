@@ -1,8 +1,8 @@
-on charger
-    wait /sys/class/power_supply/battery/temp
+on property:init.svc.vendor.charger=running
+    wait /sys/class/power_supply/usb/type
     start mi_thermald
 on boot
-    wait /sys/class/power_supply/battery/temp
+    wait /sys/class/power_supply/usb/type
     start mi_thermald
 
 service mi_thermald /system/vendor/bin/mi_thermald
