@@ -96,6 +96,9 @@ function blob_fixup() {
         vendor/lib64/libwa_sat.so)
             sed -i 's/\/system\/lib64\([^\/]\)/\/vendor\/lib64\1/g' "${2}"
             ;;
+        vendor/lib64/hw/displayfeature.default.so)
+            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
+            ;;
     esac
 }
 
