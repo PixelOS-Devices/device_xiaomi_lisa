@@ -358,7 +358,13 @@
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "1324800"
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "GPUMinFreq",
+      "Duration": 0,
+      "Value": "450000000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -494,12 +500,6 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "UclampTAMin",
-      "Duration": 3000,
-      "Value": "50"
-    },
-    {
-      "PowerHint": "LAUNCH",
       "Node": "UclampFgMin",
       "Duration": 3000,
       "Value": "30"
@@ -562,13 +562,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "180000000"
-    },
-    {
-      "PowerHint": "EXPENSIVE_RENDERING",
-      "Node": "GPUMaxFreq",
-      "Duration": 0,
-      "Value": "550000000"
+      "Value": "450000000"
     },
     {
       "PowerHint": "DISPLAY_UPDATE_IMMINENT",
