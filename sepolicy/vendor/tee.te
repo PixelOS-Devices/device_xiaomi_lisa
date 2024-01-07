@@ -1,3 +1,1 @@
-allow tee vendor_fingerprint_data_file:dir create_dir_perms;
-allow tee vendor_fingerprint_data_file:file create_file_perms;
 allow tee vendor_bsg_device:chr_file { setattr };

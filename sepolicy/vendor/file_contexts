@@ -54,7 +54,7 @@
 /vendor/bin/hw/android\.hardware\.sensors@2.1-service\.xiaomi-multihal				                                u:object_r:hal_sensors_default_exec:s0
 
 # Fingerprint
-/data/vendor/fpc(/.*)?                                              u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/fpc(/.*)?                                              u:object_r:fingerprint_vendor_data_file:s0
 
 # Sensors Fix script
 /vendor/bin/init\.sensors_fix\.sh	      u:object_r:vendor_init-qcom-sensors-sh_exec:s0
