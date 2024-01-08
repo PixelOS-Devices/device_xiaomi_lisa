@@ -1,0 +1,3 @@
+# SKU properties
+ro.product.property_source_order=odm,product,vendor,system_ext,system
+import /odm/etc/${ro.boot.hwc}_build.prop
