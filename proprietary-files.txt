@@ -1,4 +1,4 @@
-# Device proprietary files - from miui_LISAGlobal_V14.0.6.0.TKOMIXM package, unless pinned
+# Device proprietary files - from miui_LISAGlobal_V14.0.7.0.TKOMIXM package, unless pinned
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
