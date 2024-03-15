@@ -27,9 +27,6 @@
 # Lights
 /vendor/bin/hw/android\.hardware\.light-service\.xiaomi                                    u:object_r:hal_light_default_exec:s0
 
-# Media
-/vendor/bin/hw/dolbycodec2			u:object_r:mediacodec_exec:s0
-
 # Mi_Disp
 /sys/devices/virtual/mi_display/disp_feature/disp-DSI-+[0-1](/.*)?	u:object_r:vendor_sysfs_graphics:s0
 

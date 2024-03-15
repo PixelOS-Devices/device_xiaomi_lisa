@@ -836,9 +836,6 @@
     <!-- Default values for LiveDisplay -->
     <bool name="config_enableLiveDisplay">false</bool>
 
-    <!-- Device model (Build.MODEL) to spoof for netflix, if not empty -->
-    <string name="config_netflixSpoofModel" translatable="false">M2101K9G</string>
-    
     <!-- If this is true, device supports Sustained Performance Mode. -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
 </resources>

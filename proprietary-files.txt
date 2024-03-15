@@ -981,7 +981,7 @@ vendor/etc/media_yupik_v1/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/video_system_specs.json
-vendor/lib/libavservices_minijail_vendor.so
+vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/lib/libmmosal.so
 vendor/lib/libqc2vppfilter.so
 vendor/lib/libqcodec2_base.so
@@ -992,23 +992,6 @@ vendor/lib/libqcodec2_platform.so
 vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib64/libmmosal.so
-
-# Media (Dolby Vision) - from MIUI V13.0.8.0.SKOMIXM
-vendor/bin/hw/dolbycodec2|cfef1c14f3cb696580229240590164c846bf14aa
-vendor/etc/dolby_vision.cfg|16447ca0a10b37869737cc15b495e8a3f6763bfa
-vendor/etc/init/dolbycodec2.rc|1ea8b363e94fd4f5410cadceb30de8229fb38045
-vendor/etc/media_codecs_with_dolby_yupik.xml|bbd24a7967257dadc6a4e0a72271fb3053940f1f
-vendor/lib/c2.dolby.avc.dec.so|46d92835722ec8bee6160ecbd74f4876b9605cdb
-vendor/lib/c2.dolby.avc.sec.dec.so|df128db1afa1527b28c6188e414f3f79ecb30293
-vendor/lib/c2.dolby.client.so|33b96ef37f0708f44b3726ef376bc64722d2ed58
-vendor/lib/c2.dolby.egl.so|8d1710568a36178e1742113668626d37d8173c8a
-vendor/lib/c2.dolby.hevc.dec.so|3c1eafc7feffad3bb2279ef027b5d3a441306227
-vendor/lib/c2.dolby.hevc.sec.dec.so|664f12c499bc236628b92d1179e0290b0b5b1bf7
-vendor/lib/c2.dolby.store.so|08d26054d08062a508e53ad2751baa8590a6d3cf
-vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl@1.0.stock.so|443ccbe72e40a0dfb6d8270174aa0a372cbfc181
-vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk.stock.so|42e3109ed49a47106f2834320d99da34c41b8221
-vendor/lib/libdolbyottcameracontrol.so|3758b2541004c5d9a2935ed134afbabb66d6a315
-vendor/lib/libdovi.so|185d52f232cfd2ec7156ee5103593ac12f04cb1f
 
 # Media (VPU firmware)
 vendor/firmware/vpu20_1v.b00
