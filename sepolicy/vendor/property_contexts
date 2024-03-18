@@ -18,7 +18,7 @@ ro.vendor.oem.imei1                             u:object_r:vendor_deviceid_prop:
 ro.vendor.oem.imei2                             u:object_r:vendor_deviceid_prop:s0
 
 # Power
-vendor.powerhal.                   u:object_r:vendor_power_prop:s0
+vendor.powerhal.                   u:object_r:vendor_powerhal_prop:s0
 
 # SPU
 persist.vendor.security.spuari.              u:object_r:vendor_security_spuari_prop:s0

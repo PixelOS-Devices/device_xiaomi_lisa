@@ -1,2 +1,4 @@
 type public_adsprpcd_file, file_type;
-type vendor_sysfs_msm_subsys, fs_type, sysfs_type;
+
+# Graphics
+type vendor_sysfs_sde_crtc, fs_type, sysfs_type;
