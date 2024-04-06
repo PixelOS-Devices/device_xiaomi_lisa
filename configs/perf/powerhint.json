@@ -139,7 +139,7 @@
       "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
       "Values": [
         "0",
-        "30"
+        "50"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -362,12 +362,6 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "GPUMinFreq",
-      "Duration": 0,
-      "Value": "450000000"
-    },
-    {
-      "PowerHint": "INTERACTION",
       "Node": "UclampTAMin",
       "Duration": 0,
       "Value": "25"
@@ -502,7 +496,7 @@
       "PowerHint": "LAUNCH",
       "Node": "UclampFgMin",
       "Duration": 3000,
-      "Value": "30"
+      "Value": "50"
     },
     {
       "PowerHint": "LAUNCH",
