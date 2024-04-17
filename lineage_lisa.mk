@@ -26,9 +26,9 @@ PRODUCT_SYSTEM_NAME := lisa_global
 PRODUCT_SYSTEM_DEVICE := lisa
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="lisa_global-user 13 TKQ1.220829.002 V14.0.2.0.TKOMIXM release-keys" \
+    PRIVATE_BUILD_DESC="lisa_global-user 14 UKQ1.231108.001 V816.0.3.0.UKOMIXM release-keys" \
     TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := Xiaomi/lisa_global/lisa:13/TKQ1.220829.002/V14.0.2.0.TKOMIXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/lisa_global/lisa:14/UKQ1.231108.001/V816.0.3.0.UKOMIXM:user/release-keys
