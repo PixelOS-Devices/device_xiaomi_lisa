@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "LisaSettingsOverlay",
+    sdk_version: "current",
+    vendor: true,
+}

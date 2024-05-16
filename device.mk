@@ -358,7 +358,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
     com.android.nfc_extras \
     libchrome.vendor \
-    LisaNfcOverlay \
     NfcNci \
     SecureElement \
     Tag \
@@ -376,15 +375,20 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
 PRODUCT_PACKAGES += \
+    LisaCarrierConfigOverlay \
     LisaCNSettingsProviderOverlay \
+    LisaCNWifiOverlay \
+    LisaFrameworksOverlay \
     LisaGLSettingsProviderOverlay \
-    LisaINSettingsProviderOverlay
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
+    LisaGLWifiOverlay \
+    LisaINSettingsProviderOverlay \
+    LisaINWifiOverlay \
+    LisaNfcOverlay \
+    LisaSettingsOverlay \
+    LisaSystemUIOverlay \
+    LisaTelephonyOverlay \
+    LisaWifiOverlay
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -417,7 +421,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
 
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlay \
     libjson \
     librmnetctl
 
@@ -530,10 +533,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-qcom \
     libwpa_client \
-    LisaCNWifiOverlay \
-    LisaGLWifiOverlay \
-    LisaINWifiOverlay \
-    WifiOverlay \
     wpa_cli \
     wpa_supplicant \
     wpa_supplicant.conf
