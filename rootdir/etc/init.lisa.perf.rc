@@ -58,6 +58,9 @@ on property:vendor.post_boot.parsed=1
     # Enable suspend to RAM
     write /sys/power/mem_sleep "deep"
 
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
     service vendor.qti.hardware.display.composer /vendor/bin/hw/vendor.qti.hardware.display.composer-service
     override
     class hal animation

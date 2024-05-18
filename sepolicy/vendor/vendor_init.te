@@ -1,5 +1,3 @@
 set_prop(vendor_init, vendor_displayfeature_prop)
-set_prop(vendor_init, vendor_powerhal_prop)
 
 allow vendor_init cgroup:file getattr;
-allow vendor_init proc_sched:file w_file_perms;
