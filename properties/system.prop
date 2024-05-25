@@ -55,9 +55,13 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 # Radio
 DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
+persist.vendor.qti.telephony.vt_cam_interface=2
 
 # RIL
 persist.sys.fflag.override.settings_provider_model=false
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
+
+# Thermal
+vendor.sys.thermal.data.path=/data/vendor/thermal/
