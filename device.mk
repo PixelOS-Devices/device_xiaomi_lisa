@@ -34,6 +34,9 @@ PRODUCT_PACKAGES += \
     libvolumelistener
 
 PRODUCT_PACKAGES += \
+    libaudioroute.vendor
+
+PRODUCT_PACKAGES += \
     audioadsprpcd \
     audio.r_submix.default \
     audio.primary.default \
@@ -126,6 +129,9 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libion.vendor \
     libgui_vendor
+
+PRODUCT_PACKAGES += \
+    liblz4.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera_cnf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_cnf.txt
@@ -402,6 +408,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
     libqti-perfd-client
 
+PRODUCT_PACKAGES += \
+    libssl.vendor
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     $(LOCAL_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
@@ -426,6 +435,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson \
     librmnetctl
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libjsoncpp.vendor \
+    libsqlite.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -556,6 +570,9 @@ PRODUCT_PACKAGES += \
     android.media.audio.common.types-V2-cpp \
     libnl \
     libwfdaac_vendor
+
+PRODUCT_PACKAGES += \
+    libpng.vendor
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
