@@ -23,6 +23,9 @@ $(call inherit-product-if-exists, vendor/xiaomi/lisa/lisa-vendor.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
