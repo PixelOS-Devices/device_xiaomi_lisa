@@ -1,3 +1,8 @@
+//
+// Copyright (C) 2020-2024 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
 soong_namespace {
     imports: [
         "hardware/qcom-caf/bootctrl",
@@ -5,4 +10,11 @@ soong_namespace {
         "hardware/google/pixel",
         "hardware/xiaomi",
     ],
+}
+
+install_symlink {
+    name: "firmware_WCNSS_qcom_cfg.ini_symlink",
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini",
+    symlink_target: "/vendor/etc/wifi/WCNSS_qcom_cfg.ini",
 }

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020-2022 The LineageOS Project
+# Copyright (C) 2020-2024 The LineageOS Project
 # Copyright (C) 2022 PixelOS
 #
 # SPDX-License-Identifier: Apache-2.0
@@ -36,13 +36,5 @@ ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT)
 ALL_DEFAULT_INSTALLED_MODULES += $(BT_FIRMWARE_MOUNT_POINT)
 ALL_DEFAULT_INSTALLED_MODULES += $(DSP_MOUNT_POINT)
 ALL_DEFAULT_INSTALLED_MODULES += $(VM_SYSTEM_MOUNT_POINT)
-
-WIFI_FIRMWARE_SYMLINKS := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/
-$(WIFI_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating wifi firmware symlinks: $@"
-	mkdir -p $@
-	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/WCNSS_qcom_cfg.ini
-
-ALL_DEFAULT_INSTALLED_MODULES += $(WIFI_FIRMWARE_SYMLINKS)
 
 endif

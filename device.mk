@@ -567,6 +567,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.rtt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.rtt.xml
 
+# WiFi firmware symlinks
+PRODUCT_PACKAGES += \
+    firmware_WCNSS_qcom_cfg.ini_symlink
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     android.media.audio.common.types-V2-cpp \
