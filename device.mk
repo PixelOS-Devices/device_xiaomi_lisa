@@ -128,7 +128,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libcamera2ndk_vendor \
     libion.vendor \
-    libgui_vendor
+    libgui_vendor \
+    libutilscallstack.vendor
 
 PRODUCT_PACKAGES += \
     liblz4.vendor
