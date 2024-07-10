@@ -48,6 +48,7 @@
 
 # Fingerprint
 /data/vendor/fpc(/.*)?                                              u:object_r:fingerprint_vendor_data_file:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
 
 # Sensors Fix script
 /vendor/bin/init\.sensors_fix\.sh	      u:object_r:vendor_init-qcom-sensors-sh_exec:s0
