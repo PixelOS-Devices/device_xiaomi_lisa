@@ -37,5 +37,4 @@ genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup/wakeup u:object_
 genfscon sysfs /devices/platform/soc/soc:md_testing_mode/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws/subsys3/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys4/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,spcom/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,trustedvm@d0800000/subsys1/wakeup u:object_r:sysfs_wakeup:s0
