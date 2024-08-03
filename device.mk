@@ -14,6 +14,9 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.miui.notch=1 \
     ro.product.mod_device=lisa_global
 
+PRODUCT_PACKAGES += \
+    libutils.vendor
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
