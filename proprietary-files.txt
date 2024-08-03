@@ -25,6 +25,11 @@ vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
 
 # ADSP Modules
+vendor/lib/rfsa/adsp/bm2n06.bin
+vendor/lib/rfsa/adsp/bm2n08.bin
+vendor/lib/rfsa/adsp/bm2n13.bin
+vendor/lib/rfsa/adsp/bm2n14.bin
+vendor/lib/rfsa/adsp/bm2n15.bin
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
 vendor/lib/rfsa/adsp/libMIAIHDR_skel.so
@@ -88,6 +93,7 @@ vendor/lib/libvideoNS.so
 vendor/firmware/tfa98xx.cnt
 
 # Camera
+vendor/bin/loadalgo
 vendor/lib64/camera/com.qti.actuator.lisa_ofilm_s5kgw3_dw9800_wide.so
 vendor/lib64/camera/com.qti.actuator.lisa_semco_s5kgw3_dw9800_wide.so
 vendor/lib64/camera/com.qti.eeprom.lisa_ofilm_imx355_gt24p64e_ultra_eeprom.so
@@ -195,9 +201,11 @@ vendor/lib64/libfocus.so
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
 vendor/lib64/libhexagon_controller.so
+vendor/lib64/libhta.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libipebpsstriping170.so
 vendor/lib64/libjpege.so
+vendor/lib64/libloadalgo_stub.so
 vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmegface.so
 vendor/lib64/libmiStereoFactoryRemapBasicLib.so
@@ -384,11 +392,13 @@ vendor/etc/camera/beauty_style_nude.cng
 vendor/etc/camera/beauty_style_pink.cng
 vendor/etc/camera/beauty_style_skin_gloss.cng
 vendor/etc/camera/bokehParams.json
+vendor/etc/camera/cache
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/camera/com.xiaomi.dcal.wu.fake
 vendor/etc/camera/com.xiaomi.dcal.wu.golden
 vendor/etc/camera/com.xiaomi_k9_mecp.bin
 vendor/etc/camera/com.xiaomi_k9_mecp_for_nocali.bin
+vendor/etc/camera/det_quantize.dlc
 vendor/etc/camera/eisoverridesettings.txt
 vendor/etc/camera/hdrcheckerparamsettings.yml
 vendor/etc/camera/intsense_config_optical_zoom_2sat.bin
@@ -396,10 +406,25 @@ vendor/etc/camera/megviifacepp_0_5_2_model
 vendor/etc/camera/miai_hdr_config.yaml
 vendor/etc/camera/mibokeh_855_opencl.bin
 vendor/etc/camera/mibokeh_855_parameter.bin
+vendor/etc/camera/model/dof_model/capture_cache
+vendor/etc/camera/model/dof_model/capture_model
+vendor/etc/camera/model/dof_model/capture_policy
+vendor/etc/camera/model/rt_model/preview_cache
+vendor/etc/camera/model/rt_model/preview_model
+vendor/etc/camera/model/rt_model/preview_policy
+vendor/etc/camera/model1
+vendor/etc/camera/model2
+vendor/etc/camera/model3
+vendor/etc/camera/model4
 vendor/etc/camera/model_ai_dxo.dlc
 vendor/etc/camera/model_back.dlc
 vendor/etc/camera/model_front.dlc
 vendor/etc/camera/model_glass.dlc
+vendor/etc/camera/para_ini_cal_w_u_0.bin
+vendor/etc/camera/para_ini_verify_w_u_0.bin
+vendor/etc/camera/person_det_dsp.dlc
+vendor/etc/camera/person_reid_gpu.dlc
+vendor/etc/camera/preview_bokeh_params.json
 vendor/etc/camera/pureShot_parameter.xml
 vendor/etc/camera/pureView_parameter.xml
 vendor/etc/camera/reid_float.dlc
