@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from lisa V816.0.3.0.UKOMIXM
+# All unpinned blobs below are extracted from lisa V816.0.7.0.UKOMIXM
 
 abl.img;AB
 aop.img;AB
