@@ -200,7 +200,7 @@ vendor/lib64/libjpege.so
 vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmiStereoFactoryRemapBasicLib.so
 vendor/lib64/libmiStereoFactoryRemapLib.so
-vendor/lib64/libmiStereoFactoryRemapLib_v2.so
+vendor/lib64/libmiStereoFactoryRemapLib_v2.so;FIX_SONAME
 vendor/lib64/libmiXmlParser.so
 vendor/lib64/libmiai_portraitsupernight.so
 vendor/lib64/libmialgo_ai_vision.so
@@ -472,7 +472,7 @@ vendor/firmware/a660_zap.elf
 vendor/firmware/a660_zap.mdt
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so
+vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
 
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
@@ -521,7 +521,7 @@ vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/lib64/libnotifyaudiohal.so
+vendor/lib64/libnotifyaudiohal.so;FIX_SONAME
 vendor/lib64/libsensor_cal_v2.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
