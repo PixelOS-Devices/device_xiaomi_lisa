@@ -37,8 +37,11 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(b'libmegface.so', b'libfacedet.so')
         .binary_regex_replace(b'libMegviiFacepp-0.5.2.so', b'libFaceDetectpp-0.5.2.so')
         .binary_regex_replace(b'megviifacepp_0_5_2_model', b'facedetectpp_0_5_2_model'),
+        .add_needed('libprocessgroup_shim.so'),
     'vendor/lib64/hw/camera.xiaomi.so': blob_fixup()
         .sig_replace('29 07 00 94', '1F 20 03 D5'),
+    'vendor/lib64/hw/com.qti.chi.override.so' : blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
 }  # fmt: skip
 
 
